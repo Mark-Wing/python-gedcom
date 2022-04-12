@@ -2,6 +2,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -25,22 +26,8 @@
 #
 # Further information about the license: http://www.gnu.org/licenses/gpl-2.0.html
 
-"""GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_FAMILY`"""
+"""
+Module containing tools developed using the GEDCOM Parser
 
-from gedcom.element.element import Element
-import gedcom.tags
-
-
-class NotAnActualFamilyError(Exception):
-    pass
-
-
-class FamilyElement(Element):
-
-    def get_tag(self):
-        return gedcom.tags.GEDCOM_TAG_FAMILY
-    
-    
-    
-    
-    
+..include:: ./utilities.md 
+"""

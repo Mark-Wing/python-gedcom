@@ -37,8 +37,12 @@ class NotAnActualObjectError(Exception):
 
 class ObjectElement(Element):
 
+    def get_tag(self):
+        return gedcom.tags.GEDCOM_TAG_OBJECT
+
     def is_object(self):
         """Checks if this element is an actual object
+        
         :rtype: bool
         """
         return self.get_tag() == gedcom.tags.GEDCOM_TAG_OBJECT

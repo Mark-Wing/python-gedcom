@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="generator" content="pdoc 0.7.5" />
+<meta name="generator" content="pdoc 0.10.0" />
 <title>gedcom.tags API documentation</title>
 <meta name="description" content="GEDCOM tags." />
-<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
-<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
-<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
 </head>
 <body>
 <main>
@@ -29,6 +31,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -58,43 +61,44 @@ GEDCOM tags.
 
 GEDCOM_PROGRAM_DEFINED_TAG_MREL = &#34;_MREL&#34;
 &#34;&#34;&#34;Value: `_MREL`
-
 Relationship to a mother.&#34;&#34;&#34;
 
 GEDCOM_PROGRAM_DEFINED_TAG_FREL = &#34;_FREL&#34;
 &#34;&#34;&#34;Value: `_FREL`
-
 Relationship to a father.&#34;&#34;&#34;
+
+GEDCOM_TAG_ADDRESS = &#34;ADDR&#34;
+&#34;&#34;&#34;Value: `ADDR`
+The contemporary place, usually required for postal purposes, of an individual, a submitter of information, 
+a repository, a business, a school or a company.&#34;&#34;&#34;
+
+GEDCOM_TAG_AUTHOR = &#34;AUTH&#34;
+&#34;&#34;&#34;Value: `AUTH`
+The name of the individual who created or compiled information. &#34;&#34;&#34;
 
 GEDCOM_TAG_BIRTH = &#34;BIRT&#34;
 &#34;&#34;&#34;Value: `BIRT`
-
 The event of entering into life.&#34;&#34;&#34;
 
 GEDCOM_TAG_BURIAL = &#34;BURI&#34;
 &#34;&#34;&#34;Value: `BURI`
-
 The event of the proper disposing of the mortal remains of a deceased person.&#34;&#34;&#34;
 
 GEDCOM_TAG_CENSUS = &#34;CENS&#34;
 &#34;&#34;&#34;Value: `CENS`.
-
 The event of the periodic count of the population for a designated locality, such as a national or state Census.&#34;&#34;&#34;
 
 GEDCOM_TAG_CHANGE = &#34;CHAN&#34;
 &#34;&#34;&#34;Value: `CHAN`
-
 Indicates a change, correction, or modification. Typically used in connection
 with a `gedcom.tags.GEDCOM_TAG_DATE` to specify when a change in information occurred.&#34;&#34;&#34;
 
 GEDCOM_TAG_CHILD = &#34;CHIL&#34;
 &#34;&#34;&#34;Value: `CHIL`
-
 The natural, adopted, or sealed (LDS) child of a father and a mother.&#34;&#34;&#34;
 
 GEDCOM_TAG_CONCATENATION = &#34;CONC&#34;
 &#34;&#34;&#34;Value: `CONC`
-
 An indicator that additional data belongs to the superior value. The information from the `CONC` value is to
 be connected to the value of the superior preceding line without a space and without a carriage return and/or
 new line character. Values that are split for a `CONC` tag must always be split at a non-space. If the value is
@@ -104,7 +108,6 @@ the first non-space starting after the tag to determine the beginning of the val
 
 GEDCOM_TAG_CONTINUED = &#34;CONT&#34;
 &#34;&#34;&#34;Value: `CONT`
-
 An indicator that additional data belongs to the superior value. The information from the `CONT` value is to be
 connected to the value of the superior preceding line with a carriage return and/or new line character.
 Leading spaces could be important to the formatting of the resultant text. When importing values from `CONT` lines
@@ -113,100 +116,106 @@ spaces are to be a part of the value.&#34;&#34;&#34;
 
 GEDCOM_TAG_DATE = &#34;DATE&#34;
 &#34;&#34;&#34;Value: `DATE`
-
 The time of an event in a calendar format.&#34;&#34;&#34;
 
 GEDCOM_TAG_DEATH = &#34;DEAT&#34;
 &#34;&#34;&#34;Value: `DEAT`
-
 The event when mortal life terminates.&#34;&#34;&#34;
 
 GEDCOM_TAG_FAMILY = &#34;FAM&#34;
 &#34;&#34;&#34;Value: `FAM`.
-
 Identifies a legal, common law, or other customary relationship of man and woman and their children,
 if any, or a family created by virtue of the birth of a child to its biological father and mother.&#34;&#34;&#34;
 
 GEDCOM_TAG_FAMILY_CHILD = &#34;FAMC&#34;
 &#34;&#34;&#34;Value: `FAMC`
-
 Identifies the family in which an individual appears as a child.&#34;&#34;&#34;
 
 GEDCOM_TAG_FAMILY_SPOUSE = &#34;FAMS&#34;
 &#34;&#34;&#34;Value: `FAMS`
-
 Identifies the family in which an individual appears as a spouse.&#34;&#34;&#34;
 
 GEDCOM_TAG_FILE = &#34;FILE&#34;
 &#34;&#34;&#34;Value: `FILE`
-
 An information storage place that is ordered and arranged for preservation and reference.&#34;&#34;&#34;
 
 GEDCOM_TAG_GIVEN_NAME = &#34;GIVN&#34;
 &#34;&#34;&#34;Value: `GIVN`
-
 A given or earned name used for official identification of a person.&#34;&#34;&#34;
 
 GEDCOM_TAG_HUSBAND = &#34;HUSB&#34;
 &#34;&#34;&#34;Value: `HUSB`
-
 An individual in the family role of a married man or father.&#34;&#34;&#34;
 
 GEDCOM_TAG_INDIVIDUAL = &#34;INDI&#34;
 &#34;&#34;&#34;Value: `INDI`
-
 A person.&#34;&#34;&#34;
 
 GEDCOM_TAG_MARRIAGE = &#34;MARR&#34;
 &#34;&#34;&#34;Value: `MARR`.
-
 A legal, common-law, or customary event of creating a family unit of a man and a woman as husband and wife.&#34;&#34;&#34;
 
 GEDCOM_TAG_NAME = &#34;NAME&#34;
 &#34;&#34;&#34;Value: `NAME`.
-
 A word or combination of words used to help identify an individual, title, or other item.
 More than one NAME line should be used for people who were known by multiple names.&#34;&#34;&#34;
 
+# Text which appears on a name line after or behind the given and surname parts of a name. 
+# i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion
+GEDCOM_TAG_SUFFIX = &#34;NSFX&#34;
+&#34;&#34;&#34;Value: `NSFX`.
+Text which appears on a name line after or behind the given and surname parts of a name. 
+i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion&#34;&#34;&#34;
+
 GEDCOM_TAG_OBJECT = &#34;OBJE&#34;
 &#34;&#34;&#34;Value: `OBJE`
-
 Pertaining to a grouping of attributes used in describing something. Usually referring to the data required
 to represent a multimedia object, such an audio recording, a photograph of a person, or an image of a document.&#34;&#34;&#34;
 
 GEDCOM_TAG_OCCUPATION = &#34;OCCU&#34;
 &#34;&#34;&#34;Value: `OCCU`
-
 The type of work or profession of an individual.&#34;&#34;&#34;
 
 GEDCOM_TAG_PLACE = &#34;PLAC&#34;
 &#34;&#34;&#34;Value: `PLAC`
-
 A jurisdictional name to identify the place or location of an event.&#34;&#34;&#34;
+
+GEDCOM_TAG_PAGE = &#34;PAGE&#34;
+&#34;&#34;&#34;Value: `PAGE`
+A number or description to identify where information can be found in a referenced work.&#34;&#34;&#34;
 
 GEDCOM_TAG_PRIVATE = &#34;PRIV&#34;
 &#34;&#34;&#34;Value: `PRIV`
-
 Flag for private address or event.&#34;&#34;&#34;
+
+GEDCOM_TAG_PUBLISHER = &#34;PUBL&#34;
+&#34;&#34;&#34;Value: `PUBL`
+Refers to when or where a work was published or created.&#34;&#34;&#34;
+
+GEDCOM_TAG_REPOSITORY = &#34;REPO&#34;
+&#34;&#34;&#34;Value: `REPO`
+An institution or person that has the specified item as part of their collection(s).&#34;&#34;&#34;
 
 GEDCOM_TAG_SEX = &#34;SEX&#34;
 &#34;&#34;&#34;Value: `SEX`
-
 Indicates the sex of an individual--male or female.&#34;&#34;&#34;
 
 GEDCOM_TAG_SOURCE = &#34;SOUR&#34;
 &#34;&#34;&#34;Value: `SOUR`
-
 The initial or original material from which information was obtained.&#34;&#34;&#34;
 
 GEDCOM_TAG_SURNAME = &#34;SURN&#34;
 &#34;&#34;&#34;Value: `SURN`
-
 A family name passed on or used by members of a family.&#34;&#34;&#34;
+
+GEDCOM_TAG_TITLE = &#34;TITL&#34;
+&#34;&#34;&#34;Value: `TITL`
+A description of a specific writing or other work, such as the title of a book when used in a source context,
+or a formal designation used by an individual in connection with positions of royalty or another social 
+status, such as Grand Duke.&#34;&#34;&#34;
 
 GEDCOM_TAG_WIFE = &#34;WIFE&#34;
 &#34;&#34;&#34;Value: `WIFE`
-
 An individual in the role as a mother and/or married woman.&#34;&#34;&#34;</code></pre>
 </details>
 </section>
@@ -217,156 +226,195 @@ An individual in the role as a mother and/or married woman.&#34;&#34;&#34;</code
 <dl>
 <dt id="gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_FREL"><code class="name">var <span class="ident">GEDCOM_PROGRAM_DEFINED_TAG_FREL</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>_FREL</code></p>
-<p>Relationship to a father.</p></section>
+<div class="desc"><p>Value: <code>_FREL</code>
+Relationship to a father.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_MREL"><code class="name">var <span class="ident">GEDCOM_PROGRAM_DEFINED_TAG_MREL</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>_MREL</code></p>
-<p>Relationship to a mother.</p></section>
+<div class="desc"><p>Value: <code>_MREL</code>
+Relationship to a mother.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_ADDRESS"><code class="name">var <span class="ident">GEDCOM_TAG_ADDRESS</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>ADDR</code>
+The contemporary place, usually required for postal purposes, of an individual, a submitter of information,
+a repository, a business, a school or a company.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_AUTHOR"><code class="name">var <span class="ident">GEDCOM_TAG_AUTHOR</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>AUTH</code>
+The name of the individual who created or compiled information.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_BIRTH"><code class="name">var <span class="ident">GEDCOM_TAG_BIRTH</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>BIRT</code></p>
-<p>The event of entering into life.</p></section>
+<div class="desc"><p>Value: <code>BIRT</code>
+The event of entering into life.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_BURIAL"><code class="name">var <span class="ident">GEDCOM_TAG_BURIAL</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>BURI</code></p>
-<p>The event of the proper disposing of the mortal remains of a deceased person.</p></section>
+<div class="desc"><p>Value: <code>BURI</code>
+The event of the proper disposing of the mortal remains of a deceased person.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_CENSUS"><code class="name">var <span class="ident">GEDCOM_TAG_CENSUS</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>CENS</code>.</p>
-<p>The event of the periodic count of the population for a designated locality, such as a national or state Census.</p></section>
+<div class="desc"><p>Value: <code>CENS</code>.
+The event of the periodic count of the population for a designated locality, such as a national or state Census.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_CHANGE"><code class="name">var <span class="ident">GEDCOM_TAG_CHANGE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>CHAN</code></p>
-<p>Indicates a change, correction, or modification. Typically used in connection
-with a <a title="gedcom.tags.GEDCOM_TAG_DATE" href="#gedcom.tags.GEDCOM_TAG_DATE"><code>GEDCOM_TAG_DATE</code></a> to specify when a change in information occurred.</p></section>
+<div class="desc"><p>Value: <code>CHAN</code>
+Indicates a change, correction, or modification. Typically used in connection
+with a <code><a title="gedcom.tags.GEDCOM_TAG_DATE" href="#gedcom.tags.GEDCOM_TAG_DATE">GEDCOM_TAG_DATE</a></code> to specify when a change in information occurred.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_CHILD"><code class="name">var <span class="ident">GEDCOM_TAG_CHILD</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>CHIL</code></p>
-<p>The natural, adopted, or sealed (LDS) child of a father and a mother.</p></section>
+<div class="desc"><p>Value: <code>CHIL</code>
+The natural, adopted, or sealed (LDS) child of a father and a mother.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_CONCATENATION"><code class="name">var <span class="ident">GEDCOM_TAG_CONCATENATION</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>CONC</code></p>
-<p>An indicator that additional data belongs to the superior value. The information from the <code>CONC</code> value is to
+<div class="desc"><p>Value: <code>CONC</code>
+An indicator that additional data belongs to the superior value. The information from the <code>CONC</code> value is to
 be connected to the value of the superior preceding line without a space and without a carriage return and/or
 new line character. Values that are split for a <code>CONC</code> tag must always be split at a non-space. If the value is
 split on a space the space will be lost when concatenation takes place. This is because of the treatment that
 spaces get as a GEDCOM delimiter, many GEDCOM values are trimmed of trailing spaces and some systems look for
-the first non-space starting after the tag to determine the beginning of the value.</p></section>
+the first non-space starting after the tag to determine the beginning of the value.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_CONTINUED"><code class="name">var <span class="ident">GEDCOM_TAG_CONTINUED</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>CONT</code></p>
-<p>An indicator that additional data belongs to the superior value. The information from the <code>CONT</code> value is to be
+<div class="desc"><p>Value: <code>CONT</code>
+An indicator that additional data belongs to the superior value. The information from the <code>CONT</code> value is to be
 connected to the value of the superior preceding line with a carriage return and/or new line character.
 Leading spaces could be important to the formatting of the resultant text. When importing values from <code>CONT</code> lines
 the reader should assume only one delimiter character following the <code>CONT</code> tag. Assume that the rest of the leading
-spaces are to be a part of the value.</p></section>
+spaces are to be a part of the value.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_DATE"><code class="name">var <span class="ident">GEDCOM_TAG_DATE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>DATE</code></p>
-<p>The time of an event in a calendar format.</p></section>
+<div class="desc"><p>Value: <code>DATE</code>
+The time of an event in a calendar format.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_DEATH"><code class="name">var <span class="ident">GEDCOM_TAG_DEATH</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>DEAT</code></p>
-<p>The event when mortal life terminates.</p></section>
+<div class="desc"><p>Value: <code>DEAT</code>
+The event when mortal life terminates.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_FAMILY"><code class="name">var <span class="ident">GEDCOM_TAG_FAMILY</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>FAM</code>.</p>
-<p>Identifies a legal, common law, or other customary relationship of man and woman and their children,
-if any, or a family created by virtue of the birth of a child to its biological father and mother.</p></section>
+<div class="desc"><p>Value: <code>FAM</code>.
+Identifies a legal, common law, or other customary relationship of man and woman and their children,
+if any, or a family created by virtue of the birth of a child to its biological father and mother.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_FAMILY_CHILD"><code class="name">var <span class="ident">GEDCOM_TAG_FAMILY_CHILD</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>FAMC</code></p>
-<p>Identifies the family in which an individual appears as a child.</p></section>
+<div class="desc"><p>Value: <code>FAMC</code>
+Identifies the family in which an individual appears as a child.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_FAMILY_SPOUSE"><code class="name">var <span class="ident">GEDCOM_TAG_FAMILY_SPOUSE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>FAMS</code></p>
-<p>Identifies the family in which an individual appears as a spouse.</p></section>
+<div class="desc"><p>Value: <code>FAMS</code>
+Identifies the family in which an individual appears as a spouse.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_FILE"><code class="name">var <span class="ident">GEDCOM_TAG_FILE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>FILE</code></p>
-<p>An information storage place that is ordered and arranged for preservation and reference.</p></section>
+<div class="desc"><p>Value: <code>FILE</code>
+An information storage place that is ordered and arranged for preservation and reference.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_GIVEN_NAME"><code class="name">var <span class="ident">GEDCOM_TAG_GIVEN_NAME</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>GIVN</code></p>
-<p>A given or earned name used for official identification of a person.</p></section>
+<div class="desc"><p>Value: <code>GIVN</code>
+A given or earned name used for official identification of a person.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_HUSBAND"><code class="name">var <span class="ident">GEDCOM_TAG_HUSBAND</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>HUSB</code></p>
-<p>An individual in the family role of a married man or father.</p></section>
+<div class="desc"><p>Value: <code>HUSB</code>
+An individual in the family role of a married man or father.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_INDIVIDUAL"><code class="name">var <span class="ident">GEDCOM_TAG_INDIVIDUAL</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>INDI</code></p>
-<p>A person.</p></section>
+<div class="desc"><p>Value: <code>INDI</code>
+A person.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_MARRIAGE"><code class="name">var <span class="ident">GEDCOM_TAG_MARRIAGE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>MARR</code>.</p>
-<p>A legal, common-law, or customary event of creating a family unit of a man and a woman as husband and wife.</p></section>
+<div class="desc"><p>Value: <code>MARR</code>.
+A legal, common-law, or customary event of creating a family unit of a man and a woman as husband and wife.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_NAME"><code class="name">var <span class="ident">GEDCOM_TAG_NAME</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>NAME</code>.</p>
-<p>A word or combination of words used to help identify an individual, title, or other item.
-More than one NAME line should be used for people who were known by multiple names.</p></section>
+<div class="desc"><p>Value: <code>NAME</code>.
+A word or combination of words used to help identify an individual, title, or other item.
+More than one NAME line should be used for people who were known by multiple names.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_OBJECT"><code class="name">var <span class="ident">GEDCOM_TAG_OBJECT</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>OBJE</code></p>
-<p>Pertaining to a grouping of attributes used in describing something. Usually referring to the data required
-to represent a multimedia object, such an audio recording, a photograph of a person, or an image of a document.</p></section>
+<div class="desc"><p>Value: <code>OBJE</code>
+Pertaining to a grouping of attributes used in describing something. Usually referring to the data required
+to represent a multimedia object, such an audio recording, a photograph of a person, or an image of a document.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_OCCUPATION"><code class="name">var <span class="ident">GEDCOM_TAG_OCCUPATION</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>OCCU</code></p>
-<p>The type of work or profession of an individual.</p></section>
+<div class="desc"><p>Value: <code>OCCU</code>
+The type of work or profession of an individual.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_PAGE"><code class="name">var <span class="ident">GEDCOM_TAG_PAGE</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>PAGE</code>
+A number or description to identify where information can be found in a referenced work.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_PLACE"><code class="name">var <span class="ident">GEDCOM_TAG_PLACE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>PLAC</code></p>
-<p>A jurisdictional name to identify the place or location of an event.</p></section>
+<div class="desc"><p>Value: <code>PLAC</code>
+A jurisdictional name to identify the place or location of an event.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_PRIVATE"><code class="name">var <span class="ident">GEDCOM_TAG_PRIVATE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>PRIV</code></p>
-<p>Flag for private address or event.</p></section>
+<div class="desc"><p>Value: <code>PRIV</code>
+Flag for private address or event.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_PUBLISHER"><code class="name">var <span class="ident">GEDCOM_TAG_PUBLISHER</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>PUBL</code>
+Refers to when or where a work was published or created.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_REPOSITORY"><code class="name">var <span class="ident">GEDCOM_TAG_REPOSITORY</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>REPO</code>
+An institution or person that has the specified item as part of their collection(s).</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_SEX"><code class="name">var <span class="ident">GEDCOM_TAG_SEX</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>SEX</code></p>
-<p>Indicates the sex of an individual&ndash;male or female.</p></section>
+<div class="desc"><p>Value: <code>SEX</code>
+Indicates the sex of an individual&ndash;male or female.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_SOURCE"><code class="name">var <span class="ident">GEDCOM_TAG_SOURCE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>SOUR</code></p>
-<p>The initial or original material from which information was obtained.</p></section>
+<div class="desc"><p>Value: <code>SOUR</code>
+The initial or original material from which information was obtained.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_SUFFIX"><code class="name">var <span class="ident">GEDCOM_TAG_SUFFIX</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>NSFX</code>.
+Text which appears on a name line after or behind the given and surname parts of a name.
+i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_SURNAME"><code class="name">var <span class="ident">GEDCOM_TAG_SURNAME</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>SURN</code></p>
-<p>A family name passed on or used by members of a family.</p></section>
+<div class="desc"><p>Value: <code>SURN</code>
+A family name passed on or used by members of a family.</p></div>
+</dd>
+<dt id="gedcom.tags.GEDCOM_TAG_TITLE"><code class="name">var <span class="ident">GEDCOM_TAG_TITLE</span></code></dt>
+<dd>
+<div class="desc"><p>Value: <code>TITL</code>
+A description of a specific writing or other work, such as the title of a book when used in a source context,
+or a formal designation used by an individual in connection with positions of royalty or another social
+status, such as Grand Duke.</p></div>
 </dd>
 <dt id="gedcom.tags.GEDCOM_TAG_WIFE"><code class="name">var <span class="ident">GEDCOM_TAG_WIFE</span></code></dt>
 <dd>
-<section class="desc"><p>Value: <code>WIFE</code></p>
-<p>An individual in the role as a mother and/or married woman.</p></section>
+<div class="desc"><p>Value: <code>WIFE</code>
+An individual in the role as a mother and/or married woman.</p></div>
 </dd>
 </dl>
 </section>
@@ -390,6 +438,8 @@ to represent a multimedia object, such an audio recording, a photograph of a per
 <ul class="">
 <li><code><a title="gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_FREL" href="#gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_FREL">GEDCOM_PROGRAM_DEFINED_TAG_FREL</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_MREL" href="#gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_MREL">GEDCOM_PROGRAM_DEFINED_TAG_MREL</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_ADDRESS" href="#gedcom.tags.GEDCOM_TAG_ADDRESS">GEDCOM_TAG_ADDRESS</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_AUTHOR" href="#gedcom.tags.GEDCOM_TAG_AUTHOR">GEDCOM_TAG_AUTHOR</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_BIRTH" href="#gedcom.tags.GEDCOM_TAG_BIRTH">GEDCOM_TAG_BIRTH</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_BURIAL" href="#gedcom.tags.GEDCOM_TAG_BURIAL">GEDCOM_TAG_BURIAL</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_CENSUS" href="#gedcom.tags.GEDCOM_TAG_CENSUS">GEDCOM_TAG_CENSUS</a></code></li>
@@ -410,11 +460,16 @@ to represent a multimedia object, such an audio recording, a photograph of a per
 <li><code><a title="gedcom.tags.GEDCOM_TAG_NAME" href="#gedcom.tags.GEDCOM_TAG_NAME">GEDCOM_TAG_NAME</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_OBJECT" href="#gedcom.tags.GEDCOM_TAG_OBJECT">GEDCOM_TAG_OBJECT</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_OCCUPATION" href="#gedcom.tags.GEDCOM_TAG_OCCUPATION">GEDCOM_TAG_OCCUPATION</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_PAGE" href="#gedcom.tags.GEDCOM_TAG_PAGE">GEDCOM_TAG_PAGE</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_PLACE" href="#gedcom.tags.GEDCOM_TAG_PLACE">GEDCOM_TAG_PLACE</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_PRIVATE" href="#gedcom.tags.GEDCOM_TAG_PRIVATE">GEDCOM_TAG_PRIVATE</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_PUBLISHER" href="#gedcom.tags.GEDCOM_TAG_PUBLISHER">GEDCOM_TAG_PUBLISHER</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_REPOSITORY" href="#gedcom.tags.GEDCOM_TAG_REPOSITORY">GEDCOM_TAG_REPOSITORY</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_SEX" href="#gedcom.tags.GEDCOM_TAG_SEX">GEDCOM_TAG_SEX</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_SOURCE" href="#gedcom.tags.GEDCOM_TAG_SOURCE">GEDCOM_TAG_SOURCE</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_SUFFIX" href="#gedcom.tags.GEDCOM_TAG_SUFFIX">GEDCOM_TAG_SUFFIX</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_SURNAME" href="#gedcom.tags.GEDCOM_TAG_SURNAME">GEDCOM_TAG_SURNAME</a></code></li>
+<li><code><a title="gedcom.tags.GEDCOM_TAG_TITLE" href="#gedcom.tags.GEDCOM_TAG_TITLE">GEDCOM_TAG_TITLE</a></code></li>
 <li><code><a title="gedcom.tags.GEDCOM_TAG_WIFE" href="#gedcom.tags.GEDCOM_TAG_WIFE">GEDCOM_TAG_WIFE</a></code></li>
 </ul>
 </li>
@@ -422,9 +477,7 @@ to represent a multimedia object, such an audio recording, a photograph of a per
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.5</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>

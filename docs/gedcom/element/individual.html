@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="generator" content="pdoc 0.7.5" />
+<meta name="generator" content="pdoc 0.10.0" />
 <title>gedcom.element.individual API documentation</title>
 <meta name="description" content="GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_INDIVIDUAL`" />
-<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
-<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
-<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
 </head>
 <body>
 <main>
@@ -20,7 +22,7 @@
 <h1 class="title">Module <code>gedcom.element.individual</code></h1>
 </header>
 <section id="section-intro">
-<p>GEDCOM element consisting of tag <a title="gedcom.tags.GEDCOM_TAG_INDIVIDUAL" href="../tags.html#gedcom.tags.GEDCOM_TAG_INDIVIDUAL"><code>GEDCOM_TAG_INDIVIDUAL</code></a></p>
+<p>GEDCOM element consisting of tag <code><a title="gedcom.tags.GEDCOM_TAG_INDIVIDUAL" href="../tags.html#gedcom.tags.GEDCOM_TAG_INDIVIDUAL">GEDCOM_TAG_INDIVIDUAL</a></code></p>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -29,6 +31,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -67,10 +70,15 @@ class NotAnActualIndividualError(Exception):
 class IndividualElement(Element):
 
     def get_tag(self):
+        &#34;&#34;&#34;Returns the tag of this element from within the GEDCOM file
+        
+        :rtype: str
+        &#34;&#34;&#34;
         return gedcom.tags.GEDCOM_TAG_INDIVIDUAL
 
     def is_deceased(self):
         &#34;&#34;&#34;Checks if this individual is deceased
+        
         :rtype: bool
         &#34;&#34;&#34;
         for child in self.get_child_elements():
@@ -81,6 +89,7 @@ class IndividualElement(Element):
 
     def is_child(self):
         &#34;&#34;&#34;Checks if this element is a child of a family
+        
         :rtype: bool
         &#34;&#34;&#34;
         found_child = False
@@ -93,6 +102,7 @@ class IndividualElement(Element):
 
     def is_private(self):
         &#34;&#34;&#34;Checks if this individual is marked private
+        
         :rtype: bool
         &#34;&#34;&#34;
         for child in self.get_child_elements():
@@ -105,15 +115,25 @@ class IndividualElement(Element):
 
     def get_name(self):
         &#34;&#34;&#34;Returns an individual&#39;s names as a tuple: (`str` given_name, `str` surname)
+        
+        :rtype: tuple
+        &#34;&#34;&#34;
+        name_data = self.get_name_data()
+        
+        return name_data[0], name_data[1]
+
+    def get_name_data(self):
+        &#34;&#34;&#34;Returns an individual&#39;s name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
         given_name = &#34;&#34;
         surname = &#34;&#34;
+        suffix = &#34;&#34;
+        sources = []
 
         # Return the first gedcom.tags.GEDCOM_TAG_NAME that is found.
         # Alternatively as soon as we have both the gedcom.tags.GEDCOM_TAG_GIVEN_NAME and _SURNAME return those.
-        found_given_name = False
-        found_surname_name = False
 
         for child in self.get_child_elements():
             if child.get_tag() == gedcom.tags.GEDCOM_TAG_NAME:
@@ -126,31 +146,48 @@ class IndividualElement(Element):
                         given_name = name[0].strip()
                         if len(name) &gt; 1:
                             surname = name[1].strip()
-
-                    return given_name, surname
+                        if len(name) &gt; 2:
+                            suffix = name[2].strip()
 
                 for childOfChild in child.get_child_elements():
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_GIVEN_NAME:
                         given_name = childOfChild.get_value()
-                        found_given_name = True
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SURNAME:
                         surname = childOfChild.get_value()
-                        found_surname_name = True
 
-                if found_given_name and found_surname_name:
-                    return given_name, surname
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SUFFIX:
+                        suffix = childOfChild.get_value()
+                        
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        sources.append(childOfChild)
 
+                return given_name, surname, suffix, sources
+                
         # If we reach here we are probably returning empty strings
-        return given_name, surname
-
+        return given_name, surname, suffix, sources
+    
     def get_all_names(self):
+        &#34;&#34;&#34;Returns list of individual&#39;s names
+        
+        :rtype: list
+        &#34;&#34;&#34;
         return [a.get_value() for a in self.get_child_elements() if a.get_tag() == gedcom.tags.GEDCOM_TAG_NAME]
+
+    def get_first_name(self):
+        &#34;&#34;&#34;Returns an individual&#39;s first name 
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        result = self.get_name_data()[0].split(&#34; &#34;)
+        return result[0] 
 
     def surname_match(self, surname_to_match):
         &#34;&#34;&#34;Matches a string with the surname of an individual
+        
         :type surname_to_match: str
+        
         :rtype: bool
         &#34;&#34;&#34;
         (given_name, surname) = self.get_name()
@@ -167,7 +204,9 @@ class IndividualElement(Element):
 
     def given_name_match(self, given_name_to_match):
         &#34;&#34;&#34;Matches a string with the given name of an individual
+        
         :type given_name_to_match: str
+        
         :rtype: bool
         &#34;&#34;&#34;
         (given_name, surname) = self.get_name()
@@ -175,6 +214,7 @@ class IndividualElement(Element):
 
     def get_gender(self):
         &#34;&#34;&#34;Returns the gender of a person in string format
+        
         :rtype: str
         &#34;&#34;&#34;
         gender = &#34;&#34;
@@ -185,18 +225,19 @@ class IndividualElement(Element):
 
         return gender
 
-    def get_birth_data(self):
-        &#34;&#34;&#34;Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+    def get_event_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+        &#34;&#34;&#34;Returns the data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
         date = &#34;&#34;
         place = &#34;&#34;
         sources = []
-
+        
+        # get primary date, place and sources
         for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
+            if child.get_tag() == tag:
                 for childOfChild in child.get_child_elements():
-
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
                         date = childOfChild.get_value()
 
@@ -204,69 +245,130 @@ class IndividualElement(Element):
                         place = childOfChild.get_value()
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
+                        sources.append(childOfChild)
+                
+                break;
 
         return date, place, sources
+
+    def get_event_year_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+        &#34;&#34;&#34;Returns the year for the tag of a person in integer format
+        
+        :rtype: int
+        &#34;&#34;&#34;
+        date_split = self.get_event_by_tag(tag)[0].split()
+
+        if len(date_split) == 0:
+            return -1
+        
+        date = date_split[len(date_split) - 1]
+
+        if date == &#34;&#34;:
+            return -1
+        try:
+            return int(date)
+        except ValueError:
+            return -1
+
+    def get_sources_by_tag_and_date(self, tag, date):
+        &#34;&#34;&#34;Returns the sources for a tag and date
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        return self.get_sources_by_tag_and_values(tag, date=date)
+
+    def get_sources_by_tag_and_place(self, tag, place):
+        &#34;&#34;&#34;Returns the sources for a tag and place
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        return self.get_sources_by_tag_and_values(tag, place=place)
+    
+    def get_sources_by_tag_and_values(self, tag, date=None, place=None):
+        &#34;&#34;&#34;Returns the sources for a tag, date and place.  Set date or place to None if
+        this value should be ignored
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        sources = []
+        
+        # get primary date, place and sources
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                tag_sources = []
+                tag_date = &#34;&#34;
+                tag_place = &#34;&#34;
+
+                for childOfChild in child.get_child_elements():
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                        tag_date = childOfChild.get_value()
+
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                        tag_place = childOfChild.get_value()
+
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        tag_sources.append(childOfChild)
+
+                if (date == None or date == tag_date) and (place == None or place == tag_place):
+                    sources += tag_sources
+
+        return sources
+
+    def get_birth_data(self):
+        &#34;&#34;&#34;Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
+        :rtype: tuple
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)
 
     def get_birth_year(self):
         &#34;&#34;&#34;Returns the birth year of a person in integer format
+        
         :rtype: int
         &#34;&#34;&#34;
-        date = &#34;&#34;
+        return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)
 
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date_split = childOfChild.get_value().split()
-                        date = date_split[len(date_split) - 1]
+    def get_birth_date(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[0]        
 
-        if date == &#34;&#34;:
-            return -1
-        try:
-            return int(date)
-        except ValueError:
-            return -1
+    def get_birth_place(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[1]        
 
     def get_death_data(self):
         &#34;&#34;&#34;Returns the death data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
-        date = &#34;&#34;
-        place = &#34;&#34;
-        sources = []
-
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date = childOfChild.get_value()
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                        place = childOfChild.get_value()
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
-
-        return date, place, sources
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)
 
     def get_death_year(self):
         &#34;&#34;&#34;Returns the death year of a person in integer format
+        
         :rtype: int
         &#34;&#34;&#34;
-        date = &#34;&#34;
+        return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)
 
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date_split = childOfChild.get_value().split()
-                        date = date_split[len(date_split) - 1]
+    def get_death_date(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[0]        
 
-        if date == &#34;&#34;:
-            return -1
-        try:
-            return int(date)
-        except ValueError:
-            return -1
+    def get_death_place(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[1]        
 
     @deprecated
     def get_burial(self):
@@ -278,26 +380,10 @@ class IndividualElement(Element):
 
     def get_burial_data(self):
         &#34;&#34;&#34;Returns the burial data of a person formatted as a tuple: (`str` date, `str´ place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
-        date = &#34;&#34;
-        place = &#34;&#34;
-        sources = []
-
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BURIAL:
-                for childOfChild in child.get_child_elements():
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date = childOfChild.get_value()
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                        place = childOfChild.get_value()
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
-
-        return date, place, sources
+        return self.get_event_by_tag(tag=&#34;BURI&#34;)
 
     @deprecated
     def get_census(self):
@@ -309,6 +395,7 @@ class IndividualElement(Element):
 
     def get_census_data(self):
         &#34;&#34;&#34;Returns a list of censuses of an individual formatted as tuples: (`str` date, `str´ place, `list` sources)
+        
         :rtype: list of tuple
         &#34;&#34;&#34;
         census = []
@@ -337,6 +424,7 @@ class IndividualElement(Element):
 
     def get_last_change_date(self):
         &#34;&#34;&#34;Returns the date of when the person data was last changed formatted as a string
+        
         :rtype: str
         &#34;&#34;&#34;
         date = &#34;&#34;
@@ -351,6 +439,7 @@ class IndividualElement(Element):
 
     def get_occupation(self):
         &#34;&#34;&#34;Returns the occupation of a person
+        
         :rtype: str
         &#34;&#34;&#34;
         occupation = &#34;&#34;
@@ -363,15 +452,20 @@ class IndividualElement(Element):
 
     def birth_year_match(self, year):
         &#34;&#34;&#34;Returns `True` if the given year matches the birth year of this person
+        
         :type year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         return self.get_birth_year() == year
 
     def birth_range_match(self, from_year, to_year):
         &#34;&#34;&#34;Checks if the birth year of a person lies within the given range
+        
         :type from_year: int
+        
         :type to_year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         birth_year = self.get_birth_year()
@@ -383,15 +477,20 @@ class IndividualElement(Element):
 
     def death_year_match(self, year):
         &#34;&#34;&#34;Returns `True` if the given year matches the death year of this person
+        
         :type year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         return self.get_death_year() == year
 
     def death_range_match(self, from_year, to_year):
         &#34;&#34;&#34;Checks if the death year of a person lies within the given range
+        
         :type from_year: int
+        
         :type to_year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         death_year = self.get_death_year()
@@ -403,21 +502,25 @@ class IndividualElement(Element):
 
     def criteria_match(self, criteria):
         &#34;&#34;&#34;Checks if this individual matches all of the given criteria
-
         `criteria` is a colon-separated list, where each item in the
         list has the form [name]=[value]. The following criteria are supported:
+        
+        surname=[name] - Match a person with [name] in any part of the `surname`.
+        
+        given_name=[given_name] - Match a person with [given_name] in any part of the given `given_name`.
+        
+        birth=[year] - Match a person whose birth year is a four-digit [year].
+        
+        birth_range=[from_year-to_year] - Match a person whose birth year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
 
-        surname=[name]
-             Match a person with [name] in any part of the `surname`.
-        given_name=[given_name]
-             Match a person with [given_name] in any part of the given `given_name`.
-        birth=[year]
-             Match a person whose birth year is a four-digit [year].
-        birth_range=[from_year-to_year]
-             Match a person whose birth year is in the range of years from
-             [from_year] to [to_year], including both [from_year] and [to_year].
+        death=[year] - Match a person whose death year is a four-digit [year].
+        
+        death_range=[from_year-to_year] - Match a person whose death year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
 
         :type criteria: str
+        
         :rtype: bool
         &#34;&#34;&#34;
 
@@ -435,7 +538,7 @@ class IndividualElement(Element):
 
             if key == &#34;surname&#34; and not self.surname_match(value):
                 match = False
-            elif key == &#34;name&#34; and not self.given_name_match(value):
+            elif (key == &#34;name&#34; or key == &#34;given_name&#34;) and not self.given_name_match(value):
                 match = False
             elif key == &#34;birth&#34;:
 
@@ -494,10 +597,10 @@ class IndividualElement(Element):
 <span>(</span><span>level, pointer, tag, value, crlf='\n', multi_line=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>GEDCOM element</p>
-<p>Each line in a GEDCOM file is an element with the format</p>
-<p><code>level [pointer] tag [value]</code></p>
-<p>where <code>level</code> and <code>tag</code> are required, and <code>pointer</code> and <code>value</code> are
+<div class="desc"><p>GEDCOM element
+Each line in a GEDCOM file is an element with the format
+<code>level [pointer] tag [value]</code>
+where <code>level</code> and <code>tag</code> are required, and <code>pointer</code> and <code>value</code> are
 optional.
 Elements are arranged hierarchically according to their
 level, and elements with a level of zero are at the top level.
@@ -513,8 +616,8 @@ element points to the family record in which the associated person
 is a spouse. Likewise, an element with a tag of <code>FAMC</code> has a value
 that points to a family record in which the associated person is a
 child.</p>
-<p>See a GEDCOM file for examples of tags and their values.</p>
-<p>Tags available to an element are seen here: <a title="gedcom.tags" href="../tags.html"><code>gedcom.tags</code></a></p></section>
+<p>See a GEDCOM file for examples of tags and their values.
+Tags available to an element are seen here: <code><a title="gedcom.tags" href="../tags.html">gedcom.tags</a></code></p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -522,10 +625,15 @@ child.</p>
 <pre><code class="python">class IndividualElement(Element):
 
     def get_tag(self):
+        &#34;&#34;&#34;Returns the tag of this element from within the GEDCOM file
+        
+        :rtype: str
+        &#34;&#34;&#34;
         return gedcom.tags.GEDCOM_TAG_INDIVIDUAL
 
     def is_deceased(self):
         &#34;&#34;&#34;Checks if this individual is deceased
+        
         :rtype: bool
         &#34;&#34;&#34;
         for child in self.get_child_elements():
@@ -536,6 +644,7 @@ child.</p>
 
     def is_child(self):
         &#34;&#34;&#34;Checks if this element is a child of a family
+        
         :rtype: bool
         &#34;&#34;&#34;
         found_child = False
@@ -548,6 +657,7 @@ child.</p>
 
     def is_private(self):
         &#34;&#34;&#34;Checks if this individual is marked private
+        
         :rtype: bool
         &#34;&#34;&#34;
         for child in self.get_child_elements():
@@ -560,15 +670,25 @@ child.</p>
 
     def get_name(self):
         &#34;&#34;&#34;Returns an individual&#39;s names as a tuple: (`str` given_name, `str` surname)
+        
+        :rtype: tuple
+        &#34;&#34;&#34;
+        name_data = self.get_name_data()
+        
+        return name_data[0], name_data[1]
+
+    def get_name_data(self):
+        &#34;&#34;&#34;Returns an individual&#39;s name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
         given_name = &#34;&#34;
         surname = &#34;&#34;
+        suffix = &#34;&#34;
+        sources = []
 
         # Return the first gedcom.tags.GEDCOM_TAG_NAME that is found.
         # Alternatively as soon as we have both the gedcom.tags.GEDCOM_TAG_GIVEN_NAME and _SURNAME return those.
-        found_given_name = False
-        found_surname_name = False
 
         for child in self.get_child_elements():
             if child.get_tag() == gedcom.tags.GEDCOM_TAG_NAME:
@@ -581,31 +701,48 @@ child.</p>
                         given_name = name[0].strip()
                         if len(name) &gt; 1:
                             surname = name[1].strip()
-
-                    return given_name, surname
+                        if len(name) &gt; 2:
+                            suffix = name[2].strip()
 
                 for childOfChild in child.get_child_elements():
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_GIVEN_NAME:
                         given_name = childOfChild.get_value()
-                        found_given_name = True
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SURNAME:
                         surname = childOfChild.get_value()
-                        found_surname_name = True
 
-                if found_given_name and found_surname_name:
-                    return given_name, surname
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SUFFIX:
+                        suffix = childOfChild.get_value()
+                        
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        sources.append(childOfChild)
 
+                return given_name, surname, suffix, sources
+                
         # If we reach here we are probably returning empty strings
-        return given_name, surname
-
+        return given_name, surname, suffix, sources
+    
     def get_all_names(self):
+        &#34;&#34;&#34;Returns list of individual&#39;s names
+        
+        :rtype: list
+        &#34;&#34;&#34;
         return [a.get_value() for a in self.get_child_elements() if a.get_tag() == gedcom.tags.GEDCOM_TAG_NAME]
+
+    def get_first_name(self):
+        &#34;&#34;&#34;Returns an individual&#39;s first name 
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        result = self.get_name_data()[0].split(&#34; &#34;)
+        return result[0] 
 
     def surname_match(self, surname_to_match):
         &#34;&#34;&#34;Matches a string with the surname of an individual
+        
         :type surname_to_match: str
+        
         :rtype: bool
         &#34;&#34;&#34;
         (given_name, surname) = self.get_name()
@@ -622,7 +759,9 @@ child.</p>
 
     def given_name_match(self, given_name_to_match):
         &#34;&#34;&#34;Matches a string with the given name of an individual
+        
         :type given_name_to_match: str
+        
         :rtype: bool
         &#34;&#34;&#34;
         (given_name, surname) = self.get_name()
@@ -630,6 +769,7 @@ child.</p>
 
     def get_gender(self):
         &#34;&#34;&#34;Returns the gender of a person in string format
+        
         :rtype: str
         &#34;&#34;&#34;
         gender = &#34;&#34;
@@ -640,18 +780,19 @@ child.</p>
 
         return gender
 
-    def get_birth_data(self):
-        &#34;&#34;&#34;Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+    def get_event_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+        &#34;&#34;&#34;Returns the data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
         date = &#34;&#34;
         place = &#34;&#34;
         sources = []
-
+        
+        # get primary date, place and sources
         for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
+            if child.get_tag() == tag:
                 for childOfChild in child.get_child_elements():
-
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
                         date = childOfChild.get_value()
 
@@ -659,69 +800,130 @@ child.</p>
                         place = childOfChild.get_value()
 
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
+                        sources.append(childOfChild)
+                
+                break;
 
         return date, place, sources
+
+    def get_event_year_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+        &#34;&#34;&#34;Returns the year for the tag of a person in integer format
+        
+        :rtype: int
+        &#34;&#34;&#34;
+        date_split = self.get_event_by_tag(tag)[0].split()
+
+        if len(date_split) == 0:
+            return -1
+        
+        date = date_split[len(date_split) - 1]
+
+        if date == &#34;&#34;:
+            return -1
+        try:
+            return int(date)
+        except ValueError:
+            return -1
+
+    def get_sources_by_tag_and_date(self, tag, date):
+        &#34;&#34;&#34;Returns the sources for a tag and date
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        return self.get_sources_by_tag_and_values(tag, date=date)
+
+    def get_sources_by_tag_and_place(self, tag, place):
+        &#34;&#34;&#34;Returns the sources for a tag and place
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        return self.get_sources_by_tag_and_values(tag, place=place)
+    
+    def get_sources_by_tag_and_values(self, tag, date=None, place=None):
+        &#34;&#34;&#34;Returns the sources for a tag, date and place.  Set date or place to None if
+        this value should be ignored
+        
+        :rtype: list
+        &#34;&#34;&#34;
+        sources = []
+        
+        # get primary date, place and sources
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                tag_sources = []
+                tag_date = &#34;&#34;
+                tag_place = &#34;&#34;
+
+                for childOfChild in child.get_child_elements():
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                        tag_date = childOfChild.get_value()
+
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                        tag_place = childOfChild.get_value()
+
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        tag_sources.append(childOfChild)
+
+                if (date == None or date == tag_date) and (place == None or place == tag_place):
+                    sources += tag_sources
+
+        return sources
+
+    def get_birth_data(self):
+        &#34;&#34;&#34;Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
+        :rtype: tuple
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)
 
     def get_birth_year(self):
         &#34;&#34;&#34;Returns the birth year of a person in integer format
+        
         :rtype: int
         &#34;&#34;&#34;
-        date = &#34;&#34;
+        return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)
 
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date_split = childOfChild.get_value().split()
-                        date = date_split[len(date_split) - 1]
+    def get_birth_date(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[0]        
 
-        if date == &#34;&#34;:
-            return -1
-        try:
-            return int(date)
-        except ValueError:
-            return -1
+    def get_birth_place(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[1]        
 
     def get_death_data(self):
         &#34;&#34;&#34;Returns the death data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
-        date = &#34;&#34;
-        place = &#34;&#34;
-        sources = []
-
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date = childOfChild.get_value()
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                        place = childOfChild.get_value()
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
-
-        return date, place, sources
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)
 
     def get_death_year(self):
         &#34;&#34;&#34;Returns the death year of a person in integer format
+        
         :rtype: int
         &#34;&#34;&#34;
-        date = &#34;&#34;
+        return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)
 
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
-                for childOfChild in child.get_child_elements():
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date_split = childOfChild.get_value().split()
-                        date = date_split[len(date_split) - 1]
+    def get_death_date(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[0]        
 
-        if date == &#34;&#34;:
-            return -1
-        try:
-            return int(date)
-        except ValueError:
-            return -1
+    def get_death_place(self):
+        &#34;&#34;&#34;Returns the birth date of a person as a str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[1]        
 
     @deprecated
     def get_burial(self):
@@ -733,26 +935,10 @@ child.</p>
 
     def get_burial_data(self):
         &#34;&#34;&#34;Returns the burial data of a person formatted as a tuple: (`str` date, `str´ place, `list` sources)
+        
         :rtype: tuple
         &#34;&#34;&#34;
-        date = &#34;&#34;
-        place = &#34;&#34;
-        sources = []
-
-        for child in self.get_child_elements():
-            if child.get_tag() == gedcom.tags.GEDCOM_TAG_BURIAL:
-                for childOfChild in child.get_child_elements():
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                        date = childOfChild.get_value()
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                        place = childOfChild.get_value()
-
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                        sources.append(childOfChild.get_value())
-
-        return date, place, sources
+        return self.get_event_by_tag(tag=&#34;BURI&#34;)
 
     @deprecated
     def get_census(self):
@@ -764,6 +950,7 @@ child.</p>
 
     def get_census_data(self):
         &#34;&#34;&#34;Returns a list of censuses of an individual formatted as tuples: (`str` date, `str´ place, `list` sources)
+        
         :rtype: list of tuple
         &#34;&#34;&#34;
         census = []
@@ -792,6 +979,7 @@ child.</p>
 
     def get_last_change_date(self):
         &#34;&#34;&#34;Returns the date of when the person data was last changed formatted as a string
+        
         :rtype: str
         &#34;&#34;&#34;
         date = &#34;&#34;
@@ -806,6 +994,7 @@ child.</p>
 
     def get_occupation(self):
         &#34;&#34;&#34;Returns the occupation of a person
+        
         :rtype: str
         &#34;&#34;&#34;
         occupation = &#34;&#34;
@@ -818,15 +1007,20 @@ child.</p>
 
     def birth_year_match(self, year):
         &#34;&#34;&#34;Returns `True` if the given year matches the birth year of this person
+        
         :type year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         return self.get_birth_year() == year
 
     def birth_range_match(self, from_year, to_year):
         &#34;&#34;&#34;Checks if the birth year of a person lies within the given range
+        
         :type from_year: int
+        
         :type to_year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         birth_year = self.get_birth_year()
@@ -838,15 +1032,20 @@ child.</p>
 
     def death_year_match(self, year):
         &#34;&#34;&#34;Returns `True` if the given year matches the death year of this person
+        
         :type year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         return self.get_death_year() == year
 
     def death_range_match(self, from_year, to_year):
         &#34;&#34;&#34;Checks if the death year of a person lies within the given range
+        
         :type from_year: int
+        
         :type to_year: int
+        
         :rtype: bool
         &#34;&#34;&#34;
         death_year = self.get_death_year()
@@ -858,21 +1057,25 @@ child.</p>
 
     def criteria_match(self, criteria):
         &#34;&#34;&#34;Checks if this individual matches all of the given criteria
-
         `criteria` is a colon-separated list, where each item in the
         list has the form [name]=[value]. The following criteria are supported:
+        
+        surname=[name] - Match a person with [name] in any part of the `surname`.
+        
+        given_name=[given_name] - Match a person with [given_name] in any part of the given `given_name`.
+        
+        birth=[year] - Match a person whose birth year is a four-digit [year].
+        
+        birth_range=[from_year-to_year] - Match a person whose birth year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
 
-        surname=[name]
-             Match a person with [name] in any part of the `surname`.
-        given_name=[given_name]
-             Match a person with [given_name] in any part of the given `given_name`.
-        birth=[year]
-             Match a person whose birth year is a four-digit [year].
-        birth_range=[from_year-to_year]
-             Match a person whose birth year is in the range of years from
-             [from_year] to [to_year], including both [from_year] and [to_year].
+        death=[year] - Match a person whose death year is a four-digit [year].
+        
+        death_range=[from_year-to_year] - Match a person whose death year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
 
         :type criteria: str
+        
         :rtype: bool
         &#34;&#34;&#34;
 
@@ -890,7 +1093,7 @@ child.</p>
 
             if key == &#34;surname&#34; and not self.surname_match(value):
                 match = False
-            elif key == &#34;name&#34; and not self.given_name_match(value):
+            elif (key == &#34;name&#34; or key == &#34;given_name&#34;) and not self.given_name_match(value):
                 match = False
             elif key == &#34;birth&#34;:
 
@@ -944,18 +1147,21 @@ child.</p>
 <span>def <span class="ident">birth_range_match</span></span>(<span>self, from_year, to_year)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if the birth year of a person lies within the given range
-:type from_year: int
-:type to_year: int
-:rtype: bool</p></section>
+<div class="desc"><p>Checks if the birth year of a person lies within the given range</p>
+<p>:type from_year: int</p>
+<p>:type to_year: int</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def birth_range_match(self, from_year, to_year):
     &#34;&#34;&#34;Checks if the birth year of a person lies within the given range
+    
     :type from_year: int
+    
     :type to_year: int
+    
     :rtype: bool
     &#34;&#34;&#34;
     birth_year = self.get_birth_year()
@@ -970,16 +1176,18 @@ child.</p>
 <span>def <span class="ident">birth_year_match</span></span>(<span>self, year)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns <code>True</code> if the given year matches the birth year of this person
-:type year: int
-:rtype: bool</p></section>
+<div class="desc"><p>Returns <code>True</code> if the given year matches the birth year of this person</p>
+<p>:type year: int</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def birth_year_match(self, year):
     &#34;&#34;&#34;Returns `True` if the given year matches the birth year of this person
+    
     :type year: int
+    
     :rtype: bool
     &#34;&#34;&#34;
     return self.get_birth_year() == year</code></pre>
@@ -989,41 +1197,44 @@ child.</p>
 <span>def <span class="ident">criteria_match</span></span>(<span>self, criteria)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if this individual matches all of the given criteria</p>
-<p><code>criteria</code> is a colon-separated list, where each item in the
+<div class="desc"><p>Checks if this individual matches all of the given criteria
+<code>criteria</code> is a colon-separated list, where each item in the
 list has the form [name]=[value]. The following criteria are supported:</p>
-<p>surname=[name]
-Match a person with [name] in any part of the <code>surname</code>.
-given_name=[given_name]
-Match a person with [given_name] in any part of the given <code>given_name</code>.
-birth=[year]
-Match a person whose birth year is a four-digit [year].
-birth_range=[from_year-to_year]
-Match a person whose birth year is in the range of years from
+<p>surname=[name] - Match a person with [name] in any part of the <code>surname</code>.</p>
+<p>given_name=[given_name] - Match a person with [given_name] in any part of the given <code>given_name</code>.</p>
+<p>birth=[year] - Match a person whose birth year is a four-digit [year].</p>
+<p>birth_range=[from_year-to_year] - Match a person whose birth year is in the range of years from
 [from_year] to [to_year], including both [from_year] and [to_year].</p>
-<p>:type criteria: str
-:rtype: bool</p></section>
+<p>death=[year] - Match a person whose death year is a four-digit [year].</p>
+<p>death_range=[from_year-to_year] - Match a person whose death year is in the range of years from
+[from_year] to [to_year], including both [from_year] and [to_year].</p>
+<p>:type criteria: str</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def criteria_match(self, criteria):
     &#34;&#34;&#34;Checks if this individual matches all of the given criteria
-
     `criteria` is a colon-separated list, where each item in the
     list has the form [name]=[value]. The following criteria are supported:
+    
+    surname=[name] - Match a person with [name] in any part of the `surname`.
+    
+    given_name=[given_name] - Match a person with [given_name] in any part of the given `given_name`.
+    
+    birth=[year] - Match a person whose birth year is a four-digit [year].
+    
+    birth_range=[from_year-to_year] - Match a person whose birth year is in the range of years from
+    [from_year] to [to_year], including both [from_year] and [to_year].
 
-    surname=[name]
-         Match a person with [name] in any part of the `surname`.
-    given_name=[given_name]
-         Match a person with [given_name] in any part of the given `given_name`.
-    birth=[year]
-         Match a person whose birth year is a four-digit [year].
-    birth_range=[from_year-to_year]
-         Match a person whose birth year is in the range of years from
-         [from_year] to [to_year], including both [from_year] and [to_year].
+    death=[year] - Match a person whose death year is a four-digit [year].
+    
+    death_range=[from_year-to_year] - Match a person whose death year is in the range of years from
+    [from_year] to [to_year], including both [from_year] and [to_year].
 
     :type criteria: str
+    
     :rtype: bool
     &#34;&#34;&#34;
 
@@ -1041,7 +1252,7 @@ Match a person whose birth year is in the range of years from
 
         if key == &#34;surname&#34; and not self.surname_match(value):
             match = False
-        elif key == &#34;name&#34; and not self.given_name_match(value):
+        elif (key == &#34;name&#34; or key == &#34;given_name&#34;) and not self.given_name_match(value):
             match = False
         elif key == &#34;birth&#34;:
 
@@ -1090,18 +1301,21 @@ Match a person whose birth year is in the range of years from
 <span>def <span class="ident">death_range_match</span></span>(<span>self, from_year, to_year)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if the death year of a person lies within the given range
-:type from_year: int
-:type to_year: int
-:rtype: bool</p></section>
+<div class="desc"><p>Checks if the death year of a person lies within the given range</p>
+<p>:type from_year: int</p>
+<p>:type to_year: int</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def death_range_match(self, from_year, to_year):
     &#34;&#34;&#34;Checks if the death year of a person lies within the given range
+    
     :type from_year: int
+    
     :type to_year: int
+    
     :rtype: bool
     &#34;&#34;&#34;
     death_year = self.get_death_year()
@@ -1116,16 +1330,18 @@ Match a person whose birth year is in the range of years from
 <span>def <span class="ident">death_year_match</span></span>(<span>self, year)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns <code>True</code> if the given year matches the death year of this person
-:type year: int
-:rtype: bool</p></section>
+<div class="desc"><p>Returns <code>True</code> if the given year matches the death year of this person</p>
+<p>:type year: int</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def death_year_match(self, year):
     &#34;&#34;&#34;Returns `True` if the given year matches the death year of this person
+    
     :type year: int
+    
     :rtype: bool
     &#34;&#34;&#34;
     return self.get_death_year() == year</code></pre>
@@ -1135,12 +1351,17 @@ Match a person whose birth year is in the range of years from
 <span>def <span class="ident">get_all_names</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"></section>
+<div class="desc"><p>Returns list of individual's names</p>
+<p>:rtype: list</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_all_names(self):
+    &#34;&#34;&#34;Returns list of individual&#39;s names
+    
+    :rtype: list
+    &#34;&#34;&#34;
     return [a.get_value() for a in self.get_child_elements() if a.get_tag() == gedcom.tags.GEDCOM_TAG_NAME]</code></pre>
 </details>
 </dd>
@@ -1148,74 +1369,81 @@ Match a person whose birth year is in the range of years from
 <span>def <span class="ident">get_birth_data</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the birth data of a person formatted as a tuple: (<code>str</code> date, <code>str</code> place, <code>list</code> sources)
-:rtype: tuple</p></section>
+<div class="desc"><p>Returns the birth data of a person formatted as a tuple: (<code>str</code> date, <code>str</code> place, <code>list</code> sources)</p>
+<p>:rtype: tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_birth_data(self):
     &#34;&#34;&#34;Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+    
     :rtype: tuple
     &#34;&#34;&#34;
-    date = &#34;&#34;
-    place = &#34;&#34;
-    sources = []
-
-    for child in self.get_child_elements():
-        if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
-            for childOfChild in child.get_child_elements():
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                    date = childOfChild.get_value()
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                    place = childOfChild.get_value()
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                    sources.append(childOfChild.get_value())
-
-    return date, place, sources</code></pre>
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_birth_date"><code class="name flex">
+<span>def <span class="ident">get_birth_date</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the birth date of a person as a str</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_birth_date(self):
+    &#34;&#34;&#34;Returns the birth date of a person as a str
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[0]        </code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_birth_place"><code class="name flex">
+<span>def <span class="ident">get_birth_place</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the birth date of a person as a str</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_birth_place(self):
+    &#34;&#34;&#34;Returns the birth date of a person as a str
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[1]        </code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.individual.IndividualElement.get_birth_year"><code class="name flex">
 <span>def <span class="ident">get_birth_year</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the birth year of a person in integer format
-:rtype: int</p></section>
+<div class="desc"><p>Returns the birth year of a person in integer format</p>
+<p>:rtype: int</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_birth_year(self):
     &#34;&#34;&#34;Returns the birth year of a person in integer format
+    
     :rtype: int
     &#34;&#34;&#34;
-    date = &#34;&#34;
-
-    for child in self.get_child_elements():
-        if child.get_tag() == gedcom.tags.GEDCOM_TAG_BIRTH:
-            for childOfChild in child.get_child_elements():
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                    date_split = childOfChild.get_value().split()
-                    date = date_split[len(date_split) - 1]
-
-    if date == &#34;&#34;:
-        return -1
-    try:
-        return int(date)
-    except ValueError:
-        return -1</code></pre>
+    return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)</code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.individual.IndividualElement.get_burial"><code class="name flex">
 <span>def <span class="ident">get_burial</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the burial data of a person formatted as a tuple: (<code>str</code> date, <code>str´ place,</code>list<code>sources)
-::deprecated:: As of version 1.0.0 use</code>get_burial_data()` method instead
-:rtype: tuple</p></section>
+<div class="desc"><p>Returns the burial data of a person formatted as a tuple: (<code>str</code> date, <code>str´ place,</code>list` sources)
+::deprecated:: As of version 1.0.0 use <code>get_burial_data()</code> method instead
+:rtype: tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1233,43 +1461,27 @@ def get_burial(self):
 <span>def <span class="ident">get_burial_data</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the burial data of a person formatted as a tuple: (<code>str</code> date, <code>str´ place,</code>list` sources)
-:rtype: tuple</p></section>
+<div class="desc"><p>Returns the burial data of a person formatted as a tuple: (<code>str</code> date, <code>str´ place,</code>list` sources)</p>
+<p>:rtype: tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_burial_data(self):
     &#34;&#34;&#34;Returns the burial data of a person formatted as a tuple: (`str` date, `str´ place, `list` sources)
+    
     :rtype: tuple
     &#34;&#34;&#34;
-    date = &#34;&#34;
-    place = &#34;&#34;
-    sources = []
-
-    for child in self.get_child_elements():
-        if child.get_tag() == gedcom.tags.GEDCOM_TAG_BURIAL:
-            for childOfChild in child.get_child_elements():
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                    date = childOfChild.get_value()
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                    place = childOfChild.get_value()
-
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                    sources.append(childOfChild.get_value())
-
-    return date, place, sources</code></pre>
+    return self.get_event_by_tag(tag=&#34;BURI&#34;)</code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.individual.IndividualElement.get_census"><code class="name flex">
 <span>def <span class="ident">get_census</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns a list of censuses of an individual formatted as tuples: (<code>str</code> date, <code>str´ place,</code>list<code>sources)
-::deprecated:: As of version 1.0.0 use</code>get_census_data()` method instead
-:rtype: list of tuple</p></section>
+<div class="desc"><p>Returns a list of censuses of an individual formatted as tuples: (<code>str</code> date, <code>str´ place,</code>list` sources)
+::deprecated:: As of version 1.0.0 use <code>get_census_data()</code> method instead
+:rtype: list of tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1287,14 +1499,15 @@ def get_census(self):
 <span>def <span class="ident">get_census_data</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns a list of censuses of an individual formatted as tuples: (<code>str</code> date, <code>str´ place,</code>list` sources)
-:rtype: list of tuple</p></section>
+<div class="desc"><p>Returns a list of censuses of an individual formatted as tuples: (<code>str</code> date, <code>str´ place,</code>list` sources)</p>
+<p>:rtype: list of tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_census_data(self):
     &#34;&#34;&#34;Returns a list of censuses of an individual formatted as tuples: (`str` date, `str´ place, `list` sources)
+    
     :rtype: list of tuple
     &#34;&#34;&#34;
     census = []
@@ -1326,55 +1539,132 @@ def get_census(self):
 <span>def <span class="ident">get_death_data</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the death data of a person formatted as a tuple: (<code>str</code> date, <code>str</code> place, <code>list</code> sources)
-:rtype: tuple</p></section>
+<div class="desc"><p>Returns the death data of a person formatted as a tuple: (<code>str</code> date, <code>str</code> place, <code>list</code> sources)</p>
+<p>:rtype: tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_death_data(self):
     &#34;&#34;&#34;Returns the death data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+    
     :rtype: tuple
     &#34;&#34;&#34;
-    date = &#34;&#34;
-    place = &#34;&#34;
-    sources = []
-
-    for child in self.get_child_elements():
-        if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
-            for childOfChild in child.get_child_elements():
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                    date = childOfChild.get_value()
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                    place = childOfChild.get_value()
-                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                    sources.append(childOfChild.get_value())
-
-    return date, place, sources</code></pre>
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_death_date"><code class="name flex">
+<span>def <span class="ident">get_death_date</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the birth date of a person as a str</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_death_date(self):
+    &#34;&#34;&#34;Returns the birth date of a person as a str
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[0]        </code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_death_place"><code class="name flex">
+<span>def <span class="ident">get_death_place</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the birth date of a person as a str</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_death_place(self):
+    &#34;&#34;&#34;Returns the birth date of a person as a str
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)[1]        </code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.individual.IndividualElement.get_death_year"><code class="name flex">
 <span>def <span class="ident">get_death_year</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the death year of a person in integer format
-:rtype: int</p></section>
+<div class="desc"><p>Returns the death year of a person in integer format</p>
+<p>:rtype: int</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_death_year(self):
     &#34;&#34;&#34;Returns the death year of a person in integer format
+    
     :rtype: int
     &#34;&#34;&#34;
+    return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_DEATH)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_event_by_tag"><code class="name flex">
+<span>def <span class="ident">get_event_by_tag</span></span>(<span>self, tag='BIRT')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the data of a person formatted as a tuple: (<code>str</code> date, <code>str</code> place, <code>list</code> sources)</p>
+<p>:rtype: tuple</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_event_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+    &#34;&#34;&#34;Returns the data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+    
+    :rtype: tuple
+    &#34;&#34;&#34;
     date = &#34;&#34;
-
+    place = &#34;&#34;
+    sources = []
+    
+    # get primary date, place and sources
     for child in self.get_child_elements():
-        if child.get_tag() == gedcom.tags.GEDCOM_TAG_DEATH:
+        if child.get_tag() == tag:
             for childOfChild in child.get_child_elements():
                 if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                    date_split = childOfChild.get_value().split()
-                    date = date_split[len(date_split) - 1]
+                    date = childOfChild.get_value()
+
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                    place = childOfChild.get_value()
+
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    sources.append(childOfChild)
+            
+            break;
+
+    return date, place, sources</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_event_year_by_tag"><code class="name flex">
+<span>def <span class="ident">get_event_year_by_tag</span></span>(<span>self, tag='BIRT')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the year for the tag of a person in integer format</p>
+<p>:rtype: int</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_event_year_by_tag(self, tag=gedcom.tags.GEDCOM_TAG_BIRTH):
+    &#34;&#34;&#34;Returns the year for the tag of a person in integer format
+    
+    :rtype: int
+    &#34;&#34;&#34;
+    date_split = self.get_event_by_tag(tag)[0].split()
+
+    if len(date_split) == 0:
+        return -1
+    
+    date = date_split[len(date_split) - 1]
 
     if date == &#34;&#34;:
         return -1
@@ -1384,18 +1674,38 @@ def get_census(self):
         return -1</code></pre>
 </details>
 </dd>
+<dt id="gedcom.element.individual.IndividualElement.get_first_name"><code class="name flex">
+<span>def <span class="ident">get_first_name</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns an individual's first name </p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_first_name(self):
+    &#34;&#34;&#34;Returns an individual&#39;s first name 
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    result = self.get_name_data()[0].split(&#34; &#34;)
+    return result[0] </code></pre>
+</details>
+</dd>
 <dt id="gedcom.element.individual.IndividualElement.get_gender"><code class="name flex">
 <span>def <span class="ident">get_gender</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the gender of a person in string format
-:rtype: str</p></section>
+<div class="desc"><p>Returns the gender of a person in string format</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_gender(self):
     &#34;&#34;&#34;Returns the gender of a person in string format
+    
     :rtype: str
     &#34;&#34;&#34;
     gender = &#34;&#34;
@@ -1411,14 +1721,15 @@ def get_census(self):
 <span>def <span class="ident">get_last_change_date</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the date of when the person data was last changed formatted as a string
-:rtype: str</p></section>
+<div class="desc"><p>Returns the date of when the person data was last changed formatted as a string</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_last_change_date(self):
     &#34;&#34;&#34;Returns the date of when the person data was last changed formatted as a string
+    
     :rtype: str
     &#34;&#34;&#34;
     date = &#34;&#34;
@@ -1436,23 +1747,44 @@ def get_census(self):
 <span>def <span class="ident">get_name</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns an individual's names as a tuple: (<code>str</code> given_name, <code>str</code> surname)
-:rtype: tuple</p></section>
+<div class="desc"><p>Returns an individual's names as a tuple: (<code>str</code> given_name, <code>str</code> surname)</p>
+<p>:rtype: tuple</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_name(self):
     &#34;&#34;&#34;Returns an individual&#39;s names as a tuple: (`str` given_name, `str` surname)
+    
+    :rtype: tuple
+    &#34;&#34;&#34;
+    name_data = self.get_name_data()
+    
+    return name_data[0], name_data[1]</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_name_data"><code class="name flex">
+<span>def <span class="ident">get_name_data</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns an individual's name data including sources as a tuple: (<code>str</code> given_name, <code>str</code> surname, <code>str</code> suffix, <code>list</code> sources)</p>
+<p>:rtype: tuple</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_name_data(self):
+    &#34;&#34;&#34;Returns an individual&#39;s name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
+    
     :rtype: tuple
     &#34;&#34;&#34;
     given_name = &#34;&#34;
     surname = &#34;&#34;
+    suffix = &#34;&#34;
+    sources = []
 
     # Return the first gedcom.tags.GEDCOM_TAG_NAME that is found.
     # Alternatively as soon as we have both the gedcom.tags.GEDCOM_TAG_GIVEN_NAME and _SURNAME return those.
-    found_given_name = False
-    found_surname_name = False
 
     for child in self.get_child_elements():
         if child.get_tag() == gedcom.tags.GEDCOM_TAG_NAME:
@@ -1465,38 +1797,42 @@ def get_census(self):
                     given_name = name[0].strip()
                     if len(name) &gt; 1:
                         surname = name[1].strip()
-
-                return given_name, surname
+                    if len(name) &gt; 2:
+                        suffix = name[2].strip()
 
             for childOfChild in child.get_child_elements():
 
                 if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_GIVEN_NAME:
                     given_name = childOfChild.get_value()
-                    found_given_name = True
 
                 if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SURNAME:
                     surname = childOfChild.get_value()
-                    found_surname_name = True
 
-            if found_given_name and found_surname_name:
-                return given_name, surname
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SUFFIX:
+                    suffix = childOfChild.get_value()
+                    
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    sources.append(childOfChild)
 
+            return given_name, surname, suffix, sources
+            
     # If we reach here we are probably returning empty strings
-    return given_name, surname</code></pre>
+    return given_name, surname, suffix, sources</code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.individual.IndividualElement.get_occupation"><code class="name flex">
 <span>def <span class="ident">get_occupation</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the occupation of a person
-:rtype: str</p></section>
+<div class="desc"><p>Returns the occupation of a person</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_occupation(self):
     &#34;&#34;&#34;Returns the occupation of a person
+    
     :rtype: str
     &#34;&#34;&#34;
     occupation = &#34;&#34;
@@ -1508,14 +1844,93 @@ def get_census(self):
     return occupation</code></pre>
 </details>
 </dd>
+<dt id="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_date"><code class="name flex">
+<span>def <span class="ident">get_sources_by_tag_and_date</span></span>(<span>self, tag, date)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the sources for a tag and date</p>
+<p>:rtype: list</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_sources_by_tag_and_date(self, tag, date):
+    &#34;&#34;&#34;Returns the sources for a tag and date
+    
+    :rtype: list
+    &#34;&#34;&#34;
+    return self.get_sources_by_tag_and_values(tag, date=date)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_place"><code class="name flex">
+<span>def <span class="ident">get_sources_by_tag_and_place</span></span>(<span>self, tag, place)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the sources for a tag and place</p>
+<p>:rtype: list</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_sources_by_tag_and_place(self, tag, place):
+    &#34;&#34;&#34;Returns the sources for a tag and place
+    
+    :rtype: list
+    &#34;&#34;&#34;
+    return self.get_sources_by_tag_and_values(tag, place=place)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_values"><code class="name flex">
+<span>def <span class="ident">get_sources_by_tag_and_values</span></span>(<span>self, tag, date=None, place=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the sources for a tag, date and place.
+Set date or place to None if
+this value should be ignored</p>
+<p>:rtype: list</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_sources_by_tag_and_values(self, tag, date=None, place=None):
+    &#34;&#34;&#34;Returns the sources for a tag, date and place.  Set date or place to None if
+    this value should be ignored
+    
+    :rtype: list
+    &#34;&#34;&#34;
+    sources = []
+    
+    # get primary date, place and sources
+    for child in self.get_child_elements():
+        if child.get_tag() == tag:
+            tag_sources = []
+            tag_date = &#34;&#34;
+            tag_place = &#34;&#34;
+
+            for childOfChild in child.get_child_elements():
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                    tag_date = childOfChild.get_value()
+
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                    tag_place = childOfChild.get_value()
+
+                if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    tag_sources.append(childOfChild)
+
+            if (date == None or date == tag_date) and (place == None or place == tag_place):
+                sources += tag_sources
+
+    return sources</code></pre>
+</details>
+</dd>
 <dt id="gedcom.element.individual.IndividualElement.given_match"><code class="name flex">
 <span>def <span class="ident">given_match</span></span>(<span>self, name)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Matches a string with the given name of an individual
+<div class="desc"><p>Matches a string with the given name of an individual
 ::deprecated:: As of version 1.0.0 use <code>given_name_match()</code> method instead
 :type name: str
-:rtype: bool</p></section>
+:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1534,16 +1949,18 @@ def given_match(self, name):
 <span>def <span class="ident">given_name_match</span></span>(<span>self, given_name_to_match)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Matches a string with the given name of an individual
-:type given_name_to_match: str
-:rtype: bool</p></section>
+<div class="desc"><p>Matches a string with the given name of an individual</p>
+<p>:type given_name_to_match: str</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def given_name_match(self, given_name_to_match):
     &#34;&#34;&#34;Matches a string with the given name of an individual
+    
     :type given_name_to_match: str
+    
     :rtype: bool
     &#34;&#34;&#34;
     (given_name, surname) = self.get_name()
@@ -1554,14 +1971,15 @@ def given_match(self, name):
 <span>def <span class="ident">is_child</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if this element is a child of a family
-:rtype: bool</p></section>
+<div class="desc"><p>Checks if this element is a child of a family</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def is_child(self):
     &#34;&#34;&#34;Checks if this element is a child of a family
+    
     :rtype: bool
     &#34;&#34;&#34;
     found_child = False
@@ -1577,14 +1995,15 @@ def given_match(self, name):
 <span>def <span class="ident">is_deceased</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if this individual is deceased
-:rtype: bool</p></section>
+<div class="desc"><p>Checks if this individual is deceased</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def is_deceased(self):
     &#34;&#34;&#34;Checks if this individual is deceased
+    
     :rtype: bool
     &#34;&#34;&#34;
     for child in self.get_child_elements():
@@ -1598,14 +2017,15 @@ def given_match(self, name):
 <span>def <span class="ident">is_private</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Checks if this individual is marked private
-:rtype: bool</p></section>
+<div class="desc"><p>Checks if this individual is marked private</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def is_private(self):
     &#34;&#34;&#34;Checks if this individual is marked private
+    
     :rtype: bool
     &#34;&#34;&#34;
     for child in self.get_child_elements():
@@ -1621,16 +2041,18 @@ def given_match(self, name):
 <span>def <span class="ident">surname_match</span></span>(<span>self, surname_to_match)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Matches a string with the surname of an individual
-:type surname_to_match: str
-:rtype: bool</p></section>
+<div class="desc"><p>Matches a string with the surname of an individual</p>
+<p>:type surname_to_match: str</p>
+<p>:rtype: bool</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def surname_match(self, surname_to_match):
     &#34;&#34;&#34;Matches a string with the surname of an individual
+    
     :type surname_to_match: str
+    
     :rtype: bool
     &#34;&#34;&#34;
     (given_name, surname) = self.get_name()
@@ -1643,7 +2065,10 @@ def given_match(self, name):
 <li><code><b><a title="gedcom.element.element.Element" href="element.html#gedcom.element.element.Element">Element</a></b></code>:
 <ul class="hlist">
 <li><code><a title="gedcom.element.element.Element.add_child_element" href="element.html#gedcom.element.element.Element.add_child_element">add_child_element</a></code></li>
+<li><code><a title="gedcom.element.element.Element.equals" href="element.html#gedcom.element.element.Element.equals">equals</a></code></li>
+<li><code><a title="gedcom.element.element.Element.get_child_element_value" href="element.html#gedcom.element.element.Element.get_child_element_value">get_child_element_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_child_elements" href="element.html#gedcom.element.element.Element.get_child_elements">get_child_elements</a></code></li>
+<li><code><a title="gedcom.element.element.Element.get_child_value_by_tag" href="element.html#gedcom.element.element.Element.get_child_value_by_tag">get_child_value_by_tag</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_individual" href="element.html#gedcom.element.element.Element.get_individual">get_individual</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_level" href="element.html#gedcom.element.element.Element.get_level">get_level</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_multi_line_value" href="element.html#gedcom.element.element.Element.get_multi_line_value">get_multi_line_value</a></code></li>
@@ -1652,6 +2077,7 @@ def given_match(self, name):
 <li><code><a title="gedcom.element.element.Element.get_tag" href="element.html#gedcom.element.element.Element.get_tag">get_tag</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_value" href="element.html#gedcom.element.element.Element.get_value">get_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.new_child_element" href="element.html#gedcom.element.element.Element.new_child_element">new_child_element</a></code></li>
+<li><code><a title="gedcom.element.element.Element.remove_child_element" href="element.html#gedcom.element.element.Element.remove_child_element">remove_child_element</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_multi_line_value" href="element.html#gedcom.element.element.Element.set_multi_line_value">set_multi_line_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_parent_element" href="element.html#gedcom.element.element.Element.set_parent_element">set_parent_element</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_value" href="element.html#gedcom.element.element.Element.set_value">set_value</a></code></li>
@@ -1662,10 +2088,10 @@ def given_match(self, name):
 </dd>
 <dt id="gedcom.element.individual.NotAnActualIndividualError"><code class="flex name class">
 <span>class <span class="ident">NotAnActualIndividualError</span></span>
-<span>(</span><span>...)</span>
+<span>(</span><span>*args, **kwargs)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Common base class for all non-exit exceptions.</p></section>
+<div class="desc"><p>Common base class for all non-exit exceptions.</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1705,17 +2131,28 @@ def given_match(self, name):
 <li><code><a title="gedcom.element.individual.IndividualElement.death_year_match" href="#gedcom.element.individual.IndividualElement.death_year_match">death_year_match</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_all_names" href="#gedcom.element.individual.IndividualElement.get_all_names">get_all_names</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_birth_data" href="#gedcom.element.individual.IndividualElement.get_birth_data">get_birth_data</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_birth_date" href="#gedcom.element.individual.IndividualElement.get_birth_date">get_birth_date</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_birth_place" href="#gedcom.element.individual.IndividualElement.get_birth_place">get_birth_place</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_birth_year" href="#gedcom.element.individual.IndividualElement.get_birth_year">get_birth_year</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_burial" href="#gedcom.element.individual.IndividualElement.get_burial">get_burial</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_burial_data" href="#gedcom.element.individual.IndividualElement.get_burial_data">get_burial_data</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_census" href="#gedcom.element.individual.IndividualElement.get_census">get_census</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_census_data" href="#gedcom.element.individual.IndividualElement.get_census_data">get_census_data</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_death_data" href="#gedcom.element.individual.IndividualElement.get_death_data">get_death_data</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_death_date" href="#gedcom.element.individual.IndividualElement.get_death_date">get_death_date</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_death_place" href="#gedcom.element.individual.IndividualElement.get_death_place">get_death_place</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_death_year" href="#gedcom.element.individual.IndividualElement.get_death_year">get_death_year</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_event_by_tag" href="#gedcom.element.individual.IndividualElement.get_event_by_tag">get_event_by_tag</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_event_year_by_tag" href="#gedcom.element.individual.IndividualElement.get_event_year_by_tag">get_event_year_by_tag</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_first_name" href="#gedcom.element.individual.IndividualElement.get_first_name">get_first_name</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_gender" href="#gedcom.element.individual.IndividualElement.get_gender">get_gender</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_last_change_date" href="#gedcom.element.individual.IndividualElement.get_last_change_date">get_last_change_date</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_name" href="#gedcom.element.individual.IndividualElement.get_name">get_name</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_name_data" href="#gedcom.element.individual.IndividualElement.get_name_data">get_name_data</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.get_occupation" href="#gedcom.element.individual.IndividualElement.get_occupation">get_occupation</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_date" href="#gedcom.element.individual.IndividualElement.get_sources_by_tag_and_date">get_sources_by_tag_and_date</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_place" href="#gedcom.element.individual.IndividualElement.get_sources_by_tag_and_place">get_sources_by_tag_and_place</a></code></li>
+<li><code><a title="gedcom.element.individual.IndividualElement.get_sources_by_tag_and_values" href="#gedcom.element.individual.IndividualElement.get_sources_by_tag_and_values">get_sources_by_tag_and_values</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.given_match" href="#gedcom.element.individual.IndividualElement.given_match">given_match</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.given_name_match" href="#gedcom.element.individual.IndividualElement.given_name_match">given_name_match</a></code></li>
 <li><code><a title="gedcom.element.individual.IndividualElement.is_child" href="#gedcom.element.individual.IndividualElement.is_child">is_child</a></code></li>
@@ -1733,9 +2170,7 @@ def given_match(self, name):
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.5</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>

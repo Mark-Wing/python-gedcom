@@ -38,4 +38,8 @@ class NotAnActualFileError(Exception):
 class FileElement(Element):
 
     def get_tag(self):
+        """Returns the tag of this element from within the GEDCOM file
+        
+        :rtype: str
+        """
         return gedcom.tags.GEDCOM_TAG_FILE

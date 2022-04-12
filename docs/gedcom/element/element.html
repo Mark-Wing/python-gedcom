@@ -3,15 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-<meta name="generator" content="pdoc 0.7.5" />
+<meta name="generator" content="pdoc 0.10.0" />
 <title>gedcom.element.element API documentation</title>
 <meta name="description" content="Base GEDCOM element" />
-<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
-<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
-<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
-<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
 <style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
 </head>
 <body>
 <main>
@@ -25,10 +27,9 @@
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python"># -*- coding: utf-8 -*-
-
-# Python GEDCOM Parser
+<pre><code class="python"># Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -63,17 +64,14 @@ import gedcom.tags
 
 class Element(object):
     &#34;&#34;&#34;GEDCOM element
-
     Each line in a GEDCOM file is an element with the format
-
     `level [pointer] tag [value]`
-
     where `level` and `tag` are required, and `pointer` and `value` are
     optional.  Elements are arranged hierarchically according to their
     level, and elements with a level of zero are at the top level.
     Elements with a level greater than zero are children of their
     parent.
-
+    
     A pointer has the format `@pname@`, where `pname` is any sequence of
     characters and numbers. The pointer identifies the object being
     pointed to, so that any pointer included as the value of any
@@ -83,9 +81,8 @@ class Element(object):
     is a spouse. Likewise, an element with a tag of `FAMC` has a value
     that points to a family record in which the associated person is a
     child.
-
+    
     See a GEDCOM file for examples of tags and their values.
-
     Tags available to an element are seen here: `gedcom.tags`
     &#34;&#34;&#34;
 
@@ -96,7 +93,7 @@ class Element(object):
         self.__tag = tag
         self.__value = value
         self.__crlf = crlf
-
+        
         # structuring
         self.__children = []
         self.__parent = None
@@ -106,36 +103,53 @@ class Element(object):
 
     def get_level(self):
         &#34;&#34;&#34;Returns the level of this element from within the GEDCOM file
+        
         :rtype: int
         &#34;&#34;&#34;
         return self.__level
 
     def get_pointer(self):
         &#34;&#34;&#34;Returns the pointer of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__pointer
 
     def get_tag(self):
         &#34;&#34;&#34;Returns the tag of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__tag
 
     def get_value(self):
         &#34;&#34;&#34;Return the value of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__value
 
     def set_value(self, value):
         &#34;&#34;&#34;Sets the value of this element
+        
         :type value: str
         &#34;&#34;&#34;
         self.__value = value
+        
+    def get_child_value_by_tag(self, tag):
+        &#34;&#34;&#34;Returns value of child element by tag including any CONC lines
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                return child.get_multi_line_value()
+
+        return &#34;&#34;
 
     def get_multi_line_value(self):
         &#34;&#34;&#34;Returns the value of this element including concatenations or continuations
+        
         :rtype: str
         &#34;&#34;&#34;
         result = self.get_value()
@@ -150,8 +164,32 @@ class Element(object):
                 last_crlf = element.__crlf
         return result
 
+    def equals(self, element):
+        &#34;&#34;&#34;Returns true when the specific fields for both elements match.  The comparison includes the
+        level, pointer, tag and pointer.  If the tag is &#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;, or &#39;RESI&#39;, the
+        comparison includes the date and place from the child elements.
+        
+        :type element: Element
+        
+        :rtype: bool
+        &#34;&#34;&#34;
+        result = False
+        
+        if isinstance(element, Element):
+            result = self.get_level() == element.get_level() \
+                     and self.get_tag() == element.get_tag() \
+                     and self.get_value() == element.get_value() \
+                     and self.get_pointer() == element.get_pointer()
+                     
+            if result and self.get_tag() in [&#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;,&#39;RESI&#39;]:
+                result = self.get_child_element_value(&#39;DATE&#39;) == element.get_child_element_value(&#39;DATE&#39;) \
+                         and self.get_child_element_value(&#39;PLAC&#39;) == element.get_child_element_value(&#39;PLAC&#39;)
+                
+        return result
+
     def __available_characters(self):
         &#34;&#34;&#34;Get the number of available characters of the elements original string
+        
         :rtype: int
         &#34;&#34;&#34;
         element_characters = len(self.to_gedcom_string())
@@ -159,6 +197,7 @@ class Element(object):
 
     def __line_length(self, line):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type line: str
         :rtype: int
         &#34;&#34;&#34;
@@ -175,6 +214,7 @@ class Element(object):
 
     def __set_bounded_value(self, value):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type value: str
         :rtype: int
         &#34;&#34;&#34;
@@ -184,6 +224,7 @@ class Element(object):
 
     def __add_bounded_child(self, tag, value):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type tag: str
         :type value: str
         :rtype: int
@@ -193,6 +234,7 @@ class Element(object):
 
     def __add_concatenation(self, string):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :rtype: str
         &#34;&#34;&#34;
         index = 0
@@ -202,6 +244,7 @@ class Element(object):
 
     def set_multi_line_value(self, value):
         &#34;&#34;&#34;Sets the value of this element, adding concatenation and continuation lines when necessary
+        
         :type value: str
         &#34;&#34;&#34;
         self.set_value(&#39;&#39;)
@@ -220,22 +263,45 @@ class Element(object):
 
     def get_child_elements(self):
         &#34;&#34;&#34;Returns the direct child elements of this element
+        
         :rtype: list of Element
         &#34;&#34;&#34;
         return self.__children
 
+    def get_child_element_value(self, tag=gedcom.tags.GEDCOM_TAG_DATE):
+        &#34;&#34;&#34;Returns the value for a specific child element.  Assumes there will only be one
+        child element per tag
+        
+        :type tag: str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        result = &#34;&#34;
+        
+        child_elements = self.get_child_elements(tag)
+        
+        if len(child_elements) &gt; 0:
+            result = child_elements[0].get_value()
+            
+        return result
+
     def new_child_element(self, tag, pointer=&#34;&#34;, value=&#34;&#34;):
         &#34;&#34;&#34;Creates and returns a new child element of this element
-
+        
         :type tag: str
+        
         :type pointer: str
+        
         :type value: str
+        
         :rtype: Element
         &#34;&#34;&#34;
         from gedcom.element.family import FamilyElement
         from gedcom.element.file import FileElement
         from gedcom.element.individual import IndividualElement
         from gedcom.element.object import ObjectElement
+        from gedcom.element.repository import RepositoryElement
+        from gedcom.element.source import SourceElement
 
         # Differentiate between the type of the new child element
         if tag == gedcom.tags.GEDCOM_TAG_FAMILY:
@@ -246,6 +312,10 @@ class Element(object):
             child_element = IndividualElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
         elif tag == gedcom.tags.GEDCOM_TAG_OBJECT:
             child_element = ObjectElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+        elif tag == gedcom.tags.GEDCOM_TAG_SOURCE:
+            child_element = SourceElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+        elif tag == gedcom.tags.GEDCOM_TAG_REPOSITORY:
+            child_element = RepositoryElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
         else:
             child_element = Element(self.get_level() + 1, pointer, tag, value, self.__crlf)
 
@@ -255,26 +325,39 @@ class Element(object):
 
     def add_child_element(self, element):
         &#34;&#34;&#34;Adds a child element to this element
-
+        
         :type element: Element
         &#34;&#34;&#34;
         self.get_child_elements().append(element)
         element.set_parent_element(self)
 
         return element
+    
+    def remove_child_element(self, pointer):
+        &#34;&#34;&#34; Removes child element based on pointer        
+        
+        :type pointer: str
+        &#34;&#34;&#34;
+        x = 0
+        while x &lt; len(self.get_child_elements()):
+            if self.get_child_elements()[x].get_pointer() == pointer:
+                self.get_child_elements().pop(x)
+                break;
+            else:
+                x += 1        
 
     def get_parent_element(self):
         &#34;&#34;&#34;Returns the parent element of this element
+        
         :rtype: Element
         &#34;&#34;&#34;
         return self.__parent
 
     def set_parent_element(self, element):
         &#34;&#34;&#34;Adds a parent element to this element
-
         There&#39;s usually no need to call this method manually,
         `add_child_element()` calls it automatically.
-
+        
         :type element: Element
         &#34;&#34;&#34;
         self.__parent = element
@@ -283,16 +366,18 @@ class Element(object):
     def get_individual(self):
         &#34;&#34;&#34;Returns this element and all of its sub-elements represented as a GEDCOM string
         ::deprecated:: As of version 1.0.0 use `to_gedcom_string()` method instead
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.to_gedcom_string(True)
 
     def to_gedcom_string(self, recursive=False):
         &#34;&#34;&#34;Formats this element and optionally all of its sub-elements into a GEDCOM string
+        
         :type recursive: bool
+        
         :rtype: str
         &#34;&#34;&#34;
-
         result = str(self.get_level())
 
         if self.get_pointer() != &#34;&#34;:
@@ -336,10 +421,10 @@ class Element(object):
 <span>(</span><span>level, pointer, tag, value, crlf='\n', multi_line=True)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>GEDCOM element</p>
-<p>Each line in a GEDCOM file is an element with the format</p>
-<p><code>level [pointer] tag [value]</code></p>
-<p>where <code>level</code> and <code>tag</code> are required, and <code>pointer</code> and <code>value</code> are
+<div class="desc"><p>GEDCOM element
+Each line in a GEDCOM file is an element with the format
+<code>level [pointer] tag [value]</code>
+where <code>level</code> and <code>tag</code> are required, and <code>pointer</code> and <code>value</code> are
 optional.
 Elements are arranged hierarchically according to their
 level, and elements with a level of zero are at the top level.
@@ -355,25 +440,22 @@ element points to the family record in which the associated person
 is a spouse. Likewise, an element with a tag of <code>FAMC</code> has a value
 that points to a family record in which the associated person is a
 child.</p>
-<p>See a GEDCOM file for examples of tags and their values.</p>
-<p>Tags available to an element are seen here: <a title="gedcom.tags" href="../tags.html"><code>gedcom.tags</code></a></p></section>
+<p>See a GEDCOM file for examples of tags and their values.
+Tags available to an element are seen here: <code><a title="gedcom.tags" href="../tags.html">gedcom.tags</a></code></p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">class Element(object):
     &#34;&#34;&#34;GEDCOM element
-
     Each line in a GEDCOM file is an element with the format
-
     `level [pointer] tag [value]`
-
     where `level` and `tag` are required, and `pointer` and `value` are
     optional.  Elements are arranged hierarchically according to their
     level, and elements with a level of zero are at the top level.
     Elements with a level greater than zero are children of their
     parent.
-
+    
     A pointer has the format `@pname@`, where `pname` is any sequence of
     characters and numbers. The pointer identifies the object being
     pointed to, so that any pointer included as the value of any
@@ -383,9 +465,8 @@ child.</p>
     is a spouse. Likewise, an element with a tag of `FAMC` has a value
     that points to a family record in which the associated person is a
     child.
-
+    
     See a GEDCOM file for examples of tags and their values.
-
     Tags available to an element are seen here: `gedcom.tags`
     &#34;&#34;&#34;
 
@@ -396,7 +477,7 @@ child.</p>
         self.__tag = tag
         self.__value = value
         self.__crlf = crlf
-
+        
         # structuring
         self.__children = []
         self.__parent = None
@@ -406,36 +487,53 @@ child.</p>
 
     def get_level(self):
         &#34;&#34;&#34;Returns the level of this element from within the GEDCOM file
+        
         :rtype: int
         &#34;&#34;&#34;
         return self.__level
 
     def get_pointer(self):
         &#34;&#34;&#34;Returns the pointer of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__pointer
 
     def get_tag(self):
         &#34;&#34;&#34;Returns the tag of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__tag
 
     def get_value(self):
         &#34;&#34;&#34;Return the value of this element from within the GEDCOM file
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.__value
 
     def set_value(self, value):
         &#34;&#34;&#34;Sets the value of this element
+        
         :type value: str
         &#34;&#34;&#34;
         self.__value = value
+        
+    def get_child_value_by_tag(self, tag):
+        &#34;&#34;&#34;Returns value of child element by tag including any CONC lines
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                return child.get_multi_line_value()
+
+        return &#34;&#34;
 
     def get_multi_line_value(self):
         &#34;&#34;&#34;Returns the value of this element including concatenations or continuations
+        
         :rtype: str
         &#34;&#34;&#34;
         result = self.get_value()
@@ -450,8 +548,32 @@ child.</p>
                 last_crlf = element.__crlf
         return result
 
+    def equals(self, element):
+        &#34;&#34;&#34;Returns true when the specific fields for both elements match.  The comparison includes the
+        level, pointer, tag and pointer.  If the tag is &#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;, or &#39;RESI&#39;, the
+        comparison includes the date and place from the child elements.
+        
+        :type element: Element
+        
+        :rtype: bool
+        &#34;&#34;&#34;
+        result = False
+        
+        if isinstance(element, Element):
+            result = self.get_level() == element.get_level() \
+                     and self.get_tag() == element.get_tag() \
+                     and self.get_value() == element.get_value() \
+                     and self.get_pointer() == element.get_pointer()
+                     
+            if result and self.get_tag() in [&#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;,&#39;RESI&#39;]:
+                result = self.get_child_element_value(&#39;DATE&#39;) == element.get_child_element_value(&#39;DATE&#39;) \
+                         and self.get_child_element_value(&#39;PLAC&#39;) == element.get_child_element_value(&#39;PLAC&#39;)
+                
+        return result
+
     def __available_characters(self):
         &#34;&#34;&#34;Get the number of available characters of the elements original string
+        
         :rtype: int
         &#34;&#34;&#34;
         element_characters = len(self.to_gedcom_string())
@@ -459,6 +581,7 @@ child.</p>
 
     def __line_length(self, line):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type line: str
         :rtype: int
         &#34;&#34;&#34;
@@ -475,6 +598,7 @@ child.</p>
 
     def __set_bounded_value(self, value):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type value: str
         :rtype: int
         &#34;&#34;&#34;
@@ -484,6 +608,7 @@ child.</p>
 
     def __add_bounded_child(self, tag, value):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :type tag: str
         :type value: str
         :rtype: int
@@ -493,6 +618,7 @@ child.</p>
 
     def __add_concatenation(self, string):
         &#34;&#34;&#34;@TODO Write docs.
+        
         :rtype: str
         &#34;&#34;&#34;
         index = 0
@@ -502,6 +628,7 @@ child.</p>
 
     def set_multi_line_value(self, value):
         &#34;&#34;&#34;Sets the value of this element, adding concatenation and continuation lines when necessary
+        
         :type value: str
         &#34;&#34;&#34;
         self.set_value(&#39;&#39;)
@@ -520,22 +647,45 @@ child.</p>
 
     def get_child_elements(self):
         &#34;&#34;&#34;Returns the direct child elements of this element
+        
         :rtype: list of Element
         &#34;&#34;&#34;
         return self.__children
 
+    def get_child_element_value(self, tag=gedcom.tags.GEDCOM_TAG_DATE):
+        &#34;&#34;&#34;Returns the value for a specific child element.  Assumes there will only be one
+        child element per tag
+        
+        :type tag: str
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        result = &#34;&#34;
+        
+        child_elements = self.get_child_elements(tag)
+        
+        if len(child_elements) &gt; 0:
+            result = child_elements[0].get_value()
+            
+        return result
+
     def new_child_element(self, tag, pointer=&#34;&#34;, value=&#34;&#34;):
         &#34;&#34;&#34;Creates and returns a new child element of this element
-
+        
         :type tag: str
+        
         :type pointer: str
+        
         :type value: str
+        
         :rtype: Element
         &#34;&#34;&#34;
         from gedcom.element.family import FamilyElement
         from gedcom.element.file import FileElement
         from gedcom.element.individual import IndividualElement
         from gedcom.element.object import ObjectElement
+        from gedcom.element.repository import RepositoryElement
+        from gedcom.element.source import SourceElement
 
         # Differentiate between the type of the new child element
         if tag == gedcom.tags.GEDCOM_TAG_FAMILY:
@@ -546,6 +696,10 @@ child.</p>
             child_element = IndividualElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
         elif tag == gedcom.tags.GEDCOM_TAG_OBJECT:
             child_element = ObjectElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+        elif tag == gedcom.tags.GEDCOM_TAG_SOURCE:
+            child_element = SourceElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+        elif tag == gedcom.tags.GEDCOM_TAG_REPOSITORY:
+            child_element = RepositoryElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
         else:
             child_element = Element(self.get_level() + 1, pointer, tag, value, self.__crlf)
 
@@ -555,26 +709,39 @@ child.</p>
 
     def add_child_element(self, element):
         &#34;&#34;&#34;Adds a child element to this element
-
+        
         :type element: Element
         &#34;&#34;&#34;
         self.get_child_elements().append(element)
         element.set_parent_element(self)
 
         return element
+    
+    def remove_child_element(self, pointer):
+        &#34;&#34;&#34; Removes child element based on pointer        
+        
+        :type pointer: str
+        &#34;&#34;&#34;
+        x = 0
+        while x &lt; len(self.get_child_elements()):
+            if self.get_child_elements()[x].get_pointer() == pointer:
+                self.get_child_elements().pop(x)
+                break;
+            else:
+                x += 1        
 
     def get_parent_element(self):
         &#34;&#34;&#34;Returns the parent element of this element
+        
         :rtype: Element
         &#34;&#34;&#34;
         return self.__parent
 
     def set_parent_element(self, element):
         &#34;&#34;&#34;Adds a parent element to this element
-
         There&#39;s usually no need to call this method manually,
         `add_child_element()` calls it automatically.
-
+        
         :type element: Element
         &#34;&#34;&#34;
         self.__parent = element
@@ -583,16 +750,18 @@ child.</p>
     def get_individual(self):
         &#34;&#34;&#34;Returns this element and all of its sub-elements represented as a GEDCOM string
         ::deprecated:: As of version 1.0.0 use `to_gedcom_string()` method instead
+        
         :rtype: str
         &#34;&#34;&#34;
         return self.to_gedcom_string(True)
 
     def to_gedcom_string(self, recursive=False):
         &#34;&#34;&#34;Formats this element and optionally all of its sub-elements into a GEDCOM string
+        
         :type recursive: bool
+        
         :rtype: str
         &#34;&#34;&#34;
-
         result = str(self.get_level())
 
         if self.get_pointer() != &#34;&#34;:
@@ -627,7 +796,9 @@ child.</p>
 <li><a title="gedcom.element.file.FileElement" href="file.html#gedcom.element.file.FileElement">FileElement</a></li>
 <li><a title="gedcom.element.individual.IndividualElement" href="individual.html#gedcom.element.individual.IndividualElement">IndividualElement</a></li>
 <li><a title="gedcom.element.object.ObjectElement" href="object.html#gedcom.element.object.ObjectElement">ObjectElement</a></li>
+<li><a title="gedcom.element.repository.RepositoryElement" href="repository.html#gedcom.element.repository.RepositoryElement">RepositoryElement</a></li>
 <li><a title="gedcom.element.root.RootElement" href="root.html#gedcom.element.root.RootElement">RootElement</a></li>
+<li><a title="gedcom.element.source.SourceElement" href="source.html#gedcom.element.source.SourceElement">SourceElement</a></li>
 </ul>
 <h3>Methods</h3>
 <dl>
@@ -635,15 +806,15 @@ child.</p>
 <span>def <span class="ident">add_child_element</span></span>(<span>self, element)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Adds a child element to this element</p>
-<p>:type element: Element</p></section>
+<div class="desc"><p>Adds a child element to this element</p>
+<p>:type element: Element</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def add_child_element(self, element):
     &#34;&#34;&#34;Adds a child element to this element
-
+    
     :type element: Element
     &#34;&#34;&#34;
     self.get_child_elements().append(element)
@@ -652,30 +823,123 @@ child.</p>
     return element</code></pre>
 </details>
 </dd>
+<dt id="gedcom.element.element.Element.equals"><code class="name flex">
+<span>def <span class="ident">equals</span></span>(<span>self, element)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns true when the specific fields for both elements match.
+The comparison includes the
+level, pointer, tag and pointer.
+If the tag is 'BIRT','BURI','DEAT','_MILT', or 'RESI', the
+comparison includes the date and place from the child elements.</p>
+<p>:type element: Element</p>
+<p>:rtype: bool</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def equals(self, element):
+    &#34;&#34;&#34;Returns true when the specific fields for both elements match.  The comparison includes the
+    level, pointer, tag and pointer.  If the tag is &#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;, or &#39;RESI&#39;, the
+    comparison includes the date and place from the child elements.
+    
+    :type element: Element
+    
+    :rtype: bool
+    &#34;&#34;&#34;
+    result = False
+    
+    if isinstance(element, Element):
+        result = self.get_level() == element.get_level() \
+                 and self.get_tag() == element.get_tag() \
+                 and self.get_value() == element.get_value() \
+                 and self.get_pointer() == element.get_pointer()
+                 
+        if result and self.get_tag() in [&#39;BIRT&#39;,&#39;BURI&#39;,&#39;DEAT&#39;,&#39;_MILT&#39;,&#39;RESI&#39;]:
+            result = self.get_child_element_value(&#39;DATE&#39;) == element.get_child_element_value(&#39;DATE&#39;) \
+                     and self.get_child_element_value(&#39;PLAC&#39;) == element.get_child_element_value(&#39;PLAC&#39;)
+            
+    return result</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.element.Element.get_child_element_value"><code class="name flex">
+<span>def <span class="ident">get_child_element_value</span></span>(<span>self, tag='DATE')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the value for a specific child element.
+Assumes there will only be one
+child element per tag</p>
+<p>:type tag: str</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_child_element_value(self, tag=gedcom.tags.GEDCOM_TAG_DATE):
+    &#34;&#34;&#34;Returns the value for a specific child element.  Assumes there will only be one
+    child element per tag
+    
+    :type tag: str
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    result = &#34;&#34;
+    
+    child_elements = self.get_child_elements(tag)
+    
+    if len(child_elements) &gt; 0:
+        result = child_elements[0].get_value()
+        
+    return result</code></pre>
+</details>
+</dd>
 <dt id="gedcom.element.element.Element.get_child_elements"><code class="name flex">
 <span>def <span class="ident">get_child_elements</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the direct child elements of this element
-:rtype: list of Element</p></section>
+<div class="desc"><p>Returns the direct child elements of this element</p>
+<p>:rtype: list of Element</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_child_elements(self):
     &#34;&#34;&#34;Returns the direct child elements of this element
+    
     :rtype: list of Element
     &#34;&#34;&#34;
     return self.__children</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.element.Element.get_child_value_by_tag"><code class="name flex">
+<span>def <span class="ident">get_child_value_by_tag</span></span>(<span>self, tag)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns value of child element by tag including any CONC lines</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_child_value_by_tag(self, tag):
+    &#34;&#34;&#34;Returns value of child element by tag including any CONC lines
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    for child in self.get_child_elements():
+        if child.get_tag() == tag:
+            return child.get_multi_line_value()
+
+    return &#34;&#34;</code></pre>
 </details>
 </dd>
 <dt id="gedcom.element.element.Element.get_individual"><code class="name flex">
 <span>def <span class="ident">get_individual</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns this element and all of its sub-elements represented as a GEDCOM string
-::deprecated:: As of version 1.0.0 use <code>to_gedcom_string()</code> method instead
-:rtype: str</p></section>
+<div class="desc"><p>Returns this element and all of its sub-elements represented as a GEDCOM string
+::deprecated:: As of version 1.0.0 use <code>to_gedcom_string()</code> method instead</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -684,6 +948,7 @@ child.</p>
 def get_individual(self):
     &#34;&#34;&#34;Returns this element and all of its sub-elements represented as a GEDCOM string
     ::deprecated:: As of version 1.0.0 use `to_gedcom_string()` method instead
+    
     :rtype: str
     &#34;&#34;&#34;
     return self.to_gedcom_string(True)</code></pre>
@@ -693,14 +958,15 @@ def get_individual(self):
 <span>def <span class="ident">get_level</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the level of this element from within the GEDCOM file
-:rtype: int</p></section>
+<div class="desc"><p>Returns the level of this element from within the GEDCOM file</p>
+<p>:rtype: int</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_level(self):
     &#34;&#34;&#34;Returns the level of this element from within the GEDCOM file
+    
     :rtype: int
     &#34;&#34;&#34;
     return self.__level</code></pre>
@@ -710,14 +976,15 @@ def get_individual(self):
 <span>def <span class="ident">get_multi_line_value</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the value of this element including concatenations or continuations
-:rtype: str</p></section>
+<div class="desc"><p>Returns the value of this element including concatenations or continuations</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_multi_line_value(self):
     &#34;&#34;&#34;Returns the value of this element including concatenations or continuations
+    
     :rtype: str
     &#34;&#34;&#34;
     result = self.get_value()
@@ -737,14 +1004,15 @@ def get_individual(self):
 <span>def <span class="ident">get_parent_element</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the parent element of this element
-:rtype: Element</p></section>
+<div class="desc"><p>Returns the parent element of this element</p>
+<p>:rtype: Element</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_parent_element(self):
     &#34;&#34;&#34;Returns the parent element of this element
+    
     :rtype: Element
     &#34;&#34;&#34;
     return self.__parent</code></pre>
@@ -754,14 +1022,15 @@ def get_individual(self):
 <span>def <span class="ident">get_pointer</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the pointer of this element from within the GEDCOM file
-:rtype: str</p></section>
+<div class="desc"><p>Returns the pointer of this element from within the GEDCOM file</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_pointer(self):
     &#34;&#34;&#34;Returns the pointer of this element from within the GEDCOM file
+    
     :rtype: str
     &#34;&#34;&#34;
     return self.__pointer</code></pre>
@@ -771,14 +1040,15 @@ def get_individual(self):
 <span>def <span class="ident">get_tag</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Returns the tag of this element from within the GEDCOM file
-:rtype: str</p></section>
+<div class="desc"><p>Returns the tag of this element from within the GEDCOM file</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_tag(self):
     &#34;&#34;&#34;Returns the tag of this element from within the GEDCOM file
+    
     :rtype: str
     &#34;&#34;&#34;
     return self.__tag</code></pre>
@@ -788,14 +1058,15 @@ def get_individual(self):
 <span>def <span class="ident">get_value</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Return the value of this element from within the GEDCOM file
-:rtype: str</p></section>
+<div class="desc"><p>Return the value of this element from within the GEDCOM file</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def get_value(self):
     &#34;&#34;&#34;Return the value of this element from within the GEDCOM file
+    
     :rtype: str
     &#34;&#34;&#34;
     return self.__value</code></pre>
@@ -805,27 +1076,32 @@ def get_individual(self):
 <span>def <span class="ident">new_child_element</span></span>(<span>self, tag, pointer='', value='')</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Creates and returns a new child element of this element</p>
-<p>:type tag: str
-:type pointer: str
-:type value: str
-:rtype: Element</p></section>
+<div class="desc"><p>Creates and returns a new child element of this element</p>
+<p>:type tag: str</p>
+<p>:type pointer: str</p>
+<p>:type value: str</p>
+<p>:rtype: Element</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def new_child_element(self, tag, pointer=&#34;&#34;, value=&#34;&#34;):
     &#34;&#34;&#34;Creates and returns a new child element of this element
-
+    
     :type tag: str
+    
     :type pointer: str
+    
     :type value: str
+    
     :rtype: Element
     &#34;&#34;&#34;
     from gedcom.element.family import FamilyElement
     from gedcom.element.file import FileElement
     from gedcom.element.individual import IndividualElement
     from gedcom.element.object import ObjectElement
+    from gedcom.element.repository import RepositoryElement
+    from gedcom.element.source import SourceElement
 
     # Differentiate between the type of the new child element
     if tag == gedcom.tags.GEDCOM_TAG_FAMILY:
@@ -836,6 +1112,10 @@ def get_individual(self):
         child_element = IndividualElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
     elif tag == gedcom.tags.GEDCOM_TAG_OBJECT:
         child_element = ObjectElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+    elif tag == gedcom.tags.GEDCOM_TAG_SOURCE:
+        child_element = SourceElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
+    elif tag == gedcom.tags.GEDCOM_TAG_REPOSITORY:
+        child_element = RepositoryElement(self.get_level() + 1, pointer, tag, value, self.__crlf)
     else:
         child_element = Element(self.get_level() + 1, pointer, tag, value, self.__crlf)
 
@@ -844,18 +1124,44 @@ def get_individual(self):
     return child_element</code></pre>
 </details>
 </dd>
+<dt id="gedcom.element.element.Element.remove_child_element"><code class="name flex">
+<span>def <span class="ident">remove_child_element</span></span>(<span>self, pointer)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Removes child element based on pointer
+</p>
+<p>:type pointer: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def remove_child_element(self, pointer):
+    &#34;&#34;&#34; Removes child element based on pointer        
+    
+    :type pointer: str
+    &#34;&#34;&#34;
+    x = 0
+    while x &lt; len(self.get_child_elements()):
+        if self.get_child_elements()[x].get_pointer() == pointer:
+            self.get_child_elements().pop(x)
+            break;
+        else:
+            x += 1        </code></pre>
+</details>
+</dd>
 <dt id="gedcom.element.element.Element.set_multi_line_value"><code class="name flex">
 <span>def <span class="ident">set_multi_line_value</span></span>(<span>self, value)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Sets the value of this element, adding concatenation and continuation lines when necessary
-:type value: str</p></section>
+<div class="desc"><p>Sets the value of this element, adding concatenation and continuation lines when necessary</p>
+<p>:type value: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def set_multi_line_value(self, value):
     &#34;&#34;&#34;Sets the value of this element, adding concatenation and continuation lines when necessary
+    
     :type value: str
     &#34;&#34;&#34;
     self.set_value(&#39;&#39;)
@@ -877,20 +1183,19 @@ def get_individual(self):
 <span>def <span class="ident">set_parent_element</span></span>(<span>self, element)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Adds a parent element to this element</p>
-<p>There's usually no need to call this method manually,
+<div class="desc"><p>Adds a parent element to this element
+There's usually no need to call this method manually,
 <code>add_child_element()</code> calls it automatically.</p>
-<p>:type element: Element</p></section>
+<p>:type element: Element</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def set_parent_element(self, element):
     &#34;&#34;&#34;Adds a parent element to this element
-
     There&#39;s usually no need to call this method manually,
     `add_child_element()` calls it automatically.
-
+    
     :type element: Element
     &#34;&#34;&#34;
     self.__parent = element</code></pre>
@@ -900,14 +1205,15 @@ def get_individual(self):
 <span>def <span class="ident">set_value</span></span>(<span>self, value)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Sets the value of this element
-:type value: str</p></section>
+<div class="desc"><p>Sets the value of this element</p>
+<p>:type value: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def set_value(self, value):
     &#34;&#34;&#34;Sets the value of this element
+    
     :type value: str
     &#34;&#34;&#34;
     self.__value = value</code></pre>
@@ -917,19 +1223,20 @@ def get_individual(self):
 <span>def <span class="ident">to_gedcom_string</span></span>(<span>self, recursive=False)</span>
 </code></dt>
 <dd>
-<section class="desc"><p>Formats this element and optionally all of its sub-elements into a GEDCOM string
-:type recursive: bool
-:rtype: str</p></section>
+<div class="desc"><p>Formats this element and optionally all of its sub-elements into a GEDCOM string</p>
+<p>:type recursive: bool</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def to_gedcom_string(self, recursive=False):
     &#34;&#34;&#34;Formats this element and optionally all of its sub-elements into a GEDCOM string
+    
     :type recursive: bool
+    
     :rtype: str
     &#34;&#34;&#34;
-
     result = str(self.get_level())
 
     if self.get_pointer() != &#34;&#34;:
@@ -974,7 +1281,10 @@ def get_individual(self):
 <h4><code><a title="gedcom.element.element.Element" href="#gedcom.element.element.Element">Element</a></code></h4>
 <ul class="">
 <li><code><a title="gedcom.element.element.Element.add_child_element" href="#gedcom.element.element.Element.add_child_element">add_child_element</a></code></li>
+<li><code><a title="gedcom.element.element.Element.equals" href="#gedcom.element.element.Element.equals">equals</a></code></li>
+<li><code><a title="gedcom.element.element.Element.get_child_element_value" href="#gedcom.element.element.Element.get_child_element_value">get_child_element_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_child_elements" href="#gedcom.element.element.Element.get_child_elements">get_child_elements</a></code></li>
+<li><code><a title="gedcom.element.element.Element.get_child_value_by_tag" href="#gedcom.element.element.Element.get_child_value_by_tag">get_child_value_by_tag</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_individual" href="#gedcom.element.element.Element.get_individual">get_individual</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_level" href="#gedcom.element.element.Element.get_level">get_level</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_multi_line_value" href="#gedcom.element.element.Element.get_multi_line_value">get_multi_line_value</a></code></li>
@@ -983,6 +1293,7 @@ def get_individual(self):
 <li><code><a title="gedcom.element.element.Element.get_tag" href="#gedcom.element.element.Element.get_tag">get_tag</a></code></li>
 <li><code><a title="gedcom.element.element.Element.get_value" href="#gedcom.element.element.Element.get_value">get_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.new_child_element" href="#gedcom.element.element.Element.new_child_element">new_child_element</a></code></li>
+<li><code><a title="gedcom.element.element.Element.remove_child_element" href="#gedcom.element.element.Element.remove_child_element">remove_child_element</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_multi_line_value" href="#gedcom.element.element.Element.set_multi_line_value">set_multi_line_value</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_parent_element" href="#gedcom.element.element.Element.set_parent_element">set_parent_element</a></code></li>
 <li><code><a title="gedcom.element.element.Element.set_value" href="#gedcom.element.element.Element.set_value">set_value</a></code></li>
@@ -995,9 +1306,7 @@ def get_individual(self):
 </nav>
 </main>
 <footer id="footer">
-<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.5</a>.</p>
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
 </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad()</script>
 </body>
 </html>

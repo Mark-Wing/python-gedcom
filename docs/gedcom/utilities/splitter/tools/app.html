@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>gedcom.utilities.splitter.tools.app API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>gedcom.utilities.splitter.tools.app</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import PySimpleGUI as sg
+
+from gedcom.utilities.splitter.splitter import Splitter
+from gedcom.element.individual import IndividualElement
+
+import os
+
+class View(sg.Window):
+
+    def __init__(self):
+
+        layout = [[sg.T(&#34;1. Choose the GEDCOM file:&#34;)], 
+                  [sg.Input(key=&#34;-INPUT-FILE2-&#34; ,change_submits=False, size=(50, 1)), sg.FileBrowse(key=&#34;-INPUT-FILE-&#34;), sg.Button(&#34;Load&#34;)],
+                  [sg.T(&#34;2. Choose the root ancestor:&#34;)],
+                  [sg.Input(size=(70, 1), enable_events=True, key=&#39;-INPUT-FILTER-&#39;, disabled=True)],
+                  [sg.Listbox(values=[], enable_events=True, select_mode=&#39;single&#39;, key=&#39;-LISTBOX-ROOT-&#39;, size=(70, 6), disabled=True)],
+                  [sg.T(&#34;3. Select output folder:&#34;)],
+                  [sg.Input(key=&#34;-OUTPUT-FOLDER-&#34; ,change_submits=False, size=(58, 1), disabled=True), sg.FolderBrowse(key=&#34;-OU-&#34;, disabled=True)],
+                  [sg.T(&#34;4. Select output file name:&#34;)],
+                  [sg.Input(key=&#34;-OUTPUT-FILE-&#34;, change_submits=False, size=(58, 1), disabled=True)],
+                  [sg.Push(), sg.Button(&#34;Reset&#34;, disabled=True), sg.Button(&#34;Submit&#34;, disabled=True), sg.Push()],
+                  [sg.Frame(title=&#34;Progress&#34;, layout=
+                            [[sg.Push(), sg.Text(&#39;Status&#39;, key=&#34;-PROGRESS-TEXT-&#34;), sg.Push()],
+                             [sg.ProgressBar(100, orientation=&#39;h&#39;, size=(45,20), key=&#39;-PROG-BAR-&#39;)]])]]
+
+        super().__init__(&#34;GEDCOM Splitter&#34;, layout, size=(500, 460))
+
+        self.controller = None
+        
+    def set_controller(self, controller):
+        
+        self.controller = controller
+
+class Controller:
+    
+    def __init__(self, model, view):
+        self.model = model
+        self.view = view
+        self.event_listener_running = True
+        
+        while True:
+            event, values = view.read()
+            
+            if event == sg.WINDOW_CLOSED:
+                break
+
+            if event == &#39;Load&#39;:
+                self.load_button_clicked(values[&#39;-INPUT-FILE2-&#39;])
+            
+            if event == &#39;Submit&#39;:
+                self.submit_button_clicked(values)
+            
+            if event == &#39;Reset&#39;:
+                self.reset_button_clicked()
+
+            if event == &#39;-INPUT-FILTER-&#39; and values[&#39;-INPUT-FILTER-&#39;] != &#39;&#39;:                         # if a keystroke entered in search field
+                new_list = self.model.get_filter_person_list(values[&#39;-INPUT-FILTER-&#39;])
+                self.view[&#39;-LISTBOX-ROOT-&#39;].update(new_list)     # display in the listbox
+
+        view.close()
+        
+    def load_button_clicked(self, filename):
+    
+        if len(filename) == 0:
+            sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+        else:
+            for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+                self.view[x].update(disabled=False)
+            
+            self.model.load_file(filename, self.update_progress)
+            
+            self.view[&#39;-LISTBOX-ROOT-&#39;].update(self.model.get_person_list())
+            self.view[&#34;-OUTPUT-FOLDER-&#34;].update(os.path.dirname(os.path.realpath(filename)))
+            
+            filename = os.path.basename(os.path.realpath(filename)).split(&#39;.&#39;)
+            
+            self.view[&#34;-OUTPUT-FILE-&#34;].update(filename[0] + &#34;_split.ged&#34;)
+            
+
+    def submit_button_clicked(self, values):
+
+        if len(values[&#39;-INPUT-FILE2-&#39;]) == 0:
+            sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-LISTBOX-ROOT-&#39;]) == 0:
+            sg.popup(&#34;Please select a root ancestor&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-OUTPUT-FOLDER-&#39;]) == 0:
+            sg.popup(&#34;Please select an output folder&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-OUTPUT-FILE-&#39;]) == 0:
+            sg.popup(&#34;Please select an output file name&#34;,title=&#34;Error&#34;)
+        else:
+            output_file = values[&#39;-OUTPUT-FOLDER-&#39;] + &#34;\\&#34; + values[&#39;-OUTPUT-FILE-&#39;]
+            
+            self.model.split_and_save_file(values[&#39;-LISTBOX-ROOT-&#39;], output_file, self.update_progress)
+            self.update_progress(&#34;Complete&#34;, 1, 1)
+            
+            sg.popup(&#34;Complete&#34;,title=&#34;Success&#34;)
+        
+            self.reset_button_clicked()
+            
+            for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+                self.view[x].update(disabled=True)
+
+            self.update_progress(&#34;&#34;, 0, 1)
+
+
+    def reset_button_clicked(self):
+        
+        self.view[&#39;-INPUT-FILE2-&#39;].update(&#39;&#39;)
+        self.view[&#39;-INPUT-FILTER-&#39;].update(&#39;&#39;)
+        self.view[&#39;-LISTBOX-ROOT-&#39;].update([])
+        self.view[&#39;-OUTPUT-FOLDER-&#39;].update(&#39;&#39;)
+        self.view[&#39;-OUTPUT-FILE-&#39;].update(&#39;&#39;)
+        
+    def update_progress(self, message, progress, progress_total):
+        self.view[&#39;-PROGRESS-TEXT-&#39;].update(message)
+        self.view[&#39;-PROG-BAR-&#39;].update(progress / progress_total * 100)
+        
+        
+class Model:
+    
+    def __init__(self):
+        self.person_list = []
+        self.parser = Splitter()
+        
+    def get_person_list(self):
+        return self.person_list
+    
+    def get_filter_person_list(self, search):
+        new_values = [x for x in self.get_person_list() if search in x]  # do the filtering
+        
+        return new_values
+        
+    def load_file(self, filename, progress_callback):
+
+        self.parser.parse_file(filename, callback=progress_callback)
+        
+        self.person_list = []
+
+        for element in self.parser.get_root_child_elements():
+            if isinstance(element, IndividualElement):
+                person = element.get_name()[1] + &#34;, &#34; + element.get_name()[0] + &#34; (&#34;
+                if element.get_birth_year() &gt; 0:
+                    person += str(element.get_birth_year())
+                else:
+                    person += &#34;?&#34;
+                    
+                person += &#34; - &#34;
+
+                if element.get_death_year() &gt; 0:
+                    person += str(element.get_death_year())
+                
+                person += &#34;)&#34;
+                self.person_list.append(person)
+        
+        self.person_list.sort()
+
+    def split_and_save_file(self, ancestor, file_name, progress_callback):
+        
+        temp = ancestor[0].split(&#34;, &#34;)
+        criteria = &#34;surname=&#34; + temp[0]
+        
+        temp = temp[1].split(&#34; (&#34;)
+        criteria += &#34;:given_name=&#34; + temp[0]
+        
+        temp = temp[1].split(&#34;-&#34;)
+        if len(temp[0].strip()) &gt; 0:
+            criteria += &#34;:birth=&#34; + str(temp[0].strip())
+            
+        if len(temp[1][0:-1].strip()) &gt; 0:
+            criteria += &#34;:death=&#34; + str(temp[1][0:-1].strip())
+        
+        individual = self.parser.find_person(criteria)
+        
+        self.parser.split_gedcom(individual, True, progress_callback)        
+        self.parser.write_file(file_name, progress_callback)
+        
+class App:
+    
+    def __init__(self):
+
+        view = View()
+        model = Model()
+        controller = Controller(model, view)
+        
+        view.set_controller(controller)
+        
+if __name__ == &#34;__main__&#34;:
+    app = App()
+    
+    
+    </code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="gedcom.utilities.splitter.tools.app.App"><code class="flex name class">
+<span>class <span class="ident">App</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class App:
+    
+    def __init__(self):
+
+        view = View()
+        model = Model()
+        controller = Controller(model, view)
+        
+        view.set_controller(controller)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Controller"><code class="flex name class">
+<span>class <span class="ident">Controller</span></span>
+<span>(</span><span>model, view)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Controller:
+    
+    def __init__(self, model, view):
+        self.model = model
+        self.view = view
+        self.event_listener_running = True
+        
+        while True:
+            event, values = view.read()
+            
+            if event == sg.WINDOW_CLOSED:
+                break
+
+            if event == &#39;Load&#39;:
+                self.load_button_clicked(values[&#39;-INPUT-FILE2-&#39;])
+            
+            if event == &#39;Submit&#39;:
+                self.submit_button_clicked(values)
+            
+            if event == &#39;Reset&#39;:
+                self.reset_button_clicked()
+
+            if event == &#39;-INPUT-FILTER-&#39; and values[&#39;-INPUT-FILTER-&#39;] != &#39;&#39;:                         # if a keystroke entered in search field
+                new_list = self.model.get_filter_person_list(values[&#39;-INPUT-FILTER-&#39;])
+                self.view[&#39;-LISTBOX-ROOT-&#39;].update(new_list)     # display in the listbox
+
+        view.close()
+        
+    def load_button_clicked(self, filename):
+    
+        if len(filename) == 0:
+            sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+        else:
+            for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+                self.view[x].update(disabled=False)
+            
+            self.model.load_file(filename, self.update_progress)
+            
+            self.view[&#39;-LISTBOX-ROOT-&#39;].update(self.model.get_person_list())
+            self.view[&#34;-OUTPUT-FOLDER-&#34;].update(os.path.dirname(os.path.realpath(filename)))
+            
+            filename = os.path.basename(os.path.realpath(filename)).split(&#39;.&#39;)
+            
+            self.view[&#34;-OUTPUT-FILE-&#34;].update(filename[0] + &#34;_split.ged&#34;)
+            
+
+    def submit_button_clicked(self, values):
+
+        if len(values[&#39;-INPUT-FILE2-&#39;]) == 0:
+            sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-LISTBOX-ROOT-&#39;]) == 0:
+            sg.popup(&#34;Please select a root ancestor&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-OUTPUT-FOLDER-&#39;]) == 0:
+            sg.popup(&#34;Please select an output folder&#34;,title=&#34;Error&#34;)
+        elif len(values[&#39;-OUTPUT-FILE-&#39;]) == 0:
+            sg.popup(&#34;Please select an output file name&#34;,title=&#34;Error&#34;)
+        else:
+            output_file = values[&#39;-OUTPUT-FOLDER-&#39;] + &#34;\\&#34; + values[&#39;-OUTPUT-FILE-&#39;]
+            
+            self.model.split_and_save_file(values[&#39;-LISTBOX-ROOT-&#39;], output_file, self.update_progress)
+            self.update_progress(&#34;Complete&#34;, 1, 1)
+            
+            sg.popup(&#34;Complete&#34;,title=&#34;Success&#34;)
+        
+            self.reset_button_clicked()
+            
+            for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+                self.view[x].update(disabled=True)
+
+            self.update_progress(&#34;&#34;, 0, 1)
+
+
+    def reset_button_clicked(self):
+        
+        self.view[&#39;-INPUT-FILE2-&#39;].update(&#39;&#39;)
+        self.view[&#39;-INPUT-FILTER-&#39;].update(&#39;&#39;)
+        self.view[&#39;-LISTBOX-ROOT-&#39;].update([])
+        self.view[&#39;-OUTPUT-FOLDER-&#39;].update(&#39;&#39;)
+        self.view[&#39;-OUTPUT-FILE-&#39;].update(&#39;&#39;)
+        
+    def update_progress(self, message, progress, progress_total):
+        self.view[&#39;-PROGRESS-TEXT-&#39;].update(message)
+        self.view[&#39;-PROG-BAR-&#39;].update(progress / progress_total * 100)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="gedcom.utilities.splitter.tools.app.Controller.load_button_clicked"><code class="name flex">
+<span>def <span class="ident">load_button_clicked</span></span>(<span>self, filename)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_button_clicked(self, filename):
+
+    if len(filename) == 0:
+        sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+    else:
+        for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+            self.view[x].update(disabled=False)
+        
+        self.model.load_file(filename, self.update_progress)
+        
+        self.view[&#39;-LISTBOX-ROOT-&#39;].update(self.model.get_person_list())
+        self.view[&#34;-OUTPUT-FOLDER-&#34;].update(os.path.dirname(os.path.realpath(filename)))
+        
+        filename = os.path.basename(os.path.realpath(filename)).split(&#39;.&#39;)
+        
+        self.view[&#34;-OUTPUT-FILE-&#34;].update(filename[0] + &#34;_split.ged&#34;)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Controller.reset_button_clicked"><code class="name flex">
+<span>def <span class="ident">reset_button_clicked</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_button_clicked(self):
+    
+    self.view[&#39;-INPUT-FILE2-&#39;].update(&#39;&#39;)
+    self.view[&#39;-INPUT-FILTER-&#39;].update(&#39;&#39;)
+    self.view[&#39;-LISTBOX-ROOT-&#39;].update([])
+    self.view[&#39;-OUTPUT-FOLDER-&#39;].update(&#39;&#39;)
+    self.view[&#39;-OUTPUT-FILE-&#39;].update(&#39;&#39;)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Controller.submit_button_clicked"><code class="name flex">
+<span>def <span class="ident">submit_button_clicked</span></span>(<span>self, values)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def submit_button_clicked(self, values):
+
+    if len(values[&#39;-INPUT-FILE2-&#39;]) == 0:
+        sg.popup(&#34;Please select a file&#34;,title=&#34;Error&#34;)
+    elif len(values[&#39;-LISTBOX-ROOT-&#39;]) == 0:
+        sg.popup(&#34;Please select a root ancestor&#34;,title=&#34;Error&#34;)
+    elif len(values[&#39;-OUTPUT-FOLDER-&#39;]) == 0:
+        sg.popup(&#34;Please select an output folder&#34;,title=&#34;Error&#34;)
+    elif len(values[&#39;-OUTPUT-FILE-&#39;]) == 0:
+        sg.popup(&#34;Please select an output file name&#34;,title=&#34;Error&#34;)
+    else:
+        output_file = values[&#39;-OUTPUT-FOLDER-&#39;] + &#34;\\&#34; + values[&#39;-OUTPUT-FILE-&#39;]
+        
+        self.model.split_and_save_file(values[&#39;-LISTBOX-ROOT-&#39;], output_file, self.update_progress)
+        self.update_progress(&#34;Complete&#34;, 1, 1)
+        
+        sg.popup(&#34;Complete&#34;,title=&#34;Success&#34;)
+    
+        self.reset_button_clicked()
+        
+        for x in [&#39;-INPUT-FILTER-&#39;, &#39;-LISTBOX-ROOT-&#39;, &#39;-OUTPUT-FOLDER-&#39;, &#39;-OUTPUT-FILE-&#39;, &#39;-OU-&#39;, &#39;Submit&#39;, &#39;Reset&#39;]:
+            self.view[x].update(disabled=True)
+
+        self.update_progress(&#34;&#34;, 0, 1)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Controller.update_progress"><code class="name flex">
+<span>def <span class="ident">update_progress</span></span>(<span>self, message, progress, progress_total)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def update_progress(self, message, progress, progress_total):
+    self.view[&#39;-PROGRESS-TEXT-&#39;].update(message)
+    self.view[&#39;-PROG-BAR-&#39;].update(progress / progress_total * 100)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Model"><code class="flex name class">
+<span>class <span class="ident">Model</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Model:
+    
+    def __init__(self):
+        self.person_list = []
+        self.parser = Splitter()
+        
+    def get_person_list(self):
+        return self.person_list
+    
+    def get_filter_person_list(self, search):
+        new_values = [x for x in self.get_person_list() if search in x]  # do the filtering
+        
+        return new_values
+        
+    def load_file(self, filename, progress_callback):
+
+        self.parser.parse_file(filename, callback=progress_callback)
+        
+        self.person_list = []
+
+        for element in self.parser.get_root_child_elements():
+            if isinstance(element, IndividualElement):
+                person = element.get_name()[1] + &#34;, &#34; + element.get_name()[0] + &#34; (&#34;
+                if element.get_birth_year() &gt; 0:
+                    person += str(element.get_birth_year())
+                else:
+                    person += &#34;?&#34;
+                    
+                person += &#34; - &#34;
+
+                if element.get_death_year() &gt; 0:
+                    person += str(element.get_death_year())
+                
+                person += &#34;)&#34;
+                self.person_list.append(person)
+        
+        self.person_list.sort()
+
+    def split_and_save_file(self, ancestor, file_name, progress_callback):
+        
+        temp = ancestor[0].split(&#34;, &#34;)
+        criteria = &#34;surname=&#34; + temp[0]
+        
+        temp = temp[1].split(&#34; (&#34;)
+        criteria += &#34;:given_name=&#34; + temp[0]
+        
+        temp = temp[1].split(&#34;-&#34;)
+        if len(temp[0].strip()) &gt; 0:
+            criteria += &#34;:birth=&#34; + str(temp[0].strip())
+            
+        if len(temp[1][0:-1].strip()) &gt; 0:
+            criteria += &#34;:death=&#34; + str(temp[1][0:-1].strip())
+        
+        individual = self.parser.find_person(criteria)
+        
+        self.parser.split_gedcom(individual, True, progress_callback)        
+        self.parser.write_file(file_name, progress_callback)</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="gedcom.utilities.splitter.tools.app.Model.get_filter_person_list"><code class="name flex">
+<span>def <span class="ident">get_filter_person_list</span></span>(<span>self, search)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_filter_person_list(self, search):
+    new_values = [x for x in self.get_person_list() if search in x]  # do the filtering
+    
+    return new_values</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Model.get_person_list"><code class="name flex">
+<span>def <span class="ident">get_person_list</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_person_list(self):
+    return self.person_list</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Model.load_file"><code class="name flex">
+<span>def <span class="ident">load_file</span></span>(<span>self, filename, progress_callback)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_file(self, filename, progress_callback):
+
+    self.parser.parse_file(filename, callback=progress_callback)
+    
+    self.person_list = []
+
+    for element in self.parser.get_root_child_elements():
+        if isinstance(element, IndividualElement):
+            person = element.get_name()[1] + &#34;, &#34; + element.get_name()[0] + &#34; (&#34;
+            if element.get_birth_year() &gt; 0:
+                person += str(element.get_birth_year())
+            else:
+                person += &#34;?&#34;
+                
+            person += &#34; - &#34;
+
+            if element.get_death_year() &gt; 0:
+                person += str(element.get_death_year())
+            
+            person += &#34;)&#34;
+            self.person_list.append(person)
+    
+    self.person_list.sort()</code></pre>
+</details>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.Model.split_and_save_file"><code class="name flex">
+<span>def <span class="ident">split_and_save_file</span></span>(<span>self, ancestor, file_name, progress_callback)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def split_and_save_file(self, ancestor, file_name, progress_callback):
+    
+    temp = ancestor[0].split(&#34;, &#34;)
+    criteria = &#34;surname=&#34; + temp[0]
+    
+    temp = temp[1].split(&#34; (&#34;)
+    criteria += &#34;:given_name=&#34; + temp[0]
+    
+    temp = temp[1].split(&#34;-&#34;)
+    if len(temp[0].strip()) &gt; 0:
+        criteria += &#34;:birth=&#34; + str(temp[0].strip())
+        
+    if len(temp[1][0:-1].strip()) &gt; 0:
+        criteria += &#34;:death=&#34; + str(temp[1][0:-1].strip())
+    
+    individual = self.parser.find_person(criteria)
+    
+    self.parser.split_gedcom(individual, True, progress_callback)        
+    self.parser.write_file(file_name, progress_callback)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="gedcom.utilities.splitter.tools.app.View"><code class="flex name class">
+<span>class <span class="ident">View</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Represents a single Window</p>
+<p>:param title:
+The title that will be displayed in the Titlebar and on the Taskbar
+:type title:
+(str)
+:param layout:
+The layout for the window. Can also be specified in the Layout method
+:type layout:
+List[List[Element]] | Tuple[Tuple[Element]]
+:param default_element_size:
+size in characters (wide) and rows (high) for all elements in this window
+:type default_element_size:
+(int, int) - (width, height)
+:param default_button_element_size:
+(width, height) size in characters (wide) and rows (high) for all Button elements in this window
+:type default_button_element_size:
+(int, int)
+:param auto_size_text:
+True if Elements in Window should be sized to exactly fir the length of text
+:type auto_size_text:
+(bool)
+:param auto_size_buttons:
+True if Buttons in this Window should be sized to exactly fit the text on this.
+:type auto_size_buttons:
+(bool)
+:param relative_location:
+(x,y) location relative to the default location of the window, in pixels. Normally the window centers.
+This location is relative to the location the window would be created. Note they can be negative.
+:type relative_location:
+(int, int)
+:param location:
+(x,y) location, in pixels, to locate the upper left corner of the window on the screen. Default is to center on screen.
+:type location:
+(int, int)
+:param size:
+(width, height) size in pixels for this window. Normally the window is autosized to fit contents, not set to an absolute size by the user. Try not to set this value. You risk, the contents being cut off, etc. Let the layout determine the window size instead
+:type size:
+(int, int)
+:param element_padding:
+Default amount of padding to put around elements in window (left/right, top/bottom) or ((left, right), (top, bottom)), or an int. If an int, then it's converted into a tuple (int, int)
+:type element_padding:
+(int, int) or ((int, int),(int,int)) or int
+:param margins:
+(left/right, top/bottom) Amount of pixels to leave inside the window's frame around the edges before your elements are shown.
+:type margins:
+(int, int)
+:param button_color:
+Default button colors for all buttons in the window
+:type button_color:
+(str, str) or str
+:param font:
+specifies the
+font family, size, etc. Tuple or Single string format 'name size styles'. Styles: italic * roman bold normal underline overstrike
+:type font:
+(str or (str, int[, str]) or None)
+:param progress_bar_color:
+(bar color, background color) Sets the default colors for all progress bars in the window
+:type progress_bar_color:
+(str, str)
+:param background_color:
+color of background
+:type background_color:
+(str)
+:param border_depth:
+Default border depth (width) for all elements in the window
+:type border_depth:
+(int)
+:param auto_close:
+If True, the window will automatically close itself
+:type auto_close:
+(bool)
+:param auto_close_duration:
+Number of seconds to wait before closing the window
+:type auto_close_duration:
+(int)
+:param icon:
+Can be either a filename or Base64 value. For Windows if filename, it MUST be ICO format. For Linux, must NOT be ICO. Most portable is to use a Base64 of a PNG file. This works universally across all OS's
+:type icon:
+(str | bytes)
+:param force_toplevel:
+If True will cause this window to skip the normal use of a hidden master window
+:type force_toplevel:
+(bool)
+:param alpha_channel:
+Sets the opacity of the window. 0 = invisible 1 = completely visible. Values bewteen 0 &amp; 1 will produce semi-transparent windows in SOME environments (The Raspberry Pi always has this value at 1 and cannot change.
+:type alpha_channel:
+(float)
+:param return_keyboard_events:
+if True key presses on the keyboard will be returned as Events from Read calls
+:type return_keyboard_events:
+(bool)
+:param use_default_focus:
+If True will use the default focus algorithm to set the focus to the "Correct" element
+:type use_default_focus:
+(bool)
+:param text_justification:
+Default text justification for all Text Elements in window
+:type text_justification:
+'left' | 'right' | 'center'
+:param no_titlebar:
+If true, no titlebar nor frame will be shown on window. This means you cannot minimize the window and it will not show up on the taskbar
+:type no_titlebar:
+(bool)
+:param grab_anywhere:
+If True can use mouse to click and drag to move the window. Almost every location of the window will work except input fields on some systems
+:type grab_anywhere:
+(bool)
+:param grab_anywhere_using_control:
+If True can use CONTROL key + left mouse mouse to click and drag to move the window. DEFAULT is TRUE. Unlike normal grab anywhere, it works on all elements.
+:type grab_anywhere_using_control:
+(bool)
+:param keep_on_top:
+If True, window will be created on top of all other windows on screen. It can be bumped down if another window created with this parm
+:type keep_on_top:
+(bool)
+:param resizable:
+If True, allows the user to resize the window. Note the not all Elements will change size or location when resizing.
+:type resizable:
+(bool)
+:param disable_close:
+If True, the X button in the top right corner of the window will no work.
+Use with caution and always give a way out toyour users
+:type disable_close:
+(bool)
+:param disable_minimize:
+if True the user won't be able to minimize window.
+Good for taking over entire screen and staying that way.
+:type disable_minimize:
+(bool)
+:param right_click_menu:
+A list of lists of Menu items to show when this element is right clicked. See user docs for exact format.
+:type right_click_menu:
+List[List[ List[str] | str ]]
+:param transparent_color:
+Any portion of the window that has this color will be completely transparent. You can even click through these spots to the window under this window.
+:type transparent_color:
+(str)
+:param debugger_enabled:
+If True then the internal debugger will be enabled
+:type debugger_enabled:
+(bool)
+:param right_click_menu_background_color:
+Background color for right click menus
+:type right_click_menu_background_color:
+(str)
+:param right_click_menu_text_color:
+Text color for right click menus
+:type right_click_menu_text_color:
+(str)
+:param right_click_menu_disabled_text_color: Text color for disabled right click menu items
+:type right_click_menu_disabled_text_color:
+(str)
+:param right_click_menu_selected_colors:
+Text AND background colors for a selected item. Can be a Tuple OR a color string. simplified-button-color-string "foreground on background". Can be a single color if want to set only the background. Normally a tuple, but can be a simplified-dual-color-string "foreground on background". Can be a single color if want to set only the background.
+:type right_click_menu_selected_colors:
+(str, str) | str | Tuple
+:param right_click_menu_font:
+Font for right click menus
+:type right_click_menu_font:
+(str or (str, int[, str]) or None)
+:param right_click_menu_tearoff:
+If True then all right click menus can be torn off
+:type right_click_menu_tearoff:
+bool
+:param finalize:
+If True then the Finalize method will be called. Use this rather than chaining .Finalize for cleaner code
+:type finalize:
+(bool)
+:param element_justification:
+All elements in the Window itself will have this justification 'left', 'right', 'center' are valid values
+:type element_justification:
+(str)
+:param ttk_theme:
+Set the tkinter ttk "theme" of the window.
+Default = DEFAULT_TTK_THEME.
+Sets all ttk widgets to this theme as their default
+:type ttk_theme:
+(str)
+:param use_ttk_buttons:
+Affects all buttons in window. True = use ttk buttons. False = do not use ttk buttons.
+None = use ttk buttons only if on a Mac
+:type use_ttk_buttons:
+(bool)
+:param modal:
+If True then this window will be the only window a user can interact with until it is closed
+:type modal:
+(bool)
+:param enable_close_attempted_event:
+If True then the window will not close when "X" clicked. Instead an event WINDOW_CLOSE_ATTEMPTED_EVENT if returned from window.read
+:type enable_close_attempted_event:
+(bool)
+:param titlebar_background_color:
+If custom titlebar indicated by use_custom_titlebar, then use this as background color
+:type titlebar_background_color:
+(str | None)
+:param titlebar_text_color:
+If custom titlebar indicated by use_custom_titlebar, then use this as text color
+:type titlebar_text_color:
+(str | None)
+:param titlebar_font:
+If custom titlebar indicated by use_custom_titlebar, then use this as title font
+:type titlebar_font:
+(str or (str, int[, str]) or None)
+:param titlebar_icon:
+If custom titlebar indicated by use_custom_titlebar, then use this as the icon (file or base64 bytes)
+:type titlebar_icon:
+(bytes | str)
+:param use_custom_titlebar:
+If True, then a custom titlebar will be used instead of the normal titlebar
+:type use_custom_titlebar:
+bool
+:param scaling:
+Apply scaling to the elements in the window. Can be set on a global basis using set_options
+:type scaling:
+float
+:param metadata:
+User metadata that can be set to ANYTHING
+:type metadata:
+(Any)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class View(sg.Window):
+
+    def __init__(self):
+
+        layout = [[sg.T(&#34;1. Choose the GEDCOM file:&#34;)], 
+                  [sg.Input(key=&#34;-INPUT-FILE2-&#34; ,change_submits=False, size=(50, 1)), sg.FileBrowse(key=&#34;-INPUT-FILE-&#34;), sg.Button(&#34;Load&#34;)],
+                  [sg.T(&#34;2. Choose the root ancestor:&#34;)],
+                  [sg.Input(size=(70, 1), enable_events=True, key=&#39;-INPUT-FILTER-&#39;, disabled=True)],
+                  [sg.Listbox(values=[], enable_events=True, select_mode=&#39;single&#39;, key=&#39;-LISTBOX-ROOT-&#39;, size=(70, 6), disabled=True)],
+                  [sg.T(&#34;3. Select output folder:&#34;)],
+                  [sg.Input(key=&#34;-OUTPUT-FOLDER-&#34; ,change_submits=False, size=(58, 1), disabled=True), sg.FolderBrowse(key=&#34;-OU-&#34;, disabled=True)],
+                  [sg.T(&#34;4. Select output file name:&#34;)],
+                  [sg.Input(key=&#34;-OUTPUT-FILE-&#34;, change_submits=False, size=(58, 1), disabled=True)],
+                  [sg.Push(), sg.Button(&#34;Reset&#34;, disabled=True), sg.Button(&#34;Submit&#34;, disabled=True), sg.Push()],
+                  [sg.Frame(title=&#34;Progress&#34;, layout=
+                            [[sg.Push(), sg.Text(&#39;Status&#39;, key=&#34;-PROGRESS-TEXT-&#34;), sg.Push()],
+                             [sg.ProgressBar(100, orientation=&#39;h&#39;, size=(45,20), key=&#39;-PROG-BAR-&#39;)]])]]
+
+        super().__init__(&#34;GEDCOM Splitter&#34;, layout, size=(500, 460))
+
+        self.controller = None
+        
+    def set_controller(self, controller):
+        
+        self.controller = controller</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>PySimpleGUI.PySimpleGUI.Window</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="gedcom.utilities.splitter.tools.app.View.set_controller"><code class="name flex">
+<span>def <span class="ident">set_controller</span></span>(<span>self, controller)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_controller(self, controller):
+    
+    self.controller = controller</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="gedcom.utilities.splitter.tools" href="index.html">gedcom.utilities.splitter.tools</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="gedcom.utilities.splitter.tools.app.App" href="#gedcom.utilities.splitter.tools.app.App">App</a></code></h4>
+</li>
+<li>
+<h4><code><a title="gedcom.utilities.splitter.tools.app.Controller" href="#gedcom.utilities.splitter.tools.app.Controller">Controller</a></code></h4>
+<ul class="">
+<li><code><a title="gedcom.utilities.splitter.tools.app.Controller.load_button_clicked" href="#gedcom.utilities.splitter.tools.app.Controller.load_button_clicked">load_button_clicked</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Controller.reset_button_clicked" href="#gedcom.utilities.splitter.tools.app.Controller.reset_button_clicked">reset_button_clicked</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Controller.submit_button_clicked" href="#gedcom.utilities.splitter.tools.app.Controller.submit_button_clicked">submit_button_clicked</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Controller.update_progress" href="#gedcom.utilities.splitter.tools.app.Controller.update_progress">update_progress</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="gedcom.utilities.splitter.tools.app.Model" href="#gedcom.utilities.splitter.tools.app.Model">Model</a></code></h4>
+<ul class="">
+<li><code><a title="gedcom.utilities.splitter.tools.app.Model.get_filter_person_list" href="#gedcom.utilities.splitter.tools.app.Model.get_filter_person_list">get_filter_person_list</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Model.get_person_list" href="#gedcom.utilities.splitter.tools.app.Model.get_person_list">get_person_list</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Model.load_file" href="#gedcom.utilities.splitter.tools.app.Model.load_file">load_file</a></code></li>
+<li><code><a title="gedcom.utilities.splitter.tools.app.Model.split_and_save_file" href="#gedcom.utilities.splitter.tools.app.Model.split_and_save_file">split_and_save_file</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="gedcom.utilities.splitter.tools.app.View" href="#gedcom.utilities.splitter.tools.app.View">View</a></code></h4>
+<ul class="">
+<li><code><a title="gedcom.utilities.splitter.tools.app.View.set_controller" href="#gedcom.utilities.splitter.tools.app.View.set_controller">set_controller</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>

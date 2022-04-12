@@ -10,13 +10,13 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='python-gedcom',
-    version='1.0.0',
+    version='2.0.0',
     description='A Python module for parsing, analyzing, and manipulating GEDCOM files.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/nickreynke/python-gedcom',
-    author='Nicklas Reincke',
-    author_email='contact@reynke.com',
+    url='https://github.com/mark-wing/python-gedcom',
+    author='Mark Wing',
+    author_email='mark@markwing.net',
     license='GPLv2',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -28,6 +28,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     keywords='python gedcom parser',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
@@ -39,7 +40,7 @@ setup(
     package_data={},
     data_files=[],
     project_urls={
-        'Bug Reports': 'https://github.com/nickreynke/python-gedcom/issues',
-        'Source': 'https://github.com/nickreynke/python-gedcom',
+        'Bug Reports': 'https://github.com/mark-wing/python-gedcom/issues',
+        'Source': 'https://github.com/mark-wing/python-gedcom',
     },
 )

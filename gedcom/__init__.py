@@ -2,6 +2,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -31,11 +32,3 @@ A Python module for parsing, analyzing, and manipulating GEDCOM files.
 .. include:: ./gedcom.md
 """
 
-__all__ = [
-    # Subpackages
-    "element",
-    # Modules
-    "helpers",
-    "parser",
-    "tags"
-]

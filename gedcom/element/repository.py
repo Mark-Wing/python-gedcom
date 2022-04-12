@@ -2,6 +2,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -25,22 +26,31 @@
 #
 # Further information about the license: http://www.gnu.org/licenses/gpl-2.0.html
 
-"""GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_FAMILY`"""
+"""GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_REPOSITORY`"""
 
 from gedcom.element.element import Element
 import gedcom.tags
 
 
-class NotAnActualFamilyError(Exception):
+class NotAnActualSourceError(Exception):
     pass
 
 
-class FamilyElement(Element):
+class RepositoryElement(Element):
 
     def get_tag(self):
-        return gedcom.tags.GEDCOM_TAG_FAMILY
+        return gedcom.tags.GEDCOM_TAG_REPOSITORY
+
+    def get_address(self):
+        """Returns address of repository
+        
+        :rtype: str
+        """
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_ADDRESS)
     
-    
-    
-    
-    
+    def get_name(self):
+        """Returns name of repository
+        
+        :rtype: str
+        """
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_NAME)

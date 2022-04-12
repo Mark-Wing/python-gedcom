@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.10.0" />
-<title>gedcom.element.object API documentation</title>
-<meta name="description" content="GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_OBJECT`" />
+<title>gedcom.element.repository API documentation</title>
+<meta name="description" content="GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_REPOSITORY`" />
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
 <link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
 <link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
@@ -19,10 +19,10 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>gedcom.element.object</code></h1>
+<h1 class="title">Module <code>gedcom.element.repository</code></h1>
 </header>
 <section id="section-intro">
-<p>GEDCOM element consisting of tag <code><a title="gedcom.tags.GEDCOM_TAG_OBJECT" href="../tags.html#gedcom.tags.GEDCOM_TAG_OBJECT">GEDCOM_TAG_OBJECT</a></code></p>
+<p>GEDCOM element consisting of tag <code><a title="gedcom.tags.GEDCOM_TAG_REPOSITORY" href="../tags.html#gedcom.tags.GEDCOM_TAG_REPOSITORY">GEDCOM_TAG_REPOSITORY</a></code></p>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -31,6 +31,7 @@
 
 # Python GEDCOM Parser
 #
+# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -54,27 +55,34 @@
 #
 # Further information about the license: http://www.gnu.org/licenses/gpl-2.0.html
 
-&#34;&#34;&#34;GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_OBJECT`&#34;&#34;&#34;
+&#34;&#34;&#34;GEDCOM element consisting of tag `gedcom.tags.GEDCOM_TAG_REPOSITORY`&#34;&#34;&#34;
 
 from gedcom.element.element import Element
 import gedcom.tags
 
 
-class NotAnActualObjectError(Exception):
+class NotAnActualSourceError(Exception):
     pass
 
 
-class ObjectElement(Element):
+class RepositoryElement(Element):
 
     def get_tag(self):
-        return gedcom.tags.GEDCOM_TAG_OBJECT
+        return gedcom.tags.GEDCOM_TAG_REPOSITORY
 
-    def is_object(self):
-        &#34;&#34;&#34;Checks if this element is an actual object
+    def get_address(self):
+        &#34;&#34;&#34;Returns address of repository
         
-        :rtype: bool
+        :rtype: str
         &#34;&#34;&#34;
-        return self.get_tag() == gedcom.tags.GEDCOM_TAG_OBJECT</code></pre>
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_ADDRESS)
+    
+    def get_name(self):
+        &#34;&#34;&#34;Returns name of repository
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_NAME)</code></pre>
 </details>
 </section>
 <section>
@@ -86,8 +94,8 @@ class ObjectElement(Element):
 <section>
 <h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt id="gedcom.element.object.NotAnActualObjectError"><code class="flex name class">
-<span>class <span class="ident">NotAnActualObjectError</span></span>
+<dt id="gedcom.element.repository.NotAnActualSourceError"><code class="flex name class">
+<span>class <span class="ident">NotAnActualSourceError</span></span>
 <span>(</span><span>*args, **kwargs)</span>
 </code></dt>
 <dd>
@@ -96,7 +104,7 @@ class ObjectElement(Element):
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">class NotAnActualObjectError(Exception):
+<pre><code class="python">class NotAnActualSourceError(Exception):
     pass</code></pre>
 </details>
 <h3>Ancestors</h3>
@@ -105,8 +113,8 @@ class ObjectElement(Element):
 <li>builtins.BaseException</li>
 </ul>
 </dd>
-<dt id="gedcom.element.object.ObjectElement"><code class="flex name class">
-<span>class <span class="ident">ObjectElement</span></span>
+<dt id="gedcom.element.repository.RepositoryElement"><code class="flex name class">
+<span>class <span class="ident">RepositoryElement</span></span>
 <span>(</span><span>level, pointer, tag, value, crlf='\n', multi_line=True)</span>
 </code></dt>
 <dd>
@@ -135,17 +143,24 @@ Tags available to an element are seen here: <code><a title="gedcom.tags" href=".
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">class ObjectElement(Element):
+<pre><code class="python">class RepositoryElement(Element):
 
     def get_tag(self):
-        return gedcom.tags.GEDCOM_TAG_OBJECT
+        return gedcom.tags.GEDCOM_TAG_REPOSITORY
 
-    def is_object(self):
-        &#34;&#34;&#34;Checks if this element is an actual object
+    def get_address(self):
+        &#34;&#34;&#34;Returns address of repository
         
-        :rtype: bool
+        :rtype: str
         &#34;&#34;&#34;
-        return self.get_tag() == gedcom.tags.GEDCOM_TAG_OBJECT</code></pre>
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_ADDRESS)
+    
+    def get_name(self):
+        &#34;&#34;&#34;Returns name of repository
+        
+        :rtype: str
+        &#34;&#34;&#34;
+        return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_NAME)</code></pre>
 </details>
 <h3>Ancestors</h3>
 <ul class="hlist">
@@ -153,22 +168,40 @@ Tags available to an element are seen here: <code><a title="gedcom.tags" href=".
 </ul>
 <h3>Methods</h3>
 <dl>
-<dt id="gedcom.element.object.ObjectElement.is_object"><code class="name flex">
-<span>def <span class="ident">is_object</span></span>(<span>self)</span>
+<dt id="gedcom.element.repository.RepositoryElement.get_address"><code class="name flex">
+<span>def <span class="ident">get_address</span></span>(<span>self)</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Checks if this element is an actual object</p>
-<p>:rtype: bool</p></div>
+<div class="desc"><p>Returns address of repository</p>
+<p>:rtype: str</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def is_object(self):
-    &#34;&#34;&#34;Checks if this element is an actual object
+<pre><code class="python">def get_address(self):
+    &#34;&#34;&#34;Returns address of repository
     
-    :rtype: bool
+    :rtype: str
     &#34;&#34;&#34;
-    return self.get_tag() == gedcom.tags.GEDCOM_TAG_OBJECT</code></pre>
+    return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_ADDRESS)</code></pre>
+</details>
+</dd>
+<dt id="gedcom.element.repository.RepositoryElement.get_name"><code class="name flex">
+<span>def <span class="ident">get_name</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns name of repository</p>
+<p>:rtype: str</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_name(self):
+    &#34;&#34;&#34;Returns name of repository
+    
+    :rtype: str
+    &#34;&#34;&#34;
+    return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_NAME)</code></pre>
 </details>
 </dd>
 </dl>
@@ -215,12 +248,13 @@ Tags available to an element are seen here: <code><a title="gedcom.tags" href=".
 <li><h3><a href="#header-classes">Classes</a></h3>
 <ul>
 <li>
-<h4><code><a title="gedcom.element.object.NotAnActualObjectError" href="#gedcom.element.object.NotAnActualObjectError">NotAnActualObjectError</a></code></h4>
+<h4><code><a title="gedcom.element.repository.NotAnActualSourceError" href="#gedcom.element.repository.NotAnActualSourceError">NotAnActualSourceError</a></code></h4>
 </li>
 <li>
-<h4><code><a title="gedcom.element.object.ObjectElement" href="#gedcom.element.object.ObjectElement">ObjectElement</a></code></h4>
+<h4><code><a title="gedcom.element.repository.RepositoryElement" href="#gedcom.element.repository.RepositoryElement">RepositoryElement</a></code></h4>
 <ul class="">
-<li><code><a title="gedcom.element.object.ObjectElement.is_object" href="#gedcom.element.object.ObjectElement.is_object">is_object</a></code></li>
+<li><code><a title="gedcom.element.repository.RepositoryElement.get_address" href="#gedcom.element.repository.RepositoryElement.get_address">get_address</a></code></li>
+<li><code><a title="gedcom.element.repository.RepositoryElement.get_name" href="#gedcom.element.repository.RepositoryElement.get_name">get_name</a></code></li>
 </ul>
 </li>
 </ul>
