@@ -1,0 +1,1885 @@
+﻿0 HEAD
+1 SOUR FTM
+2 VERS 24.0.1.1252
+2 NAME Family Tree Maker for Windows
+2 CORP The Software MacKiev Company
+3 ADDR 30 Union Wharf
+4 CONT Boston, MA 02109
+3 PHON (617) 227-6681
+1 DEST FTM
+1 DATE 1 APR 2022
+1 CHAR UTF-8
+1 FILE Coolidge.ged
+1 SUBM @SUBM@
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+0 @SUBM@ SUBM
+1 NAME Not Given
+0 @I16@ INDI
+1 NAME John Calvin /Coolidge/ II
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 SEX M
+1 BIRT
+2 DATE 4 JUL 1872
+2 PLAC Plymouth, Windsor, Vermont, USA
+1 RESI
+2 DATE 1880
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 DEAT
+2 DATE 5 JAN 1933
+1 NAME Calvin /Coolidge/
+2 SOUR @S17@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M20@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: 654; Page: 8; Enumeration District: 0632; FHL microfilm: 1240654
+3 OBJE @M25@
+1 NAME J. Calvin /Coolidge/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 RESI
+2 DATE 1900
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: 654; Page: 8; Enumeration District: 0632; FHL microfilm: 1240654
+3 OBJE @M25@
+1 RESI
+2 DATE 1930
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+1 RESI
+2 DATE 1920
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 RESI
+2 DATE 1910
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 BIRT
+2 DATE ABT 1873
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 BIRT
+2 DATE JUL 1873
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: 654; Page: 8; Enumeration District: 0632; FHL microfilm: 1240654
+3 OBJE @M25@
+1 BIRT
+2 DATE ABT 1872
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M20@
+1 FAMS @F5@
+1 FAMC @F6@
+0 @I1@ INDI
+1 NAME Jean Usher /Turnbull/
+1 SEX F
+1 BIRT
+2 DATE 7 MAY 1910
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+1 RESI
+2 DATE 1 APR 1935
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 DEAT
+2 DATE 23 OCT 1994
+2 PLAC Seminole County, Florida, USA
+3 MAP
+4 LATI N28.7087
+4 LONG W81.2271
+2 SOUR @S6@
+1 NAME Gean /Turnbull/
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 NAME Jean Usher /Bailey/
+2 SOUR @S6@
+1 NAME Jean /Trumbull/
+2 SOUR @S5@
+3 PAGE Connecticut State Department of Health; Hartford, CT; Connecticut Vital Records — Index of Marriages, 1897-1968
+1 NAME Jean J. /Bailey/
+2 SOUR @S4@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for New York State, 10/16/1940 - 03/31/1947; Record Group: Records of the Selective Service System, 147
+3 OBJE @M1@
+1 NAME Jean T /Bailey/
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 NAME Jean U /Trumbull/
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1911
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 RESI
+2 DATE 1 APR 1940
+2 PLAC Yonkers, Westchester, New York, USA
+3 MAP
+4 LATI N40.9312
+4 LONG W73.8987
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 RESI
+2 DATE 1930
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 RESI
+2 DATE 1920
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BIRT
+2 DATE 7 MAY 1910
+2 SOUR @S6@
+1 FAMS @F1@
+1 FAMC @F4@
+0 @I2@ INDI
+1 NAME Alaric Rosencrantz /Bailey/
+2 SOUR @S4@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for New York State, 10/16/1940 - 03/31/1947; Record Group: Records of the Selective Service System, 147
+3 OBJE @M1@
+1 SEX M
+1 BIRT
+2 DATE 26 JUN 1909
+2 PLAC Jamestown, Chautauqua, New York, USA
+3 MAP
+4 LATI N42.097
+4 LONG W79.2353
+2 SOUR @S4@
+3 PAGE National Archives at St. Louis; St. Louis, Missouri; WWII Draft Registration Cards for New York State, 10/16/1940 - 03/31/1947; Record Group: Records of the Selective Service System, 147
+3 OBJE @M1@
+1 RESI
+2 DATE 1 APR 1935
+2 PLAC New York, New York, USA
+3 MAP
+4 LATI N40.7744
+4 LONG W73.9721
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 NAME Alaric R /Bailey/
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 NAME Alaric /Bailey/
+2 SOUR @S5@
+3 PAGE Connecticut State Department of Health; Hartford, CT; Connecticut Vital Records — Index of Marriages, 1897-1968
+1 BIRT
+2 DATE ABT 1910
+2 PLAC New York, USA
+3 MAP
+4 LATI N42.7531
+4 LONG W74.2224
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 RESI
+2 DATE 1 APR 1940
+2 PLAC Yonkers, Westchester, New York, USA
+3 MAP
+4 LATI N40.9312
+4 LONG W73.8987
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t0627-02867; Page: 62A; Enumeration District: 68-134
+3 OBJE @M4@
+1 FAMS @F1@
+0 @I5@ INDI
+1 NAME Hugh /Trumbull/
+2 SOUR @S7@
+3 PAGE National Archives and Records Administration (NARA); Washington D.C.; Roll #: 340; Volume #: Roll 0340 - Certificates: 42901-43400, 26 Dec 1916-04 Jan 1917
+3 OBJE @M8@
+1 SEX M
+1 FAMS @F10@
+0 @I6@ INDI
+1 NAME Calvin Galusha /Coolidge/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M6@
+1 SEX M
+1 BIRT
+2 DATE ABT 1816
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443A
+3 OBJE @M9@
+1 RESI
+2 DATE 1870
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443A
+3 OBJE @M9@
+1 NAME Calvin G /Coolidge/
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443A
+3 OBJE @M9@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records through 1870
+3 OBJE @M5@
+1 FAMS @F2@
+0 @I7@ INDI
+1 NAME Sarah Almeda /Brewer/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M6@
+2 SOUR @S11@
+1 SEX F
+1 BIRT
+2 DATE 17 DEC 1823
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+1 RESI
+2 DATE 1900
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M10@
+1 BURI
+2 PLAC Plymouth Notch Cemetery, Plymouth, Windsor, Vermont, USA
+2 SOUR @S11@
+1 DEAT
+2 DATE 2 JAN 1906
+2 SOUR @S11@
+1 NAME Sarah A /Putnam/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M10@
+1 NAME Sarah A /Coolidge/
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443B
+3 OBJE @M7@
+1 NAME Sally A /Brewer/
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records through 1870
+3 OBJE @M5@
+1 BIRT
+2 DATE ABT 1824
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443B
+3 OBJE @M7@
+1 RESI
+2 DATE 1870
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S10@
+3 PAGE Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629; Page: 443B
+3 OBJE @M7@
+1 BIRT
+2 DATE DEC 1823
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M10@
+1 BIRT
+2 DATE 17 DEC 1823
+2 SOUR @S11@
+1 FAMS @F2@
+0 @I8@ INDI
+1 NAME Abbie G. /Coolidge/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 SEX F
+1 BIRT
+2 DATE ABT 1875
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 RESI
+2 DATE 1880
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 FAMC @F6@
+0 @I9@ INDI
+1 NAME Carrie A /Brown/
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M28@
+1 SEX F
+1 RESI
+2 DATE 1900
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+1 BIRT
+2 DATE 22 JAN 1857
+2 PLAC Plymouth, Litchfield, Vermont, USA
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 DEAT
+2 DATE 18 MAY 1920
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 NAME Carrie A /Coolidge/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+1 BIRT
+2 DATE JAN 1857
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+1 NAME Carrie Brown /Coolidge/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 BIRT
+2 DATE ABT 1857
+2 PLAC Plymouth
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M28@
+1 FAMS @F7@
+1 FAMC @F11@
+0 @I10@ INDI
+1 NAME Julius Caesar /Coolidge/
+1 SEX M
+1 BURI
+2 PLAC Plymouth Notch Cemetery, Plymouth, Windsor, Vermont, USA
+2 SOUR @S11@
+1 BIRT
+2 DATE 2 JAN 1851
+2 SOUR @S11@
+1 DEAT
+2 DATE 14 MAR 1870
+2 SOUR @S11@
+1 FAMC @F2@
+0 @I11@ INDI
+1 NAME Benj /Goodhue/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number: M-2022922
+3 OBJE @M15@
+1 SEX M
+1 BIRT
+2 DATE ABT 1818
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 NAME Benjamin /Goodhue/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 FAMS @F3@
+0 @I12@ INDI
+1 NAME Carolyn /Andrew/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number: M-2022922
+3 OBJE @M15@
+1 SEX F
+1 BIRT
+2 DATE ABT 1822
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 NAME Caroline /Goodhue/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 FAMS @F3@
+0 @I13@ INDI
+1 NAME Perly E. /Goodhue/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 SEX M
+1 BIRT
+2 DATE ABT 1859
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 FAMC @F3@
+0 @I14@ INDI
+1 NAME John Harper /Trumbull/
+2 SOUR @S16@
+3 PAGE Registration State: Connecticut; Registration County: Hartford County
+3 OBJE @M16@
+1 SEX M
+1 BIRT
+2 DATE 4 MAR 1873
+2 PLAC Ashford, Windham, Connecticut, USA
+3 MAP
+4 LATI N41.8731
+4 LONG W72.1219
+2 SOUR @S7@
+3 PAGE National Archives and Records Administration (NARA); Washington D.C.; Roll #: 340; Volume #: Roll 0340 - Certificates: 42901-43400, 26 Dec 1916-04 Jan 1917
+3 OBJE @M8@
+1 RESI
+2 DATE 5 SEP 1918
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S16@
+3 PAGE Registration State: Connecticut; Registration County: Hartford County
+3 OBJE @M16@
+1 DEAT
+2 DATE 21 MAY 1961
+2 PLAC Hartford, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.7637
+4 LONG W72.6851
+2 SOUR @S15@
+1 NAME John H /Trumbull/
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+2 SOUR @S15@
+2 SOUR @S7@
+3 PAGE National Archives and Records Administration (NARA); Washington D.C.; Roll #: 340; Volume #: Roll 0340 - Certificates: 42901-43400, 26 Dec 1916-04 Jan 1917
+3 OBJE @M8@
+1 NAME John H /Turnbull/
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+1 NAME Joe H /Turnbull/
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BIRT
+2 DATE ABT 1873
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 RESI
+2 DATE 1930
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 RESI
+2 DATE 1920
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 RESI
+2 DATE 1910
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+1 BIRT
+2 DATE 4 MAR 1873
+2 SOUR @S16@
+3 PAGE Registration State: Connecticut; Registration County: Hartford County
+3 OBJE @M16@
+1 BIRT
+2 DATE ABT 1874
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BIRT
+2 DATE ABT 1873
+2 SOUR @S15@
+1 FAMS @F4@
+1 FAMC @F10@
+0 @I15@ INDI
+1 NAME Maude Pierce /Usher/
+2 SOUR @S11@
+1 SEX F
+1 BIRT
+2 DATE 26 JAN 1874
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+1 BURI
+2 PLAC West Cemetery, Plainville, Hartford, Connecticut, USA
+2 SOUR @S11@
+1 RESI
+2 DATE 1930
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 DEAT
+2 DATE 20 DEC 1963
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S15@
+1 NAME Maud P /Turnbull/
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+1 NAME Maude U /Trumbull/
+2 SOUR @S15@
+1 NAME Maud U /Trumbull/
+2 SOUR @S16@
+3 OBJE @M16@
+1 NAME Maud W /Trumbull/
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 NAME Maud /Turnbull/
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BIRT
+2 DATE ABT 1874
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B; Enumeration District: 0205; FHL microfilm: 2340003
+3 OBJE @M2@
+1 RESI
+2 DATE 1920
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 RESI
+2 DATE 1910
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+1 BIRT
+2 DATE ABT 1875
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BIRT
+2 DATE 26 JAN 1874
+2 SOUR @S11@
+1 BIRT
+2 DATE ABT 1874
+2 SOUR @S15@
+1 FAMS @F4@
+0 @I17@ INDI
+1 NAME John Calvin /Coolidge/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M6@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records through 1870
+3 OBJE @M5@
+1 SEX M
+1 BIRT
+2 DATE 31 MAR 1845
+2 PLAC Plymouth, Litchfield, Vermont, USA
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M6@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records through 1870
+3 OBJE @M5@
+1 RESI
+2 DATE 1900
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+1 DEAT
+2 DATE 18 MAR 1926
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M6@
+1 NAME John C /Coolidge/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+2 SOUR @S21@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M30@
+1 NAME J C /Coolidge/
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M20@
+1 RESI
+2 DATE 1880
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 BIRT
+2 DATE MAR 1845
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page: 1; Enumeration District: 0278; FHL microfilm: 1241696
+3 OBJE @M13@
+1 BIRT
+2 DATE ABT 1845
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 BIRT
+2 DATE ABT 1845
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M30@
+1 FAMS @F6@
+1 FAMS @F7@
+1 FAMC @F2@
+0 @I18@ INDI
+1 NAME Victoria Josephine /Moor/
+1 SEX F
+1 BIRT
+2 DATE ABT 1846
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 RESI
+2 DATE 1880
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 BURI
+2 PLAC Plymouth Notch Cemetery, Plymouth, Windsor, Vermont, USA
+2 SOUR @S11@
+1 DEAT
+2 DATE 14 MAR 1885
+2 SOUR @S11@
+1 NAME Victoria J. /Coolidge/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page: 188C; Enumeration District: 257
+3 OBJE @M11@
+1 NAME Victoria J /Moor/
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M20@
+2 SOUR @S11@
+1 NAME Victoria J /Moore/
+2 SOUR @S21@
+1 BIRT
+2 DATE 14 MAR 1846
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+1 BIRT
+2 DATE 14 MAR 1846
+2 SOUR @S11@
+1 FAMS @F6@
+0 @I19@ INDI
+1 NAME Grace /Goodhue/
+2 SOUR @S17@
+1 SEX F
+1 BIRT
+2 DATE 3 JAN 1879
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+1 BURI
+2 PLAC Plymouth Notch Cemetery, Plymouth, Windsor, Vermont, USA
+2 SOUR @S11@
+1 RESI
+2 DATE 1 APR 1935
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Northampton, Hampshire, Massachusetts; Roll: m-t0627-01599; Page: 61A; Enumeration District: 8-39
+3 OBJE @M24@
+1 DEAT
+2 DATE 8 JUL 1957
+2 SOUR @S11@
+1 NAME Grace /Coolidge/
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Northampton, Hampshire, Massachusetts; Roll: m-t0627-01599; Page: 61A; Enumeration District: 8-39
+3 OBJE @M24@
+1 NAME Grace A /Goodhue/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M21@
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 NAME Grace A /Coolidge/
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+1 NAME Grace G /Coolidge/
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 BIRT
+2 DATE JAN 1879
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 RESI
+2 DATE 1 APR 1940
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Northampton, Hampshire, Massachusetts; Roll: m-t0627-01599; Page: 61A; Enumeration District: 8-39
+3 OBJE @M24@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 RESI
+2 DATE 1930
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+1 RESI
+2 DATE 1920
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 RESI
+2 DATE 1910
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 BIRT
+2 DATE ABT 1879
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+2 SOUR @S2@
+3 PAGE Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page: 1A; Enumeration District: 0027; FHL microfilm: 2340647
+3 OBJE @M18@
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+2 SOUR @S3@
+3 PAGE Year: 1940; Census Place: Northampton, Hampshire, Massachusetts; Roll: m-t0627-01599; Page: 61A; Enumeration District: 8-39
+3 OBJE @M24@
+1 BIRT
+2 DATE ABT 1875
+2 PLAC Vermont, USA
+3 MAP
+4 LATI N43.8726
+4 LONG W71.55
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M21@
+1 BIRT
+2 DATE 3 JAN 1879
+1 RESI
+2 DATE 1900
+2 PLAC Burlington Ward 5, Chittenden, Vermont, USA
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 FAMS @F5@
+1 FAMC @F9@
+0 @I20@ INDI
+1 NAME John /Coolidge/
+2 SOUR @S18@
+3 OBJE @M23@
+2 SOUR @S19@
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+2 SOUR @S19@
+1 SEX M
+1 BIRT
+2 DATE 7 SEP 1906
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S18@
+3 OBJE @M23@
+1 RESI
+2 DATE 1920
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 DEAT
+2 DATE 31 MAY 2000
+1 RESI
+2 DATE 1910
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 BIRT
+2 DATE ABT 1907
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 FAMS @F8@
+1 FAMC @F5@
+0 @I21@ INDI
+1 NAME Calvin /Coolidge/
+2 GIVN Calvin
+2 SURN Coolidge
+2 NSFX Jr.
+1 NAME Calvin /Coolidge/
+2 SOUR @S17@
+2 SOUR @S18@
+3 OBJE @M26@
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 SEX M
+1 BIRT
+2 DATE 13 APR 1908
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S17@
+2 SOUR @S18@
+3 OBJE @M26@
+1 RESI
+2 DATE 1920
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 BURI
+2 DATE 10 JUL 1924
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S17@
+1 DEAT
+2 DATE 7 JUL 1924
+2 PLAC District of Columbia, USA
+3 MAP
+4 LATI N38.905
+4 LONG W77.0162
+2 SOUR @S17@
+1 RESI
+2 DATE 1910
+2 PLAC Northampton, Hampshire, Massachusetts, USA
+3 MAP
+4 LATI N42.3251
+4 LONG W72.6412
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 BIRT
+2 DATE ABT 1909
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T625_705; Page: 6A; Enumeration District: 163
+3 OBJE @M17@
+1 BIRT
+2 DATE ABT 1908
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm: 1374606
+3 OBJE @M19@
+1 FAMC @F5@
+0 @I22@ INDI
+1 NAME Florence /Trumbull/
+2 SOUR @S19@
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+2 SOUR @S11@
+2 SOUR @S19@
+1 SEX F
+1 BIRT
+2 DATE 30 NOV 1904
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S15@
+1 RESI
+2 DATE 1920
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 BURI
+2 PLAC Plymouth Notch Cemetery, Plymouth, Windsor, Vermont, USA
+2 SOUR @S11@
+1 DEAT
+2 DATE 15 FEB 1998
+2 PLAC Hartford, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.7637
+4 LONG W72.6851
+2 SOUR @S15@
+1 NAME Florence /Turnbull/
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 NAME Florence T /Coolidge/
+2 SOUR @S15@
+1 RESI
+2 DATE 1910
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+1 BIRT
+2 DATE ABT 1905
+2 PLAC Connecticut, USA
+3 MAP
+4 LATI N41.5735
+4 LONG W72.7383
+2 SOUR @S14@
+3 PAGE Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T624_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+3 OBJE @M14@
+2 SOUR @S1@
+3 PAGE Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T625_184; Page: 16B; Enumeration District: 180
+3 OBJE @M3@
+1 DEAT
+2 DATE 15 FEB 1998
+2 SOUR @S11@
+1 BIRT
+2 DATE 30 NOV 1904
+2 SOUR @S11@
+1 FAMS @F8@
+1 FAMC @F4@
+0 @I23@ INDI
+1 NAME Cynthia /Coolidge/
+2 SOUR @S19@
+1 SEX F
+1 BIRT
+2 DATE 28 OCT 1933
+2 PLAC New Haven, New Haven, Connecticut, USA
+3 MAP
+4 LATI N41.3082
+4 LONG W72.9281
+2 SOUR @S19@
+1 DEAT
+2 DATE 15 JAN 1989
+2 SOUR @S19@
+1 FAMC @F8@
+0 @I24@ INDI
+1 NAME Andrew I /Goodhue/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number: M-2022922
+3 OBJE @M15@
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 SEX M
+1 BIRT
+2 DATE JAN 1848
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 DEAT
+2 DATE 25 APR 1923
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number: M-2022922
+3 OBJE @M15@
+1 NAME Andrew J /Goodhue/
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+1 RESI
+2 DATE 1900
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 BIRT
+2 DATE ABT 1848
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 BIRT
+2 DATE 12 JAN 1848
+2 PLAC Hancock, New York, USA
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number: M-2022922
+3 OBJE @M15@
+1 BIRT
+2 DATE ABT 1848
+2 PLAC Hancock, Hillsborough, New Hampshire, USA
+3 MAP
+4 LATI N42.9729
+4 LONG W71.9798
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+1 FAMS @F9@
+1 FAMC @F3@
+0 @I25@ INDI
+1 NAME Lemira A /Barrett/
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+1 SEX F
+1 BIRT
+2 DATE APR 1849
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 RESI
+2 DATE 1880
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 NAME Lemira /Goodhue/
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 NAME Lemira A. /Goodhue/
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 RESI
+2 DATE 1900
+2 PLAC Burlington, Chittenden, Vermont, USA
+3 MAP
+4 LATI N44.4759
+4 LONG W73.2121
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+1 BIRT
+2 DATE ABT 1849
+2 PLAC New Hampshire, USA
+3 MAP
+4 LATI N43.6855
+4 LONG W71.5776
+2 SOUR @S13@
+3 PAGE Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343; Page: 10C; Enumeration District: 063
+3 OBJE @M12@
+1 BIRT
+2 PLAC Nashua, Hillsborough, New Hampshire, USA
+3 MAP
+4 LATI N42.7654
+4 LONG W71.4675
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+1 FAMS @F9@
+0 @I26@ INDI
+1 NAME Lydia /Coolidge/
+2 SOUR @S19@
+1 SEX F
+1 BIRT
+2 DATE 14 AUG 1939
+2 PLAC New Haven, New Haven, Connecticut, USA
+3 MAP
+4 LATI N41.3082
+4 LONG W72.9281
+2 SOUR @S19@
+1 FAMC @F8@
+0 @I27@ INDI
+1 NAME George /Brown/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M28@
+1 SEX M
+1 BIRT
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 FAMS @F11@
+0 @I28@ INDI
+1 NAME Marcella /Moore/
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 SEX F
+1 BIRT
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S8@
+3 PAGE Vermont State Archives and Records Administration; Montpelier, Vermont, USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number: M-1984780
+3 OBJE @M29@
+1 NAME Marcella /Brown/
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M28@
+1 FAMS @F11@
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I1@
+1 MARR
+2 DATE 30 SEP 1935
+2 PLAC Plainville, Hartford, Connecticut, USA
+3 MAP
+4 LATI N41.6744
+4 LONG W72.8586
+2 SOUR @S5@
+3 PAGE Connecticut State Department of Health; Hartford, CT; Connecticut Vital Records — Index of Marriages, 1897-1968
+2 SOUR @S5@
+3 PAGE Connecticut State Department of Health; Hartford, CT; Connecticut Vital Records — Index of Marriages, 1897-1968
+0 @F2@ FAM
+1 HUSB @I6@
+1 WIFE @I7@
+1 CHIL @I10@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I17@
+2 _FREL Natural
+2 _MREL Natural
+0 @F3@ FAM
+1 HUSB @I11@
+1 WIFE @I12@
+1 CHIL @I13@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I24@
+2 _FREL Natural
+2 _MREL Natural
+0 @F4@ FAM
+1 HUSB @I14@
+1 WIFE @I15@
+1 CHIL @I1@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I22@
+2 _FREL Natural
+2 _MREL Natural
+0 @F5@ FAM
+1 HUSB @I16@
+1 WIFE @I19@
+1 CHIL @I20@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I21@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 4 OCT 1905
+2 PLAC Burlington, Hartford, Vermont, USA
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M20@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M21@
+0 @F6@ FAM
+1 HUSB @I17@
+1 WIFE @I18@
+1 CHIL @I8@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I16@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 6 MAY 1868
+2 PLAC Plymouth, Windsor, Vermont, USA
+3 MAP
+4 LATI N43.5358
+4 LONG W72.7219
+2 SOUR @S21@
+0 @F7@ FAM
+1 HUSB @I17@
+1 WIFE @I9@
+1 MARR
+2 DATE 9 SEP 1891
+2 PLAC Plymouth, Litchfield, Vermont, USA
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M30@
+2 SOUR @S9@
+3 PAGE New England Historic Genealogical Society; Boston, Massachusetts; State of Vermont. Vermont Vital Records, 1871–1908
+3 OBJE @M28@
+0 @F8@ FAM
+1 HUSB @I20@
+1 WIFE @I22@
+1 CHIL @I23@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I26@
+2 _FREL Natural
+2 _MREL Natural
+0 @F9@ FAM
+1 HUSB @I24@
+1 WIFE @I25@
+1 CHIL @I19@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 7 APR 1870
+2 PLAC Merrimack, Hillsborough, New Hampshire, USA
+3 MAP
+4 LATI N42.8651
+4 LONG W71.4934
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+2 SOUR @S20@
+3 PAGE New Hampshire Department of Health; Concord, New Hampshire; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M27@
+1 MARR
+2 DATE ABT 1870
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+2 SOUR @S12@
+3 PAGE Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll: 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+3 OBJE @M22@
+0 @F10@ FAM
+1 HUSB @I5@
+1 CHIL @I14@
+2 _FREL Natural
+0 @F11@ FAM
+1 HUSB @I27@
+1 WIFE @I28@
+1 CHIL @I9@
+2 _FREL Natural
+2 _MREL Natural
+0 @S1@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1920 United States Federal Census
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 010;
+1 REPO @R1@
+0 @S2@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1930 United States Federal Census
+1 PUBL Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 200
+2 CONC 2;
+1 REPO @R1@
+0 @S3@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1940 United States Federal Census
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 012;
+1 REPO @R1@
+0 @S4@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., World War II Draft Cards Young Men, 1940-1947
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 11;
+1 REPO @R1@
+0 @S5@ SOUR
+1 AUTH Ancestry.com
+1 TITL WEB: Connecticut Marriage Records, 1897-1968
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 19;
+1 REPO @R1@
+0 @S6@ SOUR
+1 AUTH Ancestry.com
+1 TITL Florida, U.S., Death Index, 1877-1998
+1 PUBL Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 200
+2 CONC 4;
+1 REPO @R1@
+0 @S7@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Passport Applications, 1795-1925
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 07;
+1 REPO @R1@
+0 @S8@ SOUR
+1 AUTH Ancestry.com
+1 TITL Vermont, U.S., Death Records, 1909-2008
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 010;
+1 REPO @R1@
+0 @S9@ SOUR
+1 AUTH Ancestry.com
+1 TITL Vermont, U.S., Vital Records, 1720-1908
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 13;
+1 REPO @R1@
+0 @S10@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1870 United States Federal Census
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 009;
+1 REPO @R1@
+0 @S11@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Find a Grave Index, 1600s-Current
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 12;
+1 REPO @R1@
+0 @S12@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1900 United States Federal Census
+1 PUBL Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 200
+2 CONC 4;
+1 REPO @R1@
+0 @S13@ SOUR
+1 AUTH Ancestry.com and The Church of Jesus Christ of Latter-day Saints
+1 TITL 1880 United States Federal Census
+1 PUBL Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2010
+2 CONC ;
+1 REPO @R1@
+0 @S14@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1910 United States Federal Census
+1 PUBL Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2006
+2 CONC ;
+1 REPO @R1@
+0 @S15@ SOUR
+1 AUTH Connecticut Department of Health
+1 TITL Connecticut Death Index, 1949-2012
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 003;
+1 REPO @R1@
+0 @S16@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., World War I Draft Registration Cards, 1917-1918
+1 PUBL Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 200
+2 CONC 5;
+1 REPO @R1@
+0 @S17@ SOUR
+1 AUTH Ancestry.com
+1 TITL Washington, D.C., U.S., Select Deaths and Burials Index, 1769-1960
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 014;
+1 REPO @R1@
+0 @S18@ SOUR
+1 AUTH Ancestry.com
+1 TITL Massachusetts, U.S., Birth Records, 1840-1915
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 013;
+1 REPO @R1@
+0 @S19@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Social Security Applications and Claims Index, 1936-2007
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 015;
+1 REPO @R1@
+0 @S20@ SOUR
+1 AUTH Ancestry.com
+1 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 20
+2 CONC 21;
+1 REPO @R1@
+0 @S21@ SOUR
+1 AUTH Ancestry.com
+1 TITL The New England Historical & Genealogical Register, 1847-2011
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2
+2 CONC 011;
+1 REPO @R1@
+0 @R1@ REPO
+1 NAME Ancestry.com
+1 ADDR 52-55 Sir John Rogersons Quay, Dublin 2, Ireland
+1 EMAIL
+1 PHON
+0 @M1@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\U.S., World War II Draft Cards Young Men, 1940-1947.jpg
+2 FORM jpg
+2 TITL U.S., World War II Draft Cards Young Men, 1940-1947
+2 _TEXT National Archives at St. Louis; St. Louis, Missouri; WWII Draft Regist
+3 CONC ration Cards for New York State, 10/16/1940 - 03/31/1947; Record Group
+3 CONC : Records of the Selective Service System, 147
+0 @M2@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1930 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1930 United States Federal Census
+2 _TEXT Year: 1930; Census Place: Plainville, Hartford, Connecticut; Page: 2B
+3 CONC ; Enumeration District: 0205; FHL microfilm: 2340003
+0 @M3@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1920 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1920 United States Federal Census
+2 _TEXT Year: 1920; Census Place: Plainville, Hartford, Connecticut; Roll: T62
+3 CONC 5_184; Page: 16B; Enumeration District: 180
+0 @M4@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1940 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1940 United States Federal Census
+2 _TEXT Year: 1940; Census Place: Yonkers, Westchester, New York; Roll: m-t062
+3 CONC 7-02867; Page: 62A; Enumeration District: 68-134
+0 @M5@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Vital Records, 1720-1908.jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Vital Records, 1720-1908
+2 _TEXT New England Historic Genealogical Society; Boston, Massachusetts; Stat
+3 CONC e of Vermont. Vermont Vital Records through 1870
+0 @M6@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Death Records, 1909-2008.jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Death Records, 1909-2008
+2 _TEXT Vermont State Archives and Records Administration; Montpelier, Vermont
+3 CONC , USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number
+3 CONC : M-1984780
+0 @M7@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1870 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1870 United States Federal Census
+2 _TEXT Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629
+3 CONC ; Page: 443B
+0 @M8@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\U.S., Passport Applications, 1795-1925.jpg
+2 FORM jpg
+2 TITL U.S., Passport Applications, 1795-1925
+2 _TEXT National Archives and Records Administration (NARA); Washington D.C.
+3 CONC ; Roll #: 340; Volume #: Roll 0340 - Certificates: 42901-43400, 26 De
+3 CONC c 1916-04 Jan 1917
+0 @M9@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1870 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1870 United States Federal Census
+2 _TEXT Year: 1870; Census Place: Plymouth, Windsor, Vermont; Roll: M593_1629
+3 CONC ; Page: 443A
+0 @M10@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1900 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1900 United States Federal Census
+2 _TEXT Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page
+3 CONC : 1; Enumeration District: 0278; FHL microfilm: 1241696
+0 @M11@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1880 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1880 United States Federal Census
+2 _TEXT Year: 1880; Census Place: Plymouth, Windsor, Vermont; Roll: 1350; Page
+3 CONC : 188C; Enumeration District: 257
+0 @M12@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1880 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1880 United States Federal Census
+2 _TEXT Year: 1880; Census Place: Burlington, Chittenden, Vermont; Roll: 1343
+3 CONC ; Page: 10C; Enumeration District: 063
+0 @M13@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1900 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1900 United States Federal Census
+2 _TEXT Year: 1900; Census Place: Plymouth, Windsor, Vermont; Roll: 1696; Page
+3 CONC : 1; Enumeration District: 0278; FHL microfilm: 1241696
+0 @M14@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1910 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1910 United States Federal Census
+2 _TEXT Year: 1910; Census Place: Plainville, Hartford, Connecticut; Roll: T62
+3 CONC 4_131; Page: 24B; Enumeration District: 0235; FHL microfilm: 1374144
+0 @M15@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Death Records, 1909-2008(1).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Death Records, 1909-2008
+2 _TEXT Vermont State Archives and Records Administration; Montpelier, Vermont
+3 CONC , USA; User Box Number: PR-01921; Roll Number: S-30745; Archive Number
+3 CONC : M-2022922
+0 @M16@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\U.S., World War I Draft Registration Cards, 1917-1918.jpg
+2 FORM jpg
+2 TITL U.S., World War I Draft Registration Cards, 1917-1918
+2 _TEXT Registration State: Connecticut; Registration County: Hartford County
+0 @M17@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1920 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1920 United States Federal Census
+2 _TEXT Year: 1920; Census Place: Northampton Ward 2, Hampshire, Massachusetts
+3 CONC ; Roll: T625_705; Page: 6A; Enumeration District: 163
+0 @M18@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1930 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1930 United States Federal Census
+2 _TEXT Year: 1930; Census Place: Northampton, Hampshire, Massachusetts; Page
+3 CONC : 1A; Enumeration District: 0027; FHL microfilm: 2340647
+0 @M19@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1910 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1910 United States Federal Census
+2 _TEXT Year: 1910; Census Place: Northampton Ward 2, Hampshire, Massachusetts
+3 CONC ; Roll: T624_593; Page: 1B; Enumeration District: 0696; FHL microfilm
+3 CONC : 1374606
+0 @M20@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Vital Records, 1720-1908(1).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Vital Records, 1720-1908
+2 _TEXT New England Historic Genealogical Society; Boston, Massachusetts; Stat
+3 CONC e of Vermont. Vermont Vital Records, 1871–1908
+0 @M21@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Vital Records, 1720-1908(2).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Vital Records, 1720-1908
+2 _TEXT New England Historic Genealogical Society; Boston, Massachusetts; Stat
+3 CONC e of Vermont. Vermont Vital Records, 1871–1908
+0 @M22@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1900 United States Federal Census(2).jpg
+2 FORM jpg
+2 TITL 1900 United States Federal Census
+2 _TEXT Year: 1900; Census Place: Burlington Ward 5, Chittenden, Vermont; Roll
+3 CONC : 1690; Page: 12; Enumeration District: 0071; FHL microfilm: 1241690
+0 @M23@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Massachusetts, U.S., Birth Records, 1840-1915.jpg
+2 FORM jpg
+2 TITL Massachusetts, U.S., Birth Records, 1840-1915
+0 @M24@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1940 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1940 United States Federal Census
+2 _TEXT Year: 1940; Census Place: Northampton, Hampshire, Massachusetts; Roll
+3 CONC : m-t0627-01599; Page: 61A; Enumeration District: 8-39
+0 @M25@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\1900 United States Federal Census(3).jpg
+2 FORM jpg
+2 TITL 1900 United States Federal Census
+2 _TEXT Year: 1900; Census Place: Northampton Ward 2, Hampshire, Massachusetts
+3 CONC ; Roll: 654; Page: 8; Enumeration District: 0632; FHL microfilm: 12406
+3 CONC 54
+0 @M26@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Massachusetts, U.S., Birth Records, 1840-1915(1).jpg
+2 FORM jpg
+2 TITL Massachusetts, U.S., Birth Records, 1840-1915
+0 @M27@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\New Hampshire, U.S., Marriage Records, 1700-1971.jpg
+2 FORM jpg
+2 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+2 _TEXT New Hampshire Department of Health; Concord, New Hampshire; New Hampsh
+3 CONC ire Marriage Records, 1700-1969
+0 @M28@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Vital Records, 1720-1908(3).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Vital Records, 1720-1908
+2 _TEXT New England Historic Genealogical Society; Boston, Massachusetts; Stat
+3 CONC e of Vermont. Vermont Vital Records, 1871–1908
+0 @M29@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Death Records, 1909-2008(2).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Death Records, 1909-2008
+2 _TEXT Vermont State Archives and Records Administration; Montpelier, Vermont
+3 CONC , USA; User Box Number: PR-01920; Roll Number: S-30698; Archive Number
+3 CONC : M-1984780
+0 @M30@ OBJE
+1 FILE C:\Users\mark\Documents\Family Tree Maker\Coolidge Family Tree Media\Vermont, U.S., Vital Records, 1720-1908(4).jpg
+2 FORM jpg
+2 TITL Vermont, U.S., Vital Records, 1720-1908
+2 _TEXT New England Historic Genealogical Society; Boston, Massachusetts; Stat
+3 CONC e of Vermont. Vermont Vital Records, 1871–1908
+0 TRLR
