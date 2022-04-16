@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from gedcom.element import individual
 
 # Python GEDCOM Parser
 #
@@ -60,7 +59,7 @@ class Parser(object):
     For documentation of the GEDCOM 5.5 format, see: http://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm
     This parser reads and parses a GEDCOM file.
     Elements may be accessed via:
-    
+   
     * a `list` through `gedcom.parser.Parser.get_element_list()`
     
     * a `dict` through `gedcom.parser.Parser.get_element_dictionary()`
@@ -570,10 +569,15 @@ class Parser(object):
     def get_family_members(self, family, members_type=FAMILY_MEMBERS_TYPE_ALL):
         """Return array of family members: individual, spouse, and children
         Optional argument `members_type` can be used to return specific subsets:
+        
         "FAMILY_MEMBERS_TYPE_ALL": Default, return all members of the family
+        
         "FAMILY_MEMBERS_TYPE_PARENTS": Return individuals with "HUSB" and "WIFE" tags (parents)
+        
         "FAMILY_MEMBERS_TYPE_HUSBAND": Return individuals with "HUSB" tags (father)
+        
         "FAMILY_MEMBERS_TYPE_WIFE": Return individuals with "WIFE" tags (mother)
+        
         "FAMILY_MEMBERS_TYPE_CHILDREN": Return individuals with "CHIL" tags (children)
         
         :type family: FamilyElement
@@ -633,7 +637,7 @@ class Parser(object):
         
         :type criteria: str
         
-        :rtype IndividualElement
+        :rtype: IndividualElement
         """
         result = ""
         for element in self.get_root_child_elements():
