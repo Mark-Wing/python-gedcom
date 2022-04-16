@@ -89,9 +89,9 @@ class IndividualElement(Element):
         
         :rtype: tuple
         """
-        name_data = self.get_name_data()
+        given_name, surname, suffix, sources = self.get_name_data()
         
-        return name_data[0], name_data[1]
+        return given_name, surname
 
     def get_name_data(self):
         """Returns an individual's name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
@@ -167,8 +167,11 @@ class IndividualElement(Element):
     @deprecated
     def given_match(self, name):
         """Matches a string with the given name of an individual
+        
         ::deprecated:: As of version 1.0.0 use `given_name_match()` method instead
+        
         :type name: str
+        
         :rtype: bool
         """
         return self.given_name_match(name)
