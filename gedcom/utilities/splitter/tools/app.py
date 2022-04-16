@@ -8,6 +8,8 @@ import os
 class View(sg.Window):
 
     def __init__(self):
+        
+        sg.theme('Default')
 
         layout = [[sg.T("1. Choose the GEDCOM file:")], 
                   [sg.Input(key="-INPUT-FILE2-" ,change_submits=False, size=(50, 1)), sg.FileBrowse(key="-INPUT-FILE-"), sg.Button("Load")],
