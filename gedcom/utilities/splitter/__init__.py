@@ -27,7 +27,7 @@
 # Further information about the license: http://www.gnu.org/licenses/gpl-2.0.html
 
 """
-Module extending `gedcom.parser.Parser` to add new functionality  
+Module extending `gedcom.parser.Parser` to add new functionality
 
-.. include:: ./splitter.md 
+.. include:: ./splitter.md
 """

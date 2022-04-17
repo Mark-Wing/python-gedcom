@@ -43,7 +43,7 @@ class Element(object):
     level, and elements with a level of zero are at the top level.
     Elements with a level greater than zero are children of their
     parent.
-    
+
     A pointer has the format `@pname@`, where `pname` is any sequence of
     characters and numbers. The pointer identifies the object being
     pointed to, so that any pointer included as the value of any
@@ -53,7 +53,7 @@ class Element(object):
     is a spouse. Likewise, an element with a tag of `FAMC` has a value
     that points to a family record in which the associated person is a
     child.
-    
+
     See a GEDCOM file for examples of tags and their values.
     Tags available to an element are seen here: `gedcom.tags`
     """
@@ -65,7 +65,7 @@ class Element(object):
         self.__tag = tag
         self.__value = value
         self.__crlf = crlf
-        
+
         # structuring
         self.__children = []
         self.__parent = None
@@ -75,42 +75,42 @@ class Element(object):
 
     def get_level(self):
         """Returns the level of this element from within the GEDCOM file
-        
+
         :rtype: int
         """
         return self.__level
 
     def get_pointer(self):
         """Returns the pointer of this element from within the GEDCOM file
-        
+
         :rtype: str
         """
         return self.__pointer
 
     def get_tag(self):
         """Returns the tag of this element from within the GEDCOM file
-        
+
         :rtype: str
         """
         return self.__tag
 
     def get_value(self):
         """Return the value of this element from within the GEDCOM file
-        
+
         :rtype: str
         """
         return self.__value
 
     def set_value(self, value):
         """Sets the value of this element
-        
+
         :type value: str
         """
         self.__value = value
-        
+
     def get_child_value_by_tag(self, tag):
         """Returns value of child element by tag including any CONC lines
-        
+
         :rtype: str
         """
         for child in self.get_child_elements():
@@ -121,7 +121,7 @@ class Element(object):
 
     def get_multi_line_value(self):
         """Returns the value of this element including concatenations or continuations
-        
+
         :rtype: str
         """
         result = self.get_value()
@@ -140,28 +140,28 @@ class Element(object):
         """Returns true when the specific fields for both elements match.  The comparison includes the
         level, pointer, tag and pointer.  If the tag is 'BIRT','BURI','DEAT','_MILT', or 'RESI', the
         comparison includes the date and place from the child elements.
-        
+
         :type element: Element
-        
+
         :rtype: bool
         """
         result = False
-        
+
         if isinstance(element, Element):
             result = self.get_level() == element.get_level() \
-                     and self.get_tag() == element.get_tag() \
-                     and self.get_value() == element.get_value() \
-                     and self.get_pointer() == element.get_pointer()
-                     
-            if result and self.get_tag() in ['BIRT','BURI','DEAT','_MILT','RESI']:
+                and self.get_tag() == element.get_tag() \
+                and self.get_value() == element.get_value() \
+                and self.get_pointer() == element.get_pointer()
+
+            if result and self.get_tag() in ['BIRT', 'BURI', 'DEAT', '_MILT', 'RESI']:
                 result = self.get_child_element_value('DATE') == element.get_child_element_value('DATE') \
-                         and self.get_child_element_value('PLAC') == element.get_child_element_value('PLAC')
-                
+                    and self.get_child_element_value('PLAC') == element.get_child_element_value('PLAC')
+
         return result
 
     def __available_characters(self):
         """Get the number of available characters of the elements original string
-        
+
         :rtype: int
         """
         element_characters = len(self.to_gedcom_string())
@@ -169,7 +169,7 @@ class Element(object):
 
     def __line_length(self, line):
         """@TODO Write docs.
-        
+
         :type line: str
         :rtype: int
         """
@@ -186,7 +186,7 @@ class Element(object):
 
     def __set_bounded_value(self, value):
         """@TODO Write docs.
-        
+
         :type value: str
         :rtype: int
         """
@@ -196,7 +196,7 @@ class Element(object):
 
     def __add_bounded_child(self, tag, value):
         """@TODO Write docs.
-        
+
         :type tag: str
         :type value: str
         :rtype: int
@@ -206,7 +206,7 @@ class Element(object):
 
     def __add_concatenation(self, string):
         """@TODO Write docs.
-        
+
         :rtype: str
         """
         index = 0
@@ -216,7 +216,7 @@ class Element(object):
 
     def set_multi_line_value(self, value):
         """Sets the value of this element, adding concatenation and continuation lines when necessary
-        
+
         :type value: str
         """
         self.set_value('')
@@ -235,7 +235,7 @@ class Element(object):
 
     def get_child_elements(self):
         """Returns the direct child elements of this element
-        
+
         :rtype: list of Element
         """
         return self.__children
@@ -243,29 +243,29 @@ class Element(object):
     def get_child_element_value(self, tag=gedcom.tags.GEDCOM_TAG_DATE):
         """Returns the value for a specific child element.  Assumes there will only be one
         child element per tag
-        
+
         :type tag: str
-        
+
         :rtype: str
         """
         result = ""
-        
+
         child_elements = self.get_child_elements(tag)
-        
+
         if len(child_elements) > 0:
             result = child_elements[0].get_value()
-            
+
         return result
 
     def new_child_element(self, tag, pointer="", value=""):
         """Creates and returns a new child element of this element
-        
+
         :type tag: str
-        
+
         :type pointer: str
-        
+
         :type value: str
-        
+
         :rtype: Element
         """
         from gedcom.element.family import FamilyElement
@@ -297,30 +297,30 @@ class Element(object):
 
     def add_child_element(self, element):
         """Adds a child element to this element
-        
+
         :type element: Element
         """
         self.get_child_elements().append(element)
         element.set_parent_element(self)
 
         return element
-    
+
     def remove_child_element(self, pointer):
-        """ Removes child element based on pointer        
-        
+        """ Removes child element based on pointer
+
         :type pointer: str
         """
         x = 0
         while x < len(self.get_child_elements()):
             if self.get_child_elements()[x].get_pointer() == pointer:
                 self.get_child_elements().pop(x)
-                break;
+                break
             else:
-                x += 1        
+                x += 1
 
     def get_parent_element(self):
         """Returns the parent element of this element
-        
+
         :rtype: Element
         """
         return self.__parent
@@ -329,7 +329,7 @@ class Element(object):
         """Adds a parent element to this element
         There's usually no need to call this method manually,
         `add_child_element()` calls it automatically.
-        
+
         :type element: Element
         """
         self.__parent = element
@@ -338,16 +338,16 @@ class Element(object):
     def get_individual(self):
         """Returns this element and all of its sub-elements represented as a GEDCOM string
         ::deprecated:: As of version 1.0.0 use `to_gedcom_string()` method instead
-        
+
         :rtype: str
         """
         return self.to_gedcom_string(True)
 
     def to_gedcom_string(self, recursive=False):
         """Formats this element and optionally all of its sub-elements into a GEDCOM string
-        
+
         :type recursive: bool
-        
+
         :rtype: str
         """
         result = str(self.get_level())

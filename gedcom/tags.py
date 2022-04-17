@@ -40,7 +40,7 @@ Relationship to a father."""
 
 GEDCOM_TAG_ADDRESS = "ADDR"
 """Value: `ADDR`
-The contemporary place, usually required for postal purposes, of an individual, a submitter of information, 
+The contemporary place, usually required for postal purposes, of an individual, a submitter of information,
 a repository, a business, a school or a company."""
 
 GEDCOM_TAG_AUTHOR = "AUTH"
@@ -131,11 +131,11 @@ GEDCOM_TAG_NAME = "NAME"
 A word or combination of words used to help identify an individual, title, or other item.
 More than one NAME line should be used for people who were known by multiple names."""
 
-# Text which appears on a name line after or behind the given and surname parts of a name. 
+# Text which appears on a name line after or behind the given and surname parts of a name.
 # i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion
 GEDCOM_TAG_SUFFIX = "NSFX"
 """Value: `NSFX`.
-Text which appears on a name line after or behind the given and surname parts of a name. 
+Text which appears on a name line after or behind the given and surname parts of a name.
 i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion"""
 
 GEDCOM_TAG_OBJECT = "OBJE"
@@ -182,7 +182,7 @@ A family name passed on or used by members of a family."""
 GEDCOM_TAG_TITLE = "TITL"
 """Value: `TITL`
 A description of a specific writing or other work, such as the title of a book when used in a source context,
-or a formal designation used by an individual in connection with positions of royalty or another social 
+or a formal designation used by an individual in connection with positions of royalty or another social
 status, such as Grand Duke."""
 
 GEDCOM_TAG_WIFE = "WIFE"

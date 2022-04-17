@@ -14,9 +14,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../../'))
 
-#from gedcom.parser import Parser
-
-
 # -- Project information -----------------------------------------------------
 
 project = 'python-gedcom'
@@ -38,11 +35,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
 ]
-
-#extensions.append('autoapi.extension')
-
-#autoapi_type = 'python'
-#autoapi_dirs = ['../../gedcom']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

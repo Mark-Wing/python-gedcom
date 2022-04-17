@@ -39,8 +39,3 @@ class FamilyElement(Element):
 
     def get_tag(self):
         return gedcom.tags.GEDCOM_TAG_FAMILY
-    
-    
-    
-    
-    

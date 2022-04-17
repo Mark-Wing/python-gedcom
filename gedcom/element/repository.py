@@ -43,14 +43,14 @@ class RepositoryElement(Element):
 
     def get_address(self):
         """Returns address of repository
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_ADDRESS)
-    
+
     def get_name(self):
         """Returns name of repository
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_NAME)

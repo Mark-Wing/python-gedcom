@@ -43,7 +43,7 @@ class SourceElement(Element):
 
     def get_objects(self):
         """Returns the objects of a person formatted as a list
-        
+
         :rtype: list
         """
         sources = []
@@ -53,38 +53,38 @@ class SourceElement(Element):
                 sources.append(child)
 
         return sources
-    
+
     def get_author(self):
         """Returns name of author
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_AUTHOR)
-    
+
     def get_page(self):
         """Returns page of source
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_PAGE)
 
     def get_publisher(self):
         """Returns publisher of source
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_PUBLISHER)
 
     def get_repository(self):
         """Returns pointer of source's repository
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_REPOSITORY)
 
     def get_title(self):
         """Returns title of source
-        
+
         :rtype: str
         """
         return self.get_child_value_by_tag(gedcom.tags.GEDCOM_TAG_TITLE)

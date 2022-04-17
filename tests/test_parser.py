@@ -2,6 +2,7 @@ from gedcom.element.individual import IndividualElement
 from gedcom.element.root import RootElement
 from gedcom.parser import Parser
 
+
 def test_initialization():
     parser = Parser()
     assert isinstance(parser, Parser)
@@ -103,109 +104,115 @@ def test___parse_line():
     # @TODO Add appropriate testing cases
     pass
 
+
 def test_get_marriages():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1845"
     individual = parser.find_person(criteria)
-    
+
     marriages = parser.get_marriages(individual)
-    
+
     assert len(marriages) == 2
-    
+
     assert marriages[0] == ('6 MAY 1868', 'Plymouth, Windsor, Vermont, USA')
     assert marriages[1] == ('9 SEP 1891', 'Plymouth, Litchfield, Vermont, USA')
-    
+
+
 def test_get_marriages_data():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1845"
     individual = parser.find_person(criteria)
-    
+
     marriages = parser.get_marriages_data(individual)
-    
+
     assert len(marriages) == 2
-    
+
     (spouse, date, place, sources) = marriages[0]
-    
+
     assert spouse == '@I18@'
     assert date == '6 MAY 1868'
     assert place == 'Plymouth, Windsor, Vermont, USA'
-    
+
     assert len(sources) == 1
-    assert sources[0].get_value() == '@S21@' 
-        
+    assert sources[0].get_value() == '@S21@'
+
     (spouse, date, place, sources) = marriages[1]
-    
+
     assert spouse == '@I9@'
     assert date == '9 SEP 1891'
     assert place == 'Plymouth, Litchfield, Vermont, USA'
-    
+
     assert len(sources) == 2
-    assert sources[0].get_value() == '@S9@' 
-        
+    assert sources[0].get_value() == '@S9@'
+
+
 def test_get_parents():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1872"
     individual = parser.find_person(criteria)
 
     parents = parser.get_parents(individual)
-    
+
     assert len(parents) == 2
     assert parents[0].get_pointer() == '@I17@'
     assert parents[1].get_pointer() == '@I18@'
-    
+
+
 def test_get_children():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1872"
     individual = parser.find_person(criteria)
 
     children = parser.get_children(individual)
- 
+
     assert len(children) == 2
     assert children[0].get_pointer() == '@I20@'
     assert children[1].get_pointer() == '@I21@'
-   
+
+
 def test_get_spouses():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1845"
     individual = parser.find_person(criteria)
 
     spouses = parser.get_spouses(individual)
- 
+
     assert len(spouses) == 2
     assert spouses[0].get_pointer() == '@I18@'
     assert spouses[1].get_pointer() == '@I9@'
+
 
 def test_get_family():
 
     parser = Parser()
     parser.parse_file('tests/files/Coolidge.ged')
-    
+
     criteria = "surname=Coolidge:birth=1872"
     individual = parser.find_person(criteria)
 
     persons = parser.get_family(individual)
- 
+
     assert len(persons) == 2
     assert persons[0].get_pointer() == '@I20@'
     assert persons[1].get_pointer() == '@I21@'
-    
-    persons = parser.get_family(individual,  members_type="ALL")
- 
+
+    persons = parser.get_family(individual, members_type="ALL")
+
     assert len(persons) == 4
     assert persons[0].get_pointer() == '@I16@'
     assert persons[1].get_pointer() == '@I19@'

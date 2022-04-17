@@ -18,3 +18,7 @@ recursive-exclude gedcom *.md
 
 # Include GEDCOM test files
 include tests/files/*.ged
+
+# Include Python files
+recursive-include gedcom *.py
+recursive-include tests *.py
