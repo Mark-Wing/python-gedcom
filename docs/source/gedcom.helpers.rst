@@ -1,5 +1,5 @@
 gedcom.helpers module
-====================+
+=====================
 
 .. automodule:: gedcom.helpers
    :members:
