@@ -29,5 +29,5 @@
 """
 Module containing tools developed using the GEDCOM Parser
 
-..include:: ./utilities.md 
+..include:: ./utilities.md
 """
