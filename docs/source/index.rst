@@ -120,7 +120,7 @@ Navigation
    install
    examples
    splitter
-   autoapi/index
+   api
    support
    
 
