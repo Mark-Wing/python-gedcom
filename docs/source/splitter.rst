@@ -34,38 +34,6 @@ There are three ways to use the Splitter module:
 Running Splitter 
 ================
 
-Command Line
-------------
-
-.. code-block::
-
-	python splitter.py -i <gedcom-input-file> [-h | -b <year-of-birth> | -d <year-of-death> | -g <given-name> | -l <last-name> | -o <gedcom-output-file> | -n]
-
-Options and arguments (and corresponding environment variables):
-
-.. code-block::
-
-	-b : root person's year of birth
-	-d : root person's year of death
-	-g : part of all of the root person's given name
-	-h : print this help message and exit
-	-i : file name of the source GEDCOM file
-	-l : part of all of the root person's last name
-	-n : exclude father-in-law and mother-in-law of descendants
-	-o : file name of output GEDCOM file; if not included, adds "_split" to the input file name
-	-s : does not enforce strict parsing of GEDCOM file
-
-With the App
-------------
-
-.. code-block::
-
-	python app.py
-	
-File in the required fields and press Submit.
-
-.. image:: images/splitter.png
-
 Python
 ------
 
@@ -103,4 +71,36 @@ descendants.
 	else:
 		parser.split_gedcom(ancestor)
 		parser.write_file(output_file_name)
+
+Command Line
+------------
+
+.. code-block::
+
+	python splitter.py -i <gedcom-input-file> [-h | -b <year-of-birth> | -d <year-of-death> | -g <given-name> | -l <last-name> | -o <gedcom-output-file> | -n]
+
+Options and arguments (and corresponding environment variables):
+
+.. code-block::
+
+	-b : root person's year of birth
+	-d : root person's year of death
+	-g : part of all of the root person's given name
+	-h : print this help message and exit
+	-i : file name of the source GEDCOM file
+	-l : part of all of the root person's last name
+	-n : exclude father-in-law and mother-in-law of descendants
+	-o : file name of output GEDCOM file; if not included, adds "_split" to the input file name
+	-s : does not enforce strict parsing of GEDCOM file
+
+With the App
+------------
+
+.. code-block::
+
+	python app.py
+	
+File in the required fields and press Submit.
+
+.. image:: images/splitter.png
 
