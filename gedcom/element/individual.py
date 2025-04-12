@@ -90,8 +90,18 @@ class IndividualElement(Element):
         :rtype: tuple
         """
         given_name, surname, suffix, sources = self.get_name_data()
-
+                            
         return given_name, surname
+
+    def get_full_name(self):
+        """Returns an individual's names as a tuple: (`str` given_name, `str` surname, `str` suffix)
+
+        :rtype: tuple
+        """
+        if self.__given_name == None:
+            self.__given_name, self.__surname, self.__suffix, sources = self.get_name_data()
+
+        return self.__given_name, self.__surname, self.__suffix
 
     def get_name_data(self):
         """Returns an individual's name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
@@ -112,7 +122,7 @@ class IndividualElement(Element):
                 # place the name in the value of the NAME tag.
                 if child.get_value() != "":
                     name = child.get_value().split('/')
-
+                    
                     if len(name) > 0:
                         given_name = name[0].strip()
                         if len(name) > 1:
@@ -121,19 +131,18 @@ class IndividualElement(Element):
                             suffix = name[2].strip()
 
                 for childOfChild in child.get_child_elements():
-
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_GIVEN_NAME:
                         given_name = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SURNAME:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SURNAME:
                         surname = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SUFFIX:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SUFFIX:
                         suffix = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
                         sources.append(childOfChild)
-
+                    
                 return given_name, surname, suffix, sources
 
         # If we reach here we are probably returning empty strings
@@ -151,7 +160,7 @@ class IndividualElement(Element):
 
         :rtype: str
         """
-        result = self.get_name_data()[0].split(" ")
+        result = self.get_name()[0].split(" ")
         return result[0]
 
     def surname_match(self, surname_to_match):
@@ -204,7 +213,7 @@ class IndividualElement(Element):
 
         :rtype: tuple
         """
-        date = ""
+        date = "" 
         place = ""
         sources = []
 
@@ -215,10 +224,10 @@ class IndividualElement(Element):
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
                         date = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
                         place = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
                         sources.append(childOfChild)
 
                 break
@@ -277,10 +286,10 @@ class IndividualElement(Element):
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
                         tag_date = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
                         tag_place = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
                         tag_sources.append(childOfChild)
 
                 if (date is None or date == tag_date) and (place is None or place == tag_place):
@@ -288,6 +297,89 @@ class IndividualElement(Element):
 
         return sources
 
+    def get_sources_by_tag_and_day(self, tag, date):
+        """Returns the sources for a tag, day (no year) and place.
+
+        :rtype: list
+        """
+        sources = []
+        
+        #if len(date.split()) <= 1:
+        #    return sources
+
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                tag_sources = []
+                tag_date = ""
+
+                for childOfChild in child.get_child_elements():
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                        tag_date = childOfChild.get_value()
+
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        tag_sources.append(childOfChild)
+
+                if date == tag_date[:len(date)]:
+                    sources += tag_sources
+
+        return sources
+
+    def get_sources_by_tag_and_year(self, tag, year):
+        """Returns the sources for a tag, day (no year) and place.
+
+        :rtype: list
+        """
+        sources = []
+        
+        if len(year) != 4:
+            return sources
+        
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                tag_sources = []
+                tag_date = ""
+
+                for childOfChild in child.get_child_elements():
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                        tag_date = childOfChild.get_value()
+
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        tag_sources.append(childOfChild)
+
+                if len(tag_date) >= 4:
+                    if (year == tag_date[-4:] and tag_date[:3] != 'ABT'):
+                        sources += tag_sources
+
+        return sources
+
+    def get_all_data_by_tag(self, tag):
+        """Returns the all sources for a tag
+
+        :rtype: list
+        """
+        results = []
+        
+        # get primary date, place and sources
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                date, place = "", ""
+                sources = []
+
+                for childOfChild in child.get_child_elements():
+                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                        date = childOfChild.get_value()
+
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                        place = childOfChild.get_value()
+
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                        sources.append(childOfChild)
+
+                results.append((date, place, sources))
+
+        return results
+    
+    
     def get_birth_data(self):
         """Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
 
@@ -315,6 +407,34 @@ class IndividualElement(Element):
         :rtype: str
         """
         return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BIRTH)[1]
+
+    def get_baptism_data(self):
+        """Returns the birth data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
+
+        :rtype: tuple
+        """
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BAPTISM)
+
+    def get_baptism_year(self):
+        """Returns the birth year of a person in integer format
+
+        :rtype: int
+        """
+        return self.get_event_year_by_tag(tag=gedcom.tags.GEDCOM_TAG_BAPTISM)
+
+    def get_baptism_date(self):
+        """Returns the birth date of a person as a str
+
+        :rtype: str
+        """
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BAPTISM)[0]
+
+    def get_baptism_place(self):
+        """Returns the birth date of a person as a str
+
+        :rtype: str
+        """
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BAPTISM)[1]
 
     def get_death_data(self):
         """Returns the death data of a person formatted as a tuple: (`str` date, `str` place, `list` sources)
@@ -359,6 +479,20 @@ class IndividualElement(Element):
         """
         return self.get_event_by_tag(tag="BURI")
 
+    def get_burial_date(self):
+        """Returns the birth date of a person as a str
+
+        :rtype: str
+        """
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BURIAL)[0]
+
+    def get_burial_place(self):
+        """Returns the birth date of a person as a str
+
+        :rtype: str
+        """
+        return self.get_event_by_tag(tag=gedcom.tags.GEDCOM_TAG_BURIAL)[1]
+
     @deprecated
     def get_census(self):
         """Returns a list of censuses of an individual formatted as tuples: (`str` date, `str´ place, `list` sources)
@@ -386,10 +520,10 @@ class IndividualElement(Element):
                     if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
                         date = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
                         place = childOfChild.get_value()
 
-                    if childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                    elif childOfChild.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
                         sources.append(childOfChild.get_value())
 
                 census.append((date, place, sources))
@@ -411,6 +545,19 @@ class IndividualElement(Element):
 
         return date
 
+    def get_note(self):
+        """Returns the main note of a person
+
+        :rtype: str
+        """
+        notes = ""
+
+        for child in self.get_child_elements():
+            if child.get_tag() == gedcom.tags.GEDCOM_TAG_NOTE:
+                notes = child.get_value()
+
+        return notes
+    
     def get_occupation(self):
         """Returns the occupation of a person
 
