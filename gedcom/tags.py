@@ -47,6 +47,10 @@ GEDCOM_TAG_AUTHOR = "AUTH"
 """Value: `AUTH`
 The name of the individual who created or compiled information. """
 
+GEDCOM_TAG_BAPTISM = "BAPM"
+"""Value: `BAPM`
+The event of baptism."""
+
 GEDCOM_TAG_BIRTH = "BIRT"
 """Value: `BIRT`
 The event of entering into life."""
@@ -89,6 +93,10 @@ GEDCOM_TAG_DATE = "DATE"
 """Value: `DATE`
 The time of an event in a calendar format."""
 
+GEDCOM_TAG_DIVORCE = "DIV"
+"""Value: `DIV`.
+A legal, common-law, or customary event of dissolving a family unit of a man and a woman as husband and wife."""
+
 GEDCOM_TAG_DEATH = "DEAT"
 """Value: `DEAT`
 The event when mortal life terminates."""
@@ -130,6 +138,11 @@ GEDCOM_TAG_NAME = "NAME"
 """Value: `NAME`.
 A word or combination of words used to help identify an individual, title, or other item.
 More than one NAME line should be used for people who were known by multiple names."""
+
+GEDCOM_TAG_NOTE = "NOTE"
+"""Value: `NOTE`.
+
+"""
 
 # Text which appears on a name line after or behind the given and surname parts of a name.
 # i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion
