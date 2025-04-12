@@ -98,11 +98,10 @@ class IndividualElement(Element):
 
         :rtype: tuple
         """
-        if self.__given_name == None:
-            self.__given_name, self.__surname, self.__suffix, sources = self.get_name_data()
-
-        return self.__given_name, self.__surname, self.__suffix
-
+        given_name, surname, suffix, sources = self.get_name_data()
+                            
+        return given_name, surname, suffix
+        
     def get_name_data(self):
         """Returns an individual's name data including sources as a tuple: (`str` given_name, `str` surname, `str` suffix, `list` sources)
 
