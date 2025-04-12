@@ -39,3 +39,45 @@ class FamilyElement(Element):
 
     def get_tag(self):
         return gedcom.tags.GEDCOM_TAG_FAMILY
+    
+    def get_children(self):
+        """Returns a list of the children in the family
+
+        :rtype: list
+        """
+        return self. get_elements_by_tag(gedcom.tags.GEDCOM_TAG_CHILD)
+        
+    def get_husbands(self):
+        """Returns a list of the husbands in the family
+
+        :rtype: list
+        """
+        return self. get_elements_by_tag(gedcom.tags.GEDCOM_TAG_HUSBAND)
+        
+    def get_wives(self):
+        """Returns a list of the wives in the family
+
+        :rtype: list
+        """
+        return self. get_elements_by_tag(gedcom.tags.GEDCOM_TAG_WIFE)
+        
+    def get_marriages(self):
+        """Returns a list of the marriage in the family
+
+        :rtype: list
+        """
+        return self. get_elements_by_tag(gedcom.tags.GEDCOM_TAG_MARRIAGE)
+
+    def get_elements_by_tag(self, tag):
+        """Returns a list of the child elements by tag in the family
+
+        :rtype: list
+        """
+        result = []
+
+        for child in self.get_child_elements():
+            if child.get_tag() == tag:
+                result.append(child)
+
+        return result
+        
