@@ -233,3 +233,26 @@ def test_get_sources_by_tag_and_values():
     assert len(sources) == 2
     assert sources[0].get_value() == '@S15@'
     assert sources[1].get_value() == '@S11@'
+    
+def test_get_full_name():
+
+    parser = Parser()
+    parser.parse_file('tests/files/Coolidge.ged')
+
+    criteria = "surname=Coolidge:birth=1908"
+    individual = parser.find_person(criteria)
+    
+    given_name, surname, suffix = individual.get_full_name()
+    
+    assert given_name == 'Calvin'
+    assert surname == 'Coolidge'
+    assert suffix == 'Jr.'
+    
+def text_get_sources_by_tag_and_day():
+        '
+    parser = Parser()
+    parser.parse_file('tests/files/Coolidge.ged')
+
+    criteria = "surname=Coolidge:birth=1908"
+    individual = parser.find_person(criteria)
+    

@@ -1,7 +1,7 @@
 
 # Python GEDCOM Parser
 #
-# Copyright (C) 2022 Mark Wing (mark @ markwing.net)
+# Copyright (C) 2022-2025 Mark Wing (mark @ markwing.net)
 # Copyright (C) 2018 Damon Brodie (damon.brodie at gmail.com)
 # Copyright (C) 2018-2019 Nicklas Reincke (contact at reynke.com)
 # Copyright (C) 2016 Andreas Oberritter
@@ -154,8 +154,8 @@ class Element(object):
                 and self.get_pointer() == element.get_pointer()
 
             if result and self.get_tag() in ['BIRT', 'BURI', 'DEAT', '_MILT', 'RESI']:
-                result = self.get_child_element_value('DATE') == element.get_child_element_value('DATE') \
-                    and self.get_child_element_value('PLAC') == element.get_child_element_value('PLAC')
+                result = self.get_child_value_by_tag('DATE') == element.get_child_value_by_tag('DATE') \
+                    and self.get_child_value_by_tag('PLAC') == element.get_child_value_by_tag('PLAC')
 
         return result
 
@@ -241,8 +241,7 @@ class Element(object):
         return self.__children
 
     def get_child_element_value(self, tag=gedcom.tags.GEDCOM_TAG_DATE):
-        """Returns the value for a specific child element.  Assumes there will only be one
-        child element per tag
+        """Returns the value for a specific child element.
 
         :type tag: str
 
@@ -250,13 +249,12 @@ class Element(object):
         """
         result = ""
 
-        child_elements = self.get_child_elements(tag)
-
-        if len(child_elements) > 0:
-            result = child_elements[0].get_value()
+        for element in self.get_child_elements():
+            if element.get_tag() == tag:
+                result = element.get_value()
 
         return result
-
+    
     def new_child_element(self, tag, pointer="", value=""):
         """Creates and returns a new child element of this element
 

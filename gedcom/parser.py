@@ -37,6 +37,7 @@ from gedcom.element.element import Element
 from gedcom.element.family import FamilyElement, NotAnActualFamilyError
 from gedcom.element.file import FileElement
 from gedcom.element.individual import IndividualElement, NotAnActualIndividualError
+from gedcom.element.note import NoteElement
 from gedcom.element.object import ObjectElement
 from gedcom.element.root import RootElement
 from gedcom.element.source import SourceElement
@@ -274,6 +275,8 @@ class Parser(object):
             element = FamilyElement(level, pointer, tag, value, crlf, multi_line=False)
         elif tag == gedcom.tags.GEDCOM_TAG_FILE:
             element = FileElement(level, pointer, tag, value, crlf, multi_line=False)
+        elif tag == gedcom.tags.GEDCOM_TAG_NOTE:
+            element = NoteElement(level, pointer, tag, value, crlf, multi_line=False)
         elif tag == gedcom.tags.GEDCOM_TAG_OBJECT:
             element = ObjectElement(level, pointer, tag, value, crlf, multi_line=False)
         elif tag == gedcom.tags.GEDCOM_TAG_SOURCE:
@@ -319,14 +322,53 @@ class Parser(object):
 
         return result
 
-    def get_marriages_data(self, individual):
-        """Returns a list of marriages of an individual formatted as a tuple (spouse `str`, `str` date, `str` place, `list` sources)
+    def get_marriages_data(self, individual, preferred_only=False):
+        """Returns a list of marriages of an individual formatted as a tuple (`str` spouse, `str` date, `str` place, `list` sources).          
+
+        :type individual: IndividualElement
+
+        :type preferred_only: boolean
+
+        :rtype: tuple
+        """
+        return self.get_relationship_data(individual, preferred_only=preferred_only)
+
+    def get_divorces(self, individual):
+        """Returns a list of marriages of an individual formatted as a tuple (`str` date, `str` place)
 
         :type individual: IndividualElement
 
         :rtype: tuple
         """
-        marriages = []
+        result = []
+        for spouse, date, place, sources in self.get_divorces_data(individual):
+            result.append((date, place))
+
+        return result
+
+    def get_divorces_data(self, individual, preferred_only=False):
+        """Returns a list of marriages of an individual formatted as a tuple (`str` spouse, `str` date, `str` place, `list` sources)
+
+        :type individual: IndividualElement
+
+        :type preferred_only: boolean
+
+        :rtype: tuple
+        """
+        return self.get_relationship_data(individual, preferred_only=preferred_only, relationship_type=gedcom.tags.GEDCOM_TAG_DIVORCE)
+
+    def get_relationship_data(self, individual, preferred_only=False, relationship_type=gedcom.tags.GEDCOM_TAG_MARRIAGE):
+        """Returns a list of marriages of an individual formatted as a tuple (`str` spouse, `str` date, `str` place, `list` sources)
+
+        :type individual: IndividualElement
+
+        :type preferred_only: boolean
+
+        :type relationship_type: string
+
+        :rtype: tuple
+        """
+        relationships = []
         if not isinstance(individual, IndividualElement):
             raise NotAnActualIndividualError(
                 "Operation only valid for elements with %s tag" % gedcom.tags.GEDCOM_TAG_INDIVIDUAL
@@ -335,31 +377,34 @@ class Parser(object):
         # Get and analyze families where individual is spouse.
         families = self.get_families(individual, gedcom.tags.GEDCOM_TAG_FAMILY_SPOUSE)
         for family in families:
-            marriage_found = False
+            relationship_found = False
             spouse = ""
+            current_spouse = ""
             for family_data in family.get_child_elements():
                 if family_data.get_tag() == gedcom.tags.GEDCOM_TAG_HUSBAND or family_data.get_tag() == gedcom.tags.GEDCOM_TAG_WIFE:
                     if family_data.get_value() != individual.get_pointer():
                         spouse = family_data.get_value()
-                elif family_data.get_tag() == gedcom.tags.GEDCOM_TAG_MARRIAGE:
-                    date = ''
-                    place = ''
-                    sources = []
-                    for marriage_data in family_data.get_child_elements():
-                        if marriage_data.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
-                            date = marriage_data.get_value()
-                        if marriage_data.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
-                            place = marriage_data.get_value()
-                        if marriage_data.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
-                            sources.append(marriage_data)
+                elif family_data.get_tag() == relationship_type:
+                    if preferred_only == False or current_spouse != spouse:
+                        current_spouse = spouse
+                        date = ''
+                        place = ''
+                        sources = []
+                        for relationship_data in family_data.get_child_elements():
+                            if relationship_data.get_tag() == gedcom.tags.GEDCOM_TAG_DATE:
+                                date = relationship_data.get_value()
+                            if relationship_data.get_tag() == gedcom.tags.GEDCOM_TAG_PLACE:
+                                place = relationship_data.get_value()
+                            if relationship_data.get_tag() == gedcom.tags.GEDCOM_TAG_SOURCE:
+                                sources.append(relationship_data)
+                                
+                        relationships.append((spouse, date, place, sources))
+                        relationship_found = True
 
-                    marriages.append((spouse, date, place, sources))
-                    marriage_found = True
+            if relationship_found is False:
+                relationships.append(('', '', '', []))
 
-            if marriage_found is False:
-                marriages.append(('', '', '', []))
-
-        return marriages
+        return relationships
 
     def get_marriage_years(self, individual):
         """Returns a list of marriage years (as integers) for an individual
@@ -614,6 +659,47 @@ class Parser(object):
 
         return family_members
 
+    def get_parent_relationship(self, parent, individual):
+ 
+        if not isinstance(parent, IndividualElement) or not isinstance(individual, IndividualElement):
+            raise NotAnActualIndividualError(
+                "Operation only valid for elements with %s tag" % gedcom.tags.GEDCOM_TAG_INDIVIDUAL
+            )
+
+        families = self.get_families(individual, gedcom.tags.GEDCOM_TAG_FAMILY_CHILD)
+        
+        for family in families:
+            parent_match = False
+            for person in self.get_family_members(family, members_type=FAMILY_MEMBERS_TYPE_PARENTS):
+                if person.get_pointer() == parent.get_pointer():
+                    parent_match = True
+
+            if parent_match == True:
+                for family_member in family.get_child_elements():
+                    if family_member.get_tag() == gedcom.tags.GEDCOM_TAG_CHILD \
+                       and family_member.get_value() == individual.get_pointer():
+
+                        for child in family_member.get_child_elements():
+                            if child.get_tag() == gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_MREL and parent.get_gender() == 'F':
+                                return child.get_value()
+                                
+                            elif child.get_tag() == gedcom.tags.GEDCOM_PROGRAM_DEFINED_TAG_FREL and parent.get_gender() == 'M':
+                                return child.get_value()
+                                
+        return ""
+       
+        
+
+    def get_note(self, note):
+        result = ""
+        for element in self.get_root_child_elements():
+            if isinstance(element, NoteElement):
+                if(element.get_pointer() == note):
+                    result = element
+                    break
+
+        return result
+    
     def find_person(self, criteria):
         """Returns a person matching all of the criteria.
         `criteria` is a colon-separated list, where each item in the
@@ -643,6 +729,37 @@ class Parser(object):
                 if (element.criteria_match(criteria)):
                     result = element
                     break
+
+        return result
+
+    def find_people(self, criteria):
+        """Returns a person matching all of the criteria.
+        `criteria` is a colon-separated list, where each item in the
+        list has the form [name]=[value]. The following criteria are supported:
+
+        surname=[name] - Match a person with [name] in any part of the `surname`.
+
+        given_name=[given_name] - Match a person with [given_name] in any part of the given `given_name`.
+
+        birth=[year] - Match a person whose birth year is a four-digit [year].
+
+        birth_range=[from_year-to_year] - Match a person whose birth year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
+
+        death=[year] - Match a person whose death year is a four-digit [year].
+
+        death_range=[from_year-to_year] - Match a person whose death year is in the range of years from
+        [from_year] to [to_year], including both [from_year] and [to_year].
+
+        :type criteria: str
+
+        :rtype: IndividualElement
+        """
+        result = []
+        for element in self.get_root_child_elements():
+            if isinstance(element, IndividualElement):
+                if (element.criteria_match(criteria)):
+                    result.append(element)
 
         return result
 
